@@ -1,0 +1,27 @@
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin transition($time) {
+  transition: all $time ease;
+}
+
+@mixin border-style($width, $height, $color) {
+  width: $width;
+  height: $height;
+  background-color: $color;
+}
+@mixin background_img($repeat, $position){
+  background-repeat: $repeat;
+  background-position: $position;
+}
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -moz-border-radius   : $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius    : $radius;
+  -o-border-radius     : $radius;
+}

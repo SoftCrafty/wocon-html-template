@@ -1,0 +1,107 @@
+/* COMMOON CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+ul,
+ol {
+  list-style-type: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0; }
+
+.container {
+  width: 1320px;
+  margin: auto; }
+
+/* COMMOON CSS END */
+/*=================navigation start=======================*/
+#navigation {
+  height: 115px; }
+  #navigation .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 110px !important;
+    border-bottom: 1px solid #ccc; }
+    #navigation .container .logo img {
+      width: 100%;
+      height: auto; }
+    #navigation .container .menu_iteam ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 35px;
+      margin: 0; }
+      #navigation .container .menu_iteam ul li a {
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 147%;
+        text-transform: uppercase;
+        color: #1a1a1a; }
+        #navigation .container .menu_iteam ul li a:hover {
+          color: #fe4a22; }
+  #navigation .nav_btn button {
+    border: 1px solid #ffd026;
+    width: 146px;
+    height: 60px; }
+
+/*=================navigation end=======================*/
+/*=================hero section start=======================*/
+#hero_section .heading_part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  gap: 50px; }
+  #hero_section .heading_part h2 {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 129%;
+    color: #000; }
+    #hero_section .heading_part h2::after {
+      content: "Better Tomorrow";
+      font-style: italic;
+      font-weight: 400;
+      border-bottom: 1px solid #fe4a22; }
+  #hero_section .heading_part .right_part p {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: #6a6a6a; }
+  #hero_section .heading_part .right_part .btn {
+    margin-top: 20px;
+    padding: 5px;
+    width: 173px;
+    height: 50px;
+    background-color: #ffd026;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 147%;
+    text-transform: uppercase;
+    color: #1a1a1a; }
+
+/*=================hero section end=======================*/
+/*=================navigation start=======================*/
+/*=================navigation end=======================*/
+
+/*# sourceMappingURL=main.css.map */

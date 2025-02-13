@@ -1,0 +1,9 @@
+@media (max-width:998px) {
+    #navigation .menu_iteam{
+        display: none !important;
+        background-color: green;
+    }
+    h2{
+        font-size: 48px !important;
+    }
+}
