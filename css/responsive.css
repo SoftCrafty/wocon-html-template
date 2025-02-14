@@ -7,3 +7,30 @@
         font-size: 48px !important;
     }
 }
+
+/* 📌 Tablet (768px-1024px) */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 24px;
+    }
+    h2{
+        font-size: 58px;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+
+/* 📌 Mobile (Max 767px) */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 18px;
+    }
+    h2 {
+    font-size: 52px;
+}
+    p{
+
+        font-size: 12px;
+    }
+}

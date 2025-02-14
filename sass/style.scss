@@ -1,4 +1,6 @@
 /* COMMOON CSS */
+@import "mixin";
+@import "variables";
 * {
     margin    : 0;
     padding   : 0;
@@ -13,7 +15,9 @@ ul,
 ol {
     list-style-type: none;
 }
-
+.text-right{
+    text-align: right !important;
+}
 h1,
 h2,
 h3,
@@ -22,6 +26,11 @@ h5,
 h6,
 p {
     margin: 0;
+    font-family: $--second-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: $--eight;
 }
 
 .container {
@@ -29,9 +38,61 @@ p {
     margin: auto;
 }
 
+.button_all{
+    width: 100%;
+    // background-color: green;
+    .commn_btn{
+margin-top: 20px;
+padding: 5px;
+width: 173px;
+height: 50px;
+background-color: $--secondary;
+font-family: $--font-family;
+font-weight: 400;
+font-size: 15px;
+line-height: 147%;
+border: none;
+@include border-radius(none);
+text-transform: uppercase;
+color: $--nine;
+span i{
+    transform: rotate(45deg) !important;
+    -webkit-transform: rotate(45deg) !important;
+    -moz-transform: rotate(45deg) !important;
+    -ms-transform: rotate(45deg) !important;
+    -o-transform: rotate(45deg) !important;
+}
+            }
+}
+
+.heading_part{
+    @include flex(column, center, flex-start);
+    gap: 30px;
+    .sub_heading{
+        width: 100%;
+
+        h5{
+            border: 1px solid $--tow;
+            padding: 10px 15px;
+            font-family: $--font-family;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 147%;
+            text-transform: uppercase;
+            color: $--primary;
+            display: inline;
+        }
+    }
+        h4{
+            font-family: $--font-family;
+            font-weight: 400;
+            font-size: 55px;
+            line-height: 127%;
+            color: $--nine;
+        }
+}
 /* COMMOON CSS END */
-@import "mixin";
-@import "variables";
+
 
 /*=================navigation start=======================*/
 #navigation{
@@ -39,7 +100,7 @@ p {
     .container{
         @include flex(row, space-between, center);
         height: 110px !important;
-        border-bottom: 1px solid $--tow;
+        border-bottom: 3px solid $--tow;
         .logo{
             img{
                 width: 100%;
@@ -76,7 +137,6 @@ p {
             border: 1px solid $--secondary;
             width: 146px;
             height: 60px;
-            // padding: 5px 0px;
         }
     }
 }
@@ -85,6 +145,7 @@ p {
 
 /*=================hero section start=======================*/
 #hero_section{
+    margin-top: 102px;
     .heading_part{
         @include flex(row, space-between, center);
         flex-wrap: wrap;
@@ -112,18 +173,31 @@ p {
                 line-height: 162%;
                 color: $--eight;
             }
-            .btn{
-margin-top: 20px;
-padding: 5px;
-width: 173px;
-height: 50px;
-background-color: $--secondary;
-font-family: $--font-family;
-font-weight: 400;
-font-size: 15px;
-line-height: 147%;
-text-transform: uppercase;
-color: $--nine;
+
+        }
+    }
+    .hero_section_img{
+        margin-top: 80px;
+        position: relative;
+
+        img{
+            width: 100%;
+        height: auto;
+        }
+        .overly_box{
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            background-color: $--one;
+            font-family: $--font-family;
+            font-weight: 400;
+            font-size: 40px;
+            line-height: 125%;
+            color: $--nine;
+            padding: 20px;
+            @include flex(row, space-between, center);
+            span{
+                color: $--primary;
             }
         }
     }
@@ -131,9 +205,103 @@ color: $--nine;
 /*=================hero section end=======================*/
 
 
+/*=================company logo start=======================*/
+#company_logo{
+    margin-top: 100px;
+    .container{
+    @include flex(row, space-between, center);
+    gap: 10px;
+    overflow: hidden;
+    .logo_img{
+        width: calc(100% / 10);
+        height: auto;
+        img{
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+    }
+}
+/*=================company logo end=======================*/
 
 
 
+/*=================about us start=======================*/
+#about_us{
+    margin-top: 100px;
+    .container{
+        @include flex(row, space-between, space-between);
+        flex-wrap: wrap;
+        height: 100%;
+        gap: 50px;
+        
+    }
+    .left_side{
+        @include flex(column, flex-start, flex-start);
+        padding: 0px;
+        .image_part{
+            width: 100%;
+            height: auto;
+            img{
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+        p{
+            margin: 57px 0px 47px 0px;
+        }
+
+    }
+
+    .right-side{
+        @include flex(column, space-between, flex-start);
+        width: 100%;
+        height: 100%;
+        
+
+        .progrees_container{
+            width: 80%;
+                margin-top: 21px;
+                border-radius: 5px;
+                height: 5px;
+                background-color: $--one;
+                position: relative;
+                z-index: 1;
+                @include flex(row, space-between, center);
+                margin-top: 60px !important;
+                .progress_bar{
+                    width: 84%;
+                    height: 5px;
+                    background-color: $--primary;
+                    @include flex(row, space-between, center);
+                    span{
+                        margin-top: -40px;
+                    }
+                }
+                .tow{
+                    width: 92%;
+                }
+               
+            
+        }
+
+        .architect{
+            width: 100%;
+            height: auto;
+            margin-top: 30px;
+            img{
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+
+
+    }
+}
+/*=================about us end=======================*/
 
 
 
