@@ -6,7 +6,9 @@
     padding   : 0;
     box-sizing: border-box;
 }
-
+section{
+    margin-top: 100px;
+}
 a {
     text-decoration: none;
 }
@@ -26,13 +28,14 @@ h5,
 h6,
 p {
     margin: 0;
+}
+p{
     font-family: $--second-family;
     font-weight: 400;
     font-size: 16px;
     line-height: 162%;
     color: $--eight;
 }
-
 .container {
     width : 1320px;
     margin: auto;
@@ -89,6 +92,7 @@ span i{
             font-size: 55px;
             line-height: 127%;
             color: $--nine;
+            width: 100%;
         }
 }
 /* COMMOON CSS END */
@@ -288,6 +292,7 @@ span i{
         }
 
         .architect{
+            background-color: green;
             width: 100%;
             height: auto;
             margin-top: 30px;
@@ -304,14 +309,341 @@ span i{
 /*=================about us end=======================*/
 
 
+/*=================box start=======================*/
+#box{
+    .parent_box{
+        @include flex(row, flex-end, center);
+        // flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 18px;
+
+         .child_box{
+            width: 299px;
+            height: 246px;
+            background-color: $--one;
+            @include flex(column, center, center);
+            gap: 27px;
+            h6{
+                font-family: $--font-family;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 125%;
+                text-align: center;
+                color: $--nine;
+            }
+            p{
+                font-family: $--font-family;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 150%;
+                text-align: center;
+                color: $--nine;
+            }
+        }
+    }
+}
+
+/*=================box end=======================*/
+
+
+/*====================Latest Gallery start=======================*/
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Heading Part */
+.gallery_heading {
+    @include flex(row, space-between, center);
+    .left{
+        h4{
+            margin-top: 20px;
+        }
+    }
+}
+#gallery{
+    overflow: hidden;
+    
+.overly_content_text{
+    width: 400px !important;
+    height: 100%;
+    display: block;
+    // background-color: red;
+    @include flex(column, center, left);
+    gap: 10px;
+    z-index: 1;
+    position: absolute;
+    bottom: 20px;
+    left: -80%;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+h6{
+        font-family:$--font-family;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color:$--white;
+    }
+    b{
+        font-family:$--font-family;
+font-weight: 400;
+font-size: 40px;
+line-height: 125%;
+color: $--white;
+    }
+}
+
+/* Gallery Section */
+.gallery_parent {
+    margin-top: 80px;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    .tab {
+        position: relative;
+        flex: 1;
+        transition: flex 0.5s ease-in-out;
+        cursor: pointer;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.6);
+            transition: filter 0.3s ease-in-out;
+            
+        }
+
+        .overlay_content {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: opacity 0.3s ease;
+
+            h2 {
+                margin: 0;
+                font-size: 20px;
+            }
+
+            p {
+                margin: 5px 0 0;
+                font-size: 14px;
+            }
+        }
+
+        &.active {
+            flex: 4;
+
+            img {
+                filter: brightness(1);
+            }
+
+            .overlay_content {
+                opacity: 0;
+            }
+
+            .content {
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                background-color: $--one;
+                padding: 15px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                @include flex(column, center, flex-start);
+                gap: 10px;
+            }
+        }
+        
+    }
+}
+
+}
+
+
+
+/*====================Latest Gallery end=======================*/
 
 
 
 
 
 
+/*=================service start=======================*/
+#service{
+    .service_box{
+        margin-top: 80px;
+        @include flex(row, space-between, center);
+        flex-wrap: wrap;
+        border: 1px solid $--tow;
+        .service_box_child{
+            padding: 20px 50px;
+            @include transition(0.3s);
+            @include flex(column, space-between, flex-start);
+            &:hover{
+                height: 392px;
+                box-shadow: 0 5px 60px 0 rgba(0, 0, 0, 0.05);
+                background: $--white;
+                p{
+                    &::after{
+                        content: "Business consulting involves providing the a expert advice and guidance";
+                    }
+                }
+                b{
+                    span i{
+                        color:$--primary;
+                        transform: rotate(0deg);
+                        -webkit-transform: rotate(0deg);
+                        -moz-transform: rotate(0deg);
+                        -ms-transform: rotate(0deg);
+                        -o-transform: rotate(0deg);
+}
+                }
+            }
+            img{
+                object-fit: contain;
+                padding: 0;
+                margin: 0;
+            }
+            h6{
+                font-family: $--font-family;
+                font-weight: 500;
+                font-size: 30px;
+                line-height: 133%;
+                color: $--nine;
+                margin: 30px 0px;
+            }
+            p{
+                margin-bottom: 30px;
+            }
+            b{
+                font-family: $--font-family;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 147%;
+                    text-transform: uppercase;
+                    color: $--nine;
+                    span i{
+                        transform: rotate(45deg);
+                        -webkit-transform: rotate(45deg);
+                        -moz-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        -o-transform: rotate(45deg);
+}
+            
+                }
 
 
-/*=================navigation start=======================*/
 
-/*=================navigation end=======================*/
+            }
+        }
+    }
+
+/*=================service end=======================*/
+
+
+
+
+
+/*=================experts start=======================*/
+#experts{
+    margin-top: 120px;
+    .experts_person{
+        margin-top: 80px;
+        @include flex(row, space-between, center);
+        gap: 10px;
+        flex-wrap: wrap;
+        .experts_person_child{
+            width: calc(33.33% - 20px);
+            position: relative;
+            img{
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+            h5{
+                padding: 51px 0px 0px 30px;
+                font-family: $--font-family;
+font-weight: 500;
+font-size: 30px;
+line-height: 133%;
+color: $--nine;
+                
+            }
+            p{
+                padding: 0px 0px 43px 30px;
+                margin-top: 18px;
+                font-family: $--font-family;
+font-weight: 400;
+font-size: 16px;
+line-height: 162%;
+color: $--eight;
+            }
+.social_media{
+    position: absolute;
+
+    bottom: 80px;
+    right: 40px;
+    &:hover{
+        .social_icon{
+        transform: translateY(0px);
+        padding: 0;
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        @include transition(0.5s);
+        }
+}
+    span{
+        width: 40px;
+        height: 40px;
+        display: block;
+        border: 2px solid $--tow;
+        color: $--primary;
+        text-align: center;
+        line-height:30px;
+        background-color: $--one;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .social_icon{
+        transform: translateY(40px);
+        padding: 0;
+        opacity: 0;
+        visibility: hidden;
+        li
+{
+            width: 40px;
+            height: 40px;
+            background-color:$--secondary;
+            border: 2px solid $--tow;
+            text-align: center;
+            line-height: 40px;
+            &:hover a{
+                color: $--primary;
+            }
+            a{
+                color: $--nine;
+            }
+        }
+    }
+
+}
+        }
+    }
+}
+/*=================experts end=======================*/

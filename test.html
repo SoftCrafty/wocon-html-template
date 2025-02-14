@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .slider {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 400px;
+        }
+        .slide {
+            flex: 1;
+            position: relative;
+            transition: flex 0.5s ease-in-out;
+            background-size: cover;
+            background-position: center;
+        }
+        .slide.active {
+            flex: 4;
+        }
+        .slide-content {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+        .slide.active .slide-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slide active" style="background-image: url('image1.jpg');">
+            <div class="slide-content">
+                <h2>01 General Contracting</h2>
+                <p>Construction is one of the oldest and most essential industries...</p>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('image2.jpg');">
+            <div class="slide-content">
+                <h2>02 Residential Construction</h2>
+                <p>Construction is one of the oldest and most essential industries...</p>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('image3.jpg');">
+            <div class="slide-content">
+                <h2>03 Residential Construction</h2>
+                <p>Construction is one of the oldest and most essential industries...</p>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('image4.jpg');">
+            <div class="slide-content">
+                <h2>04 Commercial Construction</h2>
+                <p>Construction is one of the oldest and most essential industries...</p>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('image5.jpg');">
+            <div class="slide-content">
+                <h2>05 Industrial Construction</h2>
+                <p>Construction is one of the oldest and most essential industries...</p>
+            </div>
+        </div>
+        <div class="slide" style="background-image: url('image6.jpg');">
+            <div class="slide-content">
+                <h2>06 Renovation & Remodeling</h2>
+                <p>Construction is one of the oldest and most essential industries...</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('.slide').on('click', function() {
+                $('.slide').removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+</body>
+</html>
