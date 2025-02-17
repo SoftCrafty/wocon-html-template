@@ -25,3 +25,25 @@
   -ms-border-radius    : $radius;
   -o-border-radius     : $radius;
 }
+@mixin transformY($translate){
+  transform: translateY($translate);
+  -webkit-transform: translateY($translate);
+  -moz-transform: translateY($translate);
+  -ms-transform: translateY($translate);
+  -o-transform: translateY($translate);
+}
+@mixin transformX($translate){
+  transform: translateX($translate);
+  -webkit-transform: translateX($translate);
+  -moz-transform: translateX($translate);
+  -ms-transform: translateX($translate);
+  -o-transform: translateX($translate);
+}
+
+@mixin transform($translateX, $translateY){
+  transform: translate($translateX, $translateY);
+  -webkit-transform: translate($translateX, $translateY);
+  -moz-transform: translate($translateX, $translateY);
+  -ms-transform: translate($translateX, $translateY);
+  -o-transform: translate($translateX, $translateY);
+}

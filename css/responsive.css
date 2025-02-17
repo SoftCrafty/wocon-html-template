@@ -1,21 +1,58 @@
+@media (max-width:1199px){
+    #blog_news .blog_box_parent .blog_box .img_part .overly_part{
+        width: 90%;
+    }
+   
+}
 @media (max-width:1024px){
     #service .service_box .service_box_child {
         width: 100% !important;
         flex-wrap: wrap;
         height: auto !important;
     }
-    .experts_person_child {
+    /* .experts_person_child {
         width: 100% !important;
         margin-top: 30px;
+    } */
+}
+@media (min-width:998px){
+    #navigation .mobile_device{
+        display: none;
     }
 }
 @media (max-width:998px) {
     #navigation .menu_iteam{
         display: none !important;
-        background-color: green;
+    }
+    #navigation .nav_btn{
+        display: none !important;
     }
     h2{
         font-size: 48px !important;
+    }
+    #review .review_content .left-arrow {
+        display: none;
+        visibility: hidden;
+        background-color: red;
+    }
+    #review .review_content .right-arrow{
+        display: none;
+        visibility: hidden;
+    }
+    #subscribe .right {
+        margin-top: 40px !important;
+    }
+    #footer {
+        margin-top: 300px;
+    }
+    #footer .container .contanct_part{
+        top: -200px;
+    }
+    #footer .container .contanct_part .part_one {
+        margin:20px 0px ;
+    }
+    #footer .container .row ul {
+        margin: 20px 0px;
     }
 }
 
@@ -35,6 +72,23 @@
     }
     p{
         font-size: 14px !important;
+    }
+    #blog_news .blog_box_parent .blog_box {
+        width: 100%;
+        height: auto;
+    }
+        .images .img span {
+        width      : 80px;
+        height     : 80px;
+        font-size  : 40px;
+        line-height: 80px;
+        text-align : center;
+    }
+    #box .heading_part h4{
+        font-size: 30px !important;
+    }
+    .experts_person {
+        justify-content: center !important;
     }
 }
 
@@ -56,4 +110,33 @@
 
         font-size: 12px !important;
     }
+    /* .heading_part h4 {
+        width: 300px;
+        background: darkgoldenrod;
+    }
+    .heading_part p {
+        width: 300px;
+        background: darkgoldenrod;
+    } */
+    #review{
+        padding-bottom: 0px;
+    }
+    #review .review_box {
+        width: 100% !important;
+        margin-bottom: 100px;
+    }
+    .images .img span {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 40px;
+        text-align: center;
+    }
+  #blog_news .blog_box_parent .blog_box {
+     width : 100%;
+     height: auto;
+ }
+ .experts_person {
+    justify-content: center !important;
+}
 }

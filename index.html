@@ -22,18 +22,16 @@
     <!-- RESPONSIVE CSS -->
     <link rel="stylesheet" href="./css/responsive.css" />
     <!-- FONTS STYLE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- ==================================<<<<<<<<<<NAVIGATION BAR START>>>>>>>>>>================================= -->
-    <div id="navigation">
+    <nav id="navigation">
       <div class="container">
-        <div class="logo">
+
+          <div class="logo">
           <a href="index.html"
             ><img src="./images/logo/home_logo.png" alt=""
           /></a>
@@ -51,9 +49,41 @@
         <div class="nav_btn">
           <button>Contact Us</button>
         </div>
+
+        <div class="mobile_device">
+            <span class="menu_btn"><i class="fa-solid fa-bars"></i></span>
+        </div>
+
       </div>
-    </div>
+    </nav>
     <!-- ===================================<<<<<<<<<<NAVIGATION BAR END>>>>>>>>>>================================== -->
+
+          <!-- ========OFFCANVAS START============ -->
+    <div class="off_canvas">
+        <div class="off_overly">
+            <span class="cross_btn"><i class="fa-solid fa-x"></i></span>
+
+            <ul class="nav_iteam">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="support.html">support</a></li>
+                        <li><a href="about.html">About Us</a></li>
+            </ul>
+
+            <ul class="menu_icon">
+                <!-- <li class="menu_search"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li class="menu_cart"><a href="#"><i class="fa-solid fa-cart-plus"></i> <span
+                            class="menu_count_number">0</span></a></li>
+                <li class="menu_nav_btn"><a href="#">Get a quote<span> <i class="fa-solid fa-right-long"></i>
+                        </span></a></li> -->
+            </ul>
+        </div>
+    </div>
+
+    <!-- ========OFFCANVAS END============ -->
+
+
 
     <!-- ==================================<<<<<<<<<<HERO SECTION START>>>>>>>>>>================================= -->
     <div id="hero_section">
@@ -86,8 +116,7 @@
       </div>
     </div>
     <!-- ===================================<<<<<<<<<<HERO SECTION END>>>>>>>>>>================================== -->
-
-    <div id="company_logo">
+      <div id="company_logo">
       <div class="container">
         <div class="logo_img">
             <img src="./images/logo/company logo/XMLID.png" alt="" />
@@ -110,7 +139,11 @@
       </div>
     </div>
 
-    <!-- ==================================<<<<<<<<<<About us START>>>>>>>>>>================================= -->
+
+
+
+
+        <!-- ==================================<<<<<<<<<<About us START>>>>>>>>>>================================= -->
     <div id="about_us">
       <div class="container">
         <div class="col-lg-5 col-12">
@@ -173,7 +206,7 @@
     </div>
 
     <!-- ===================================<<<<<<<<<<About us END>>>>>>>>>>================================== -->
-    
+ 
     <!-- ==================================<<<<<<<<<<BOX START>>>>>>>>>>================================= -->
     <section id="box">
         <div class="container">
@@ -207,18 +240,17 @@
     </section>
     <!-- ===================================<<<<<<<<<<BOX END>>>>>>>>>>================================== -->
 
-
-        <!-- ================================<<<<<<<<<<GALLERY STAT>>>>>>>>>>=============================== -->
+              <!-- ================================<<<<<<<<<<GALLERY STAT>>>>>>>>>>=============================== -->
     <section id="gallery">
         <div class="container">
             <div class="heading_part gallery_heading">
-                <div class="col-lg-5">
+                <div class="col-lg-5 col-12">
                     <div class="left">
                     <div class="sub_heading"><h5>Latest Gallery</h5></div>
                     <h4>Breathe New Life into Your Property</h4>
                 </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5 col-12">
                     <div class="right">
                     <p>Construction is the process of designing, building, and assembling structures such as houses, commercial buildings roads bridges and other infrastructure.</p>
                     <div class="button_all">
@@ -308,8 +340,7 @@
         </div>
     </section>
         <!-- =================================<<<<<<<<<<GALLERY END>>>>>>>>>>=============================== -->
-            
-            
+             
     <!-- =================================<<<<<<<<<<SERVICE END>>>>>>>>>>=============================== -->
     <section id="service">
         <div class="container">
@@ -341,22 +372,18 @@
         </div>
     </section>
     <!-- =================================<<<<<<<<<<SERVICE START>>>>>>>>>>=============================== -->
-        
-        
-        
-        
-        
-    <!-- =================================<<<<<<<<<<EXPERTS START>>>>>>>>>>=============================== -->
+ 
+          <!-- =================================<<<<<<<<<<EXPERTS START>>>>>>>>>>=============================== -->
     <section id="experts">
         <div class="container">
             <div class="heading_part gallery_heading">
-                <div class="col-lg-5">
+                <div class="col-lg-5 col-12">
                     <div class="left">
                     <div class="sub_heading"><h5>Meet our experts</h5></div>
                     <h4>Professional Reliable Exceptional</h4>
                 </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5 col-12">
                     <div class="right">
                     <p>Construction is the process of designing, building, and assembling structures such as houses, commercial buildings roads bridges and other infrastructure.</p>
                     
@@ -365,7 +392,7 @@
             </div>
 
             <div class="experts_person">
-                <div class="experts_person_child">
+                <div class="experts_person_child col-lg-4 col-12">
                     <img src="./images/experts/1.png" alt="">
                     <h5>Darrell Steward</h5>
                     <p>Marketing coordinator</p>
@@ -382,7 +409,7 @@
                 </div>
 
                 
-                <div class="experts_person_child">
+                <div class="experts_person_child col-lg-4 col-12">
                     <img src="./images/experts/2.png" alt="">
                     <h5>Jacob Jones</h5>
                     <p>Marketing coordinator</p>
@@ -398,7 +425,7 @@
                     </div>
                 </div>
 
-                <div class="experts_person_child">
+                <div class="experts_person_child col-lg-4 col-12">
                     <img src="./images/experts/3.png" alt="">
                     <h5>Esther Howard</h5>
                     <p>Marketing coordinator</p>
@@ -419,12 +446,279 @@
         </div>
     </section>
     <!-- =================================<<<<<<<<<<EXPERTS END>>>>>>>>>>=============================== -->
+    <!-- =================================<<<<<<<<<<REVIEW START>>>>>>>>>>=============================== -->
+  <section id="review">
+     <div class="service_img">
+      <img src="./images/review/5.png" alt="">
+    </div>
+    <div class="container">
+      <div class="review_content">
+      <div class="review_box col-lg-6 col-12">
+        <ul>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+        </ul>
+        <p>Construction is the process of designing, building, and design assembling structures such as houses, commercial buildings roads, bridges, and other infrastructure. </p>
+        <div class="profile">
+          <div class="pic">
+            <img src="./images/review/3.png" alt="">
+          </div>
+          <div class="name">
+            <h5>Robert Fox</h5>
+            <p>Web Developer</p>
+          </div>
+        </div>
+      </div>
+      <div class="review_box col-lg-6 col-12">
+        <ul>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+        </ul>
+        <p>Construction is the process of designing, building, and design assembling structures such as houses, commercial buildings roads, bridges, and other infrastructure. </p>
+        <div class="profile">
+          <div class="pic">
+            <img src="./images/review/3.png" alt="">
+          </div>
+          <div class="name">
+            <h5>Robert Fox</h5>
+            <p>Web Developer</p>
+          </div>
+        </div>
+      </div>
+      <div class="review_box col-lg-6">
+        <ul>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+          <li><i class="fa-solid fa-star"></i></li>
+        </ul>
+        <p>Construction is the process of designing, building, and design assembling structures such as houses, commercial buildings roads, bridges, and other infrastructure. </p>
+        <div class="profile">
+          <div class="pic">
+            <img src="./images/review/3.png" alt="">
+          </div>
+          <div class="name">
+            <h5>Robert Fox</h5>
+            <p>Web Developer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   
+  </div>
+  <div class="images">
+     <div class="img">
+      <img src="./images/review/6.png" alt="">
+     <span><i class="fa-solid fa-play"></i></span>
+     </div>
+   </div>
+</div>
+  </section>
+  <!-- =================================<<<<<<<<<<REVIEW END>>>>>>>>>>=============================== -->
 
 
+  <!-- =================================<<<<<<<<<<SUBSCRIBE START>>>>>>>>>>=============================== -->
+    <section id="subscribe">
+      <div class="container">
+        <div class="vector">
+          <img src="./images/subscribe/1.png" alt="">
+          <img src="./images/subscribe/2.png" alt="">
+        </div>
+        <div class="row">
+          <div class="left col-lg-5">
+            <h4>Subscribe Our newsletter For Any Update</h4>
+          </div>
+          <div class="right col-lg-7">
+            <input type="text" placeholder="Enter Your Email">
+            <button class="sub_btn">Subscribe Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- =================================<<<<<<<<<<SUBSCRIBE END>>>>>>>>>>=============================== -->
 
 
+  <!-- =================================<<<<<<<<<<BLOG AND NEWS START>>>>>>>>>>=============================== -->
+    <section id="blog_news">
+      <div class="container">
+        <div class="heading_part gallery_heading">
+                <div class="col-lg-5 col-12">
+                    <div class="left">
+                    <div class="sub_heading"><h5>Blog and news</h5></div>
+                    <h4>Your Dream Project Starts Here</h4>
+                </div>
+                </div>
+                
+                <div class="col-lg-5 col-12">
+                    <div class="right">
+                    <p>Construction is the process of designing, building, and assembling structures such as houses, commercial buildings roads bridges and other infrastructure.</p>
+                    <div class="button_all">
+                        <button class="commn_btn">
+                           explore more &nbsp;<span><i class="fa-solid fa-arrow-right"></i></span>
+                        </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="blog_box_parent">
+              <!-- box one start -->
+              <div class="blog_box">
+                <div class="img_part">
+                  <img src="./images/blog/1.png" alt="">
+                  <div class="overly_part">
+                    <p>Oct 19</p>
+                    <p><span><i class="fa-regular fa-comments"></i></span>Comments (05)</p>
+                    <p><span><i class="fa-solid fa-user"></i></span>Admin</p>
+                  </div>
+                </div>
+                <div class="title">
+                  <h6>Building Businesses, One Project at a Time</h6>
+                  <p>Read more <span><i class="fa-solid fa-arrow-right"></i></span></p>
+                </div>
+              </div>
+              <!-- box one end -->
+
+              
+              <!-- box one start -->
+              <div class="blog_box">
+                <div class="img_part">
+                  <img src="./images/blog/1.png" alt="">
+                  <div class="overly_part">
+                    <p>Oct 19</p>
+                    <p><span><i class="fa-regular fa-comments"></i></span>Comments (05)</p>
+                    <p><span><i class="fa-solid fa-user"></i></span>Admin</p>
+                  </div>
+                </div>
+                <div class="title">
+                  <h6>Building Businesses, One Project at a Time</h6>
+                  <p>Read more <span><i class="fa-solid fa-arrow-right"></i></span></p>
+                </div>
+              </div>
+              <!-- box one end -->
+
+              <!-- box one start -->
+              <div class="blog_box">
+                <div class="img_part">
+                  <img src="./images/blog/1.png" alt="">
+                  <div class="overly_part">
+                    <p>Oct 19</p>
+                    <p><span><i class="fa-regular fa-comments"></i></span>Comments (05)</p>
+                    <p><span><i class="fa-solid fa-user"></i></span>Admin</p>
+                  </div>
+                </div>
+                <div class="title">
+                  <h6>Building Businesses, One Project at a Time</h6>
+                  <p>Read more <span><i class="fa-solid fa-arrow-right"></i></span></p>
+                </div>
+              </div>
+              <!-- box one end -->
 
 
+            </div>
+      </div>
+    </section>
+      <!-- =================================<<<<<<<<<<BLOG AND NEWS END>>>>>>>>>>=============================== -->
+        
+     <!-- =================================<<<<<<<<<<FOOTER START>>>>>>>>>>=============================== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="contanct_part">
+        <div class="part_one col-lg-4 col-12">
+          <div class="icon">
+            <span><i class="fa-solid fa-phone"></i></span>
+          </div>
+          <div class="text">
+            <h5>Phone number</h5>
+            <p>(704) 555-0127</p>
+          </div>
+        </div>
+        <div class="part_one col-lg-4 col-12">
+          <div class="icon">
+            <span><i class="fa-solid fa-phone"></i></span>
+          </div>
+          <div class="text">
+            <h5>Email Address</h5>
+            <p>tim.jennings@example.com</p>
+          </div>
+        </div>
+        <div class="part_one col-lg-4 col-12">
+          <div class="icon">
+            <span><i class="fa-solid fa-phone"></i></span>
+          </div>
+          <div class="text">
+            <h5>Address</h5>
+            <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
+          </div>
+        </div>
+      </div>
+      <div class="bg_img">
+        <img src="./images/footer/Vector.png" alt="">
+      </div>
+      <div class="row">
+        <div class="one col-lg-4">
+          <ul>
+            <li><img src="./images/logo/footer_logo/logo.png" alt=""></li>
+            <li><p>Construction is the process of designing, building, and assembling structures such as houses</p></li>
+            <li>
+              <ul class="social_media_icon">
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                            </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="tow col-lg-2">
+          <ul>
+            <li><h5>Service</h5></li>
+            <li><p>Planning & Design</p></li>
+            <li><p>Pre-Construction</p></li>
+            <li><p>Construction Phase</p></li>
+          </ul>
+        </div>
+        <div class="three col-lg-2">
+          <ul>
+            <li><h5>Links</h5></li>
+            <li><p>Residential</p></li>
+            <li><p>Commercial</p></li>
+            <li><p>Renovation </p></li>
+          </ul>
+        </div>
+        <div class="four col-lg-4">
+          <ul>
+            <li><h5>Get Free Estimate</h5></li>
+            <li><p>Construction is the process of designing, building, and assembling structures</p></li>
+            <li class="email_sent">
+              <input type="text" placeholder="Your email...">
+              <span><a href="#"><i class="fa-solid fa-paper-plane"></i></a></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_last">
+        <div class="left">
+          <p>© Yoursitename  2025 | All Rights Reserved</p>
+        </div>
+        <div class="right">
+          <p>Legal</p>
+          <p>Trams $ Condition</p>
+          <p>Privacy Policy</p>
+          <p>Contact Us</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+     <!-- =================================<<<<<<<<<<FOOTER END>>>>>>>>>>=============================== -->
 
 
 
