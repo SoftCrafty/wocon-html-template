@@ -47,3 +47,6 @@ $('.review_content').slick({
     ]
 });
 
+
+
+
