@@ -32,7 +32,12 @@
    left: -140px;
    bottom: 140px;
   }
-   
+     #our_teams .our_teams_box .child_box {
+        width: calc(50% - 30px);
+     }
+     #home_services .home_service_box .child_box {
+    width: calc(50% - 30px);
+}
 }
 @media (max-width:1024px){
     #service .service_box .service_box_child {
@@ -127,6 +132,46 @@
     #footer .container .row ul {
         margin: 20px 0px;
     }
+    #home_slider .slider_parent .slider_child {
+    justify-content: center !important;
+}
+
+#home_slider .slider_parent .slider_child .col-lg-8 {
+    float: none;
+}
+
+#home_slider .slider_parent .slider_child .col-lg-3 {
+    float: none;
+}
+  /* #home_blog_news .parent_box .box .left_contains {
+    align-items: center;
+  }
+  #home_blog_news .parent_box .box .center_contains {
+    align-items: center;
+  } */
+  #home_blog_news .parent_box .box{
+    gap: 20px;
+  }
+  #home_blog_news .parent_box .box .right_contains {
+      align-items:flex-start;
+    }
+    #home_blog_news .parent_box .box .right_contains span{
+        width: 100% !important;
+        
+        
+    }
+    #home_blog_news .parent_box .box .right_contains span img{
+        object-fit: cover;
+    }
+    #home_blog_news .parent_box .box .left_contains{
+        width: 100%;
+    }
+    #home_blog_news .parent_box .box .center_contains{
+        width: 100%;
+    }
+    #home_blog_news .parent_box .box .right_contains{
+        width: 100%;
+    }
 }
 
 /*============= Tablet (768px-1024px)==================== */
@@ -163,6 +208,24 @@
     .experts_person {
         justify-content: center !important;
     }
+     #our_teams .our_teams_box .child_box {
+     width: 100%;
+ }
+ #home_services .home_service_box .child_box {
+    width: 100%;
+}
+
+
+#home_slider .slider_parent .slider_child .col-lg-3 img:nth-child(1){
+    float: none;
+}
+#home_slider .slider_parent .right-arrow{
+    bottom: 10px;
+}
+#home_slider .slider_parent .left-arrow{
+    bottom: 10px;
+}
+
 }
 
 /*================== Mobile (Max 767px)=========== */
@@ -233,6 +296,17 @@
     justify-content: flex-start !important;
 }
 
-
+#our_teams .our_teams_box .child_box {
+    width: 100%;
+}
+#home_services .home_service_box .child_box {
+    width: 100%;
+}
+  #home_slider .slider_parent .left-arrow {
+    display: none;
+  }
+  #home_slider .slider_parent .right-arrow {
+    display: none;
+  }
 }
 
