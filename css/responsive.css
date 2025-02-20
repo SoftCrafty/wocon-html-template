@@ -65,10 +65,9 @@
         width: 100% !important;
     }
   
-    /* .experts_person_child {
-        width: 100% !important;
-        margin-top: 30px;
-    } */
+  #nav_bar .menu_iteam{
+    display: none;
+  }
 }
 @media (min-width:998px){
     #navigation .mobile_device{
@@ -172,6 +171,12 @@
     #home_blog_news .parent_box .box .right_contains{
         width: 100%;
     }
+    #general_service .row .right_side {
+    padding-left: 0px;
+    }
+     .information_contains {
+        gap: 30px;
+     }
 }
 
 /*============= Tablet (768px-1024px)==================== */
@@ -225,6 +230,16 @@
 #home_slider .slider_parent .left-arrow{
     bottom: 10px;
 }
+#service_details .container .contains{
+    text-align: center;
+    gap: 30px;
+}
+#service_details .container .contains .right_side {
+    text-align: center;
+}
+ #general_service .row {
+     gap: 100px !important;
+ }
 
 }
 
@@ -308,5 +323,17 @@
   #home_slider .slider_parent .right-arrow {
     display: none;
   }
+    #service_details .container .contains {
+        text-align: center;
+        gap: 30px;
+        
+    }
+    #service_details .container .contains .right_side {
+    text-align: center;
+}
+ #general_service .row {
+     gap: 100px !important;
+ }
+
 }
 

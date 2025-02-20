@@ -973,7 +973,7 @@ p {
 /*=================subscribe end=======================*/
 /*=================footer start=======================*/
 #footer {
-  margin-top: 200px;
+  margin-top: 247px;
   min-height: 537px;
   max-height: auto;
   background-color: #1a1a1a; }
@@ -1311,6 +1311,8 @@ p {
             line-height: 129%;
             color: #1a1a1a; }
 
+/*=================hero section end=======================*/
+/*=================About start=======================*/
 #home_about .container .row {
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1329,6 +1331,8 @@ p {
     right: -60px;
     z-index: -10; }
 
+/*=================About end=======================*/
+/*=================BOX GALLARY LOGO START=======================*/
 .box_gallery_logo {
   background-color: #000;
   padding: 50px 0px;
@@ -1398,8 +1402,7 @@ p {
 .slick-list {
   margin: 0 -10px; }
 
-/*=================hero section end=======================*/
-/*=================,,,,,,,,,SECOND HOME END,,,,,,,,, =======================*/
+/*=================BOX GALLARY LOGO end=======================*/
 /*=================services section start=======================*/
 #home_services .home_service_box {
   display: flex;
@@ -1732,5 +1735,450 @@ p {
           object-fit: contain; }
 
 /*=================blog and news end =======================*/
+/*=================subscribe start =======================*/
+#home_subscribe {
+  padding: 30px 0px;
+  background-color: #f2f2f2; }
+  #home_subscribe .container .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px; }
+    #home_subscribe .container .row .vector {
+      width: 253px;
+      height: 300px; }
+      #home_subscribe .container .row .vector img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%; }
+    #home_subscribe .container .row h4 {
+      font-family: "Kanit", sans-serif;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 125%;
+      color: #1a1a1a; }
+    #home_subscribe .container .row .right_contains {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0px; }
+      #home_subscribe .container .row .right_contains .sub_box {
+        position: relative;
+        width: 100% !important; }
+      #home_subscribe .container .row .right_contains input {
+        border: 1px solid #ccc;
+        width: 80%;
+        height: 65px;
+        padding: 0px 10px;
+        position: relative; }
+      #home_subscribe .container .row .right_contains .sub_btn {
+        width: 144px;
+        height: 49px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 147%;
+        text-transform: uppercase;
+        color: #1a1a1a;
+        background-color: #ffd026;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        right: 0px; }
+
+/*=================subscribe end =======================*/
+/*=================,,,,,,,,,SECOND HOME END,,,,,,,,, =======================*/
+.off_canvas ul li:hover > a {
+  color: #ffd026 !important; }
+.off_canvas ul li ul li:hover > a {
+  color: #ffd026 !important; }
+
+/*=================,,,,,,,,,SERVICE DETAILS START,,,,,,,,, =======================*/
+/*=================NAV AND BANNER START =======================*/
+#service_details {
+  margin: 0 !important;
+  background-color: #ddd; }
+  #service_details .container {
+    padding-left: 0;
+    padding-right: 0; }
+    #service_details .container .contains {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 70px 0px;
+      flex-wrap: wrap; }
+      #service_details .container .contains .right_side {
+        text-align: right; }
+      #service_details .container .contains h2 {
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-size: 55px;
+        line-height: 127%;
+        color: #1a1a1a; }
+      #service_details .container .contains img {
+        width: fit-content;
+        height: fit-content;
+        object-fit: contain; }
+
+#nav_bar {
+  height: 92px;
+  display: flex;
+  flex-direction: 0;
+  justify-content: center;
+  align-items: center; }
+  #nav_bar .container {
+    background-color: #fff;
+    padding: 0 30px;
+    height: 92px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+    #nav_bar .container .logo {
+      width: fit-content; }
+      #nav_bar .container .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; }
+    #nav_bar .container .menu_iteam ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 24px;
+      margin: 0; }
+      #nav_bar .container .menu_iteam ul li {
+        position: relative; }
+        #nav_bar .container .menu_iteam ul li:hover > a {
+          color: #ffd026; }
+        #nav_bar .container .menu_iteam ul li:hover ul {
+          visibility: visible;
+          opacity: 1;
+          top: 60px; }
+        #nav_bar .container .menu_iteam ul li a {
+          font-family: "Kanit", sans-serif;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 147%;
+          text-transform: uppercase;
+          color: #1a1a1a; }
+        #nav_bar .container .menu_iteam ul li ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          background: #fff;
+          top: 30px;
+          left: -20px;
+          padding: 5px 10px;
+          width: 150px;
+          gap: 5px;
+          visibility: hidden;
+          opacity: 0;
+          border-radius: 5px;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          transition: all 0.5s ease; }
+          #nav_bar .container .menu_iteam ul li ul li {
+            width: 100%; }
+            #nav_bar .container .menu_iteam ul li ul li:hover a {
+              color: #ffd026; }
+    #nav_bar .container .nav_btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center; }
+      #nav_bar .container .nav_btn span {
+        width: 52px;
+        height: 52px;
+        background-color: #fe4a22;
+        display: block;
+        text-align: center;
+        line-height: 52px;
+        color: #fff;
+        cursor: pointer; }
+
+/*=================NAV AND BANNER END =======================*/
+/*=================GENERAL SERVICE START =======================*/
+#general_service {
+  margin-top: 150px; }
+  #general_service .row {
+    justify-content: space-between; }
+    #general_service .row .left_side {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 45px; }
+      #general_service .row .left_side:nth-child(2) {
+        margin-top: 80px; }
+      #general_service .row .left_side .contains_title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px; }
+        #general_service .row .left_side .contains_title h4 {
+          font-family: "Kanit", sans-serif;
+          font-weight: 400;
+          font-size: 55px;
+          line-height: 127%;
+          color: #1a1a1a; }
+          #general_service .row .left_side .contains_title h4 span {
+            font-weight: 300; }
+        #general_service .row .left_side .contains_title p {
+          font-family: "Urbanist", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          color: #6a6a6a; }
+        #general_service .row .left_side .contains_title b {
+          font-family: "Kanit", sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 150%;
+          color: #1a1a1a; }
+        #general_service .row .left_side .contains_title ul {
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start; }
+          #general_service .row .left_side .contains_title ul li {
+            font-family: "Kanit", sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: #1a1a1a; }
+            #general_service .row .left_side .contains_title ul li span {
+              margin-right: 5px;
+              font-size: 12px;
+              opacity: 0.8; }
+        #general_service .row .left_side .contains_title .list_iteam {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap; }
+      #general_service .row .left_side .contains_box {
+        margin-top: 60px;
+        border: 1px solid #ccc;
+        padding: 80px 40px 45px 40px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px; }
+        #general_service .row .left_side .contains_box h4 {
+          font-family: "Kanit", sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 150%;
+          color: #1a1a1a; }
+        #general_service .row .left_side .contains_box p {
+          font-family: "Urbanist", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          color: #6a6a6a; }
+        #general_service .row .left_side .contains_box img {
+          width: fit-content;
+          height: fit-content;
+          padding: 17px;
+          background-color: #f2f2f2;
+          position: absolute;
+          top: -40px;
+          left: 40px; }
+      #general_service .row .left_side .summery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px; }
+        #general_service .row .left_side .summery p {
+          font-family: "Urbanist", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+          color: #6a6a6a; }
+    #general_service .row .right_side {
+      padding: 0px;
+      padding-left: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-end; }
+      #general_service .row .right_side .phn {
+        background-color: #fe4a22;
+        padding: 85px 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 20px; }
+        #general_service .row .right_side .phn span {
+          width: 88px;
+          height: 88px;
+          display: block;
+          text-align: center;
+          line-height: 88px;
+          border-radius: 50%;
+          -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -o-border-radius: 50%;
+          background-color: #ffffff3a;
+          color: #fff;
+          font-size: 30px; }
+        #general_service .row .right_side .phn b {
+          font-family: "Kanit", sans-serif;
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 133%;
+          text-align: center;
+          color: #fff; }
+        #general_service .row .right_side .phn p {
+          font-family: "Kanit", sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 150%;
+          text-align: center;
+          color: #fff; }
+      #general_service .row .right_side .service_list {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        width: 100%; }
+        #general_service .row .right_side .service_list h3 {
+          font-family: "Kanit", sans-serif;
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 133%;
+          color: #1a1a1a; }
+        #general_service .row .right_side .service_list ul {
+          width: 100%;
+          margin: 0px;
+          padding: 10px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px; }
+          #general_service .row .right_side .service_list ul li {
+            padding: 22px 20px;
+            background-color: #fff;
+            border: 1px solid #ccc; }
+            #general_service .row .right_side .service_list ul li a {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: center;
+              font-family: "Kanit", sans-serif;
+              font-weight: 400;
+              font-size: 20px;
+              line-height: 150%;
+              color: #1a1a1a; }
+            #general_service .row .right_side .service_list ul li:hover {
+              background-color: #ffd026;
+              transition: all 0.4s ease; }
+
+/*=================GENERAL SERVICE END =======================*/
+/*=================,,,,,,,,,SERVICE DETAILS END,,,,,,,,, =======================*/
+/*=================,,,,,,,,,Project DETAILS start,,,,,,,,, =======================*/
+#project_information {
+  margin-top: 105px; }
+  #project_information .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    gap: 40px;
+    padding: 60px;
+    box-shadow: 0 5px 60px 0 rgba(0, 0, 0, 0.05);
+    background: #fff; }
+    #project_information .container .image_part {
+      width: 100%;
+      height: fit-content; }
+      #project_information .container .image_part img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; }
+    #project_information .container .information_contains {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; }
+      #project_information .container .information_contains .left_contains {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px; }
+        #project_information .container .information_contains .left_contains h5 {
+          font-family: "Kanit", sans-serif;
+          font-weight: 500;
+          font-size: 30px;
+          line-height: 133%;
+          color: #1a1a1a; }
+        #project_information .container .information_contains .left_contains b {
+          font-family: "Kanit", sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 150%;
+          color: #1a1a1a; }
+          #project_information .container .information_contains .left_contains b span {
+            font-family: "Font Awesome 6 Free", sans-serif;
+            font-weight: 900;
+            font-size: 14px;
+            color: #cdd81a; }
+        #project_information .container .information_contains .left_contains p {
+          font-family: "Urbanist", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 162%;
+          color: #6a6a6a; }
+      #project_information .container .information_contains .center_contains {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-between;
+        gap: 40px; }
+        #project_information .container .information_contains .center_contains .box {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 20px;
+          padding: 17px 20px;
+          border: 1px solid #ccc; }
+          #project_information .container .information_contains .center_contains .box b {
+            font-family: "Kanit", sans-serif;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: #1a1a1a; }
+          #project_information .container .information_contains .center_contains .box p {
+            font-family: "Urbanist", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 162%;
+            color: #6a6a6a; }
+
+/*=================,,,,,,,,,Project DETAILS END,,,,,,,,, =======================*/
 
 /*# sourceMappingURL=main.css.map */
