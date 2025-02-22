@@ -36,7 +36,6 @@ p {
 .button_all {
   width: 100%; }
   .button_all .commn_btn {
-    margin-top: 20px;
     padding: 5px;
     width: 173px;
     height: 50px;
@@ -2180,5 +2179,395 @@ p {
             color: #6a6a6a; }
 
 /*=================,,,,,,,,,Project DETAILS END,,,,,,,,, =======================*/
+/*=================,,,,,,,,,Blog page start,,,,,,,,, =======================*/
+#blog_page .container .left_part {
+  padding-right: 30px; }
+  #blog_page .container .left_part .contains {
+    margin-bottom: 80px; }
+    #blog_page .container .left_part .contains .img_part {
+      width: 100%;
+      height: auto; }
+      #blog_page .container .left_part .contains .img_part img {
+        width: 100%;
+        height: fit-content; }
+    #blog_page .container .left_part .contains .meta-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      padding-left: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: fit-content;
+      height: 45px;
+      margin: 30px 0px 56px 0px; }
+      #blog_page .container .left_part .contains .meta-info span {
+        font-family: "Urbanist", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 186%;
+        color: #6a6a6a; }
+        #blog_page .container .left_part .contains .meta-info span i {
+          color: #fe4a22 !important; }
+      #blog_page .container .left_part .contains .meta-info .date {
+        height: 100%; }
+        #blog_page .container .left_part .contains .meta-info .date p {
+          font-family: "Kanit", sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+          text-align: center;
+          color: #1a1a1a;
+          background-color: #ffd026;
+          height: 100%;
+          padding: 0px 5px;
+          line-height: 40px;
+          width: 100%; }
+    #blog_page .container .left_part .contains .button_all .commn_btn {
+      background-color: #fe4a22;
+      color: #fff; }
+      #blog_page .container .left_part .contains .button_all .commn_btn:hover {
+        background-color: #fff;
+        color: #1a1a1a; }
+  #blog_page .container .left_part .michal_doe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f2f2f2;
+    padding: 60px; }
+    #blog_page .container .left_part .michal_doe p {
+      font-family: "Urbanist", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #6a6a6a;
+      margin-bottom: 28px; }
+    #blog_page .container .left_part .michal_doe img {
+      width: fit-content;
+      height: fit-content;
+      object-fit: contain; }
+    #blog_page .container .left_part .michal_doe .border {
+      background-color: #fe4a22;
+      width: 135px;
+      height: 3px;
+      margin-top: 10px;
+      margin-bottom: 20px; }
+  #blog_page .container .left_part .article {
+    margin-top: 60px; }
+    #blog_page .container .left_part .article p {
+      font-family: "Urbanist", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #6a6a6a;
+      margin-bottom: 20px; }
+    #blog_page .container .left_part .article ul {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; }
+      #blog_page .container .left_part .article ul li {
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #1a1a1a; }
+        #blog_page .container .left_part .article ul li span {
+          margin-right: 5px;
+          font-size: 12px;
+          opacity: 0.8; }
+  #blog_page .container .left_part .previous_next {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0px; }
+    #blog_page .container .left_part .previous_next .prv p {
+      font-family: "Urbanist", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 162%;
+      color: #6a6a6a;
+      display: inline; }
+    #blog_page .container .left_part .previous_next .prv span {
+      color: #fe4a22; }
+#blog_page .container .right_part {
+  border: 1px solid #ccc;
+  height: fit-content;
+  padding: 0px 30px; }
+  #blog_page .container .right_part .search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 60px; }
+    #blog_page .container .right_part .search .search_box {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #ccc;
+      padding: 0px 10px;
+      width: 100%;
+      height: 58px; }
+      #blog_page .container .right_part .search .search_box input {
+        width: 90%;
+        height: 100%;
+        border: none;
+        outline: none; }
+      #blog_page .container .right_part .search .search_box span {
+        color: #fe4a22;
+        width: 10%;
+        font-family: "Font Awesome 6 Free", sans-serif;
+        font-weight: 900;
+        font-size: 14px;
+        color: #fe4a22;
+        cursor: pointer;
+        height: 100%;
+        text-align: center;
+        line-height: 58px; }
+  #blog_page .container .right_part h5 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 133%;
+    color: #1a1a1a;
+    position: relative;
+    display: inline;
+    margin-bottom: 10px; }
+    #blog_page .container .right_part h5::after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      transform: translateY(50%);
+      -webkit-transform: translateY(50%);
+      -moz-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+      -o-transform: translateY(50%);
+      right: -60px;
+      width: 50px;
+      height: 1px;
+      background-color: #fe4a22; }
+  #blog_page .container .right_part .category {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 60px; }
+    #blog_page .container .right_part .category ul {
+      padding: 0;
+      width: 100%; }
+      #blog_page .container .right_part .category ul li {
+        padding: 15px 5px;
+        border-bottom: 1px solid #ccc; }
+        #blog_page .container .right_part .category ul li a {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: flex-start;
+          font-family: "Kanit", sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 150%;
+          color: #1a1a1a; }
+        #blog_page .container .right_part .category ul li:hover a span {
+          color: #ffd026;
+          transition: all 0.4s ease; }
+  #blog_page .container .right_part .latest_blog {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 60px; }
+    #blog_page .container .right_part .latest_blog .box {
+      height: 134px;
+      width: 100%;
+      border: 1px solid #ccc;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start; }
+      #blog_page .container .right_part .latest_blog .box .img_part {
+        width: 60px;
+        height: auto; }
+        #blog_page .container .right_part .latest_blog .box .img_part img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain; }
+      #blog_page .container .right_part .latest_blog .box .text_part {
+        padding: 26px 20px;
+        height: 100%;
+        width: 100%; }
+        #blog_page .container .right_part .latest_blog .box .text_part p {
+          font-family: "Urbanist", sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 162%;
+          color: #6a6a6a; }
+          #blog_page .container .right_part .latest_blog .box .text_part p span {
+            color: #ffd026;
+            margin-right: 5px; }
+        #blog_page .container .right_part .latest_blog .box .text_part h6 {
+          font-family: "Kanit", sans-serif;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 150%;
+          color: #1a1a1a;
+          width: 200px;
+          margin-top: 5px; }
+  #blog_page .container .right_part .tag {
+    margin-top: 60px; }
+    #blog_page .container .right_part .tag ul {
+      padding: 0px;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 25px;
+      flex-wrap: wrap; }
+      #blog_page .container .right_part .tag ul li a {
+        font-family: "Urbanist", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 162%;
+        color: #6a6a6a;
+        padding: 5px 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px; }
+      #blog_page .container .right_part .tag ul li:hover a {
+        background-color: #fe4a22;
+        color: #fff;
+        border: none;
+        transition: all 0.4s ease; }
+
+/*=================,,,,,,,,,Blog page END,,,,,,,,, =======================*/
+.comments_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  width: 628px;
+  margin-top: 60px; }
+  .comments_box h5 {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 133%;
+    color: #1a1a1a;
+    margin-bottom: 30px; }
+  .comments_box input {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 50px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 0px 10px; }
+  .comments_box .email_phn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    gap: 10px; }
+  .comments_box textarea {
+    width: 100%;
+    height: 175px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px; }
+  .comments_box .button_all .commn_btn {
+    width: 100% !important;
+    color: #fff;
+    background-color: #fe4a22;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 147%;
+    text-transform: uppercase; }
+    .comments_box .button_all .commn_btn:hover {
+      background-color: #fff;
+      color: #1a1a1a; }
+
+#message .container .row {
+  box-shadow: 0 5px 60px 0 rgba(0, 0, 0, 0.05);
+  background: #fff;
+  padding: 80px; }
+  #message .container .row .left_side img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+  #message .container .row .right_side {
+    display: flex;
+    justify-content: flex-end; }
+
+#contact {
+  margin: 100px 0px; }
+  #contact .container .row {
+    justify-content: space-between; }
+    #contact .container .row .part_one {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+    #contact .container .row .part_three {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center; }
+    #contact .container .row .one {
+      background-color: #fff;
+      border: 1px solid #ccc;
+      width: 377px;
+      height: 125px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 5px;
+      padding-left: 68px;
+      position: relative; }
+      #contact .container .row .one h5 {
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #1a1a1a; }
+      #contact .container .row .one p {
+        font-family: "Urbanist", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 162%;
+        color: #6a6a6a; }
+      #contact .container .row .one span {
+        width: 65px;
+        height: 65px;
+        background-color: #ffd026;
+        text-align: center;
+        line-height: 65px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        left: -30px; }
+
+#maps {
+  margin-top: 100px; }
 
 /*# sourceMappingURL=main.css.map */

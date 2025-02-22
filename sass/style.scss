@@ -44,7 +44,7 @@ p{
 .button_all{
     width: 100%;
     .commn_btn{
-margin-top: 20px;
+// margin-top: 20px;
 padding: 5px;
 width: 173px;
 height: 50px;
@@ -2493,3 +2493,445 @@ color: $--nine;
 
 }
 /*=================,,,,,,,,,Project DETAILS END,,,,,,,,, =======================*/
+
+
+/*=================,,,,,,,,,Blog page start,,,,,,,,, =======================*/
+#blog_page{
+    .container{
+       .left_part{
+        padding-right: 30px;
+        .contains{
+            margin-bottom: 80px;
+             .img_part{
+            width: 100%;
+            height: auto;
+            img{
+                width: 100%;
+                height: fit-content;
+            }
+        }
+        .meta-info {
+            @include flex(row, space-between, center);
+            gap: 10px;
+            padding-left: 10px;
+            border: 1px solid $--tow;
+            border-radius: 5px;
+            width: fit-content;
+            height: 45px;
+            margin: 30px 0px 56px 0px;
+
+            
+             span {
+                     font-family: $--second-family;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 186%;
+                    color: $--eight;
+                    i{
+                        color: $--primary !important;
+                    }
+            } 
+            .date{
+                height: 100%;
+                         p {
+                    font-family: $--font-family;
+                    font-weight: 400;
+                    font-size: 20px;
+                    text-align: center;
+                    color: $--nine;
+                    background-color: $--secondary;
+                    height: 100%;
+                    padding: 0px 5px;
+                    line-height: 40px;
+                    width: 100%;
+}
+            }
+
+        }
+        .button_all{
+            .commn_btn{
+                background-color: $--primary;
+                color: $--white;
+                &:hover{
+                    background-color: $--white;
+                    color: $--nine;
+                    
+                }
+            }
+        }
+        }
+        .michal_doe{
+            @include flex(column, center, flex-start);
+            background-color: $--one;
+            padding: 60px;
+            p{
+                font-family: $--second-family;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: $--eight;
+                margin-bottom: 28px;
+
+            }
+            img{
+                width: fit-content;
+                height: fit-content;
+                object-fit: contain;
+            }
+            .border{
+                background-color: $--primary;
+                width: 135px;
+                height: 3px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
+        .article{
+            margin-top: 60px;
+            p{
+                font-family: $--second-family;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: $--eight;
+                margin-bottom: 20px;
+            }
+              ul{
+                padding: 0;
+                @include flex(column, center, flex-start);
+                li{
+                    font-family: $--font-family;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: $--nine;
+                    span{
+                        margin-right: 5px;
+                        font-size: 12px;
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+        .previous_next{
+            margin-top: 60px;
+            @include flex(row, space-between, center);
+            border-top: 1px solid $--tow;
+            border-bottom: 1px solid $--tow;
+            padding: 20px 0px;
+            .prv{
+                p{
+                    font-family: $--second-family;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 162%;
+                    color: $--eight;
+                    display: inline;
+                }
+                span{
+                    color: $--primary;
+                }
+            }
+        }
+       }
+       .right_part{
+        border: 1px solid $--tow;
+        height: fit-content;
+        padding: 0px 30px;
+        .search{
+            @include flex(column, center, flex-start);
+            gap: 20px;
+            margin-top: 60px;
+            .search_box{
+                @include flex(row, space-between, center);
+                border: 1px solid $--tow;
+                padding: 0px 10px;
+                width:  100%;
+                height: 58px;
+                input{
+                    width: 90%;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+
+                }
+                span{
+                    color: $--primary;
+                    width: 10%;
+                    font-family: $--third-family;
+                    font-weight: 900;
+                    font-size: 14px;
+                    color: $--primary;
+                    cursor: pointer;
+                    height: 100%;
+                    text-align: center;
+                    line-height: 58px;
+                }
+            }
+        }
+        h5{
+            font-family: $--font-family;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 133%;
+            color: $--nine;
+            position: relative;
+            display: inline;
+            margin-bottom: 10px;
+            &::after{
+                content:" ";
+                position: absolute;
+                top: 50%;
+                @include transformY(50%);
+                right: -60px;
+                width: 50px;
+                height: 1px;
+                background-color: $--primary;
+            }
+        }
+        .category{
+            @include flex(column, flex-start, flex-start);
+            gap: 20px;
+            margin-top: 60px;
+            ul{
+                padding: 0;
+                width: 100%;
+                li{
+                    padding: 15px 5px;
+                    border-bottom: 1px solid $--tow;
+                    
+                    a{
+                        @include flex(row, space-between, flex-start);
+                        font-family: $--font-family;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 150%;
+                        color: $--nine;
+                    }
+                    &:hover{
+                        a{
+                            span{
+                                color: $--secondary;
+                                @include transition(0.4s);
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        .latest_blog{
+            @include flex(column, flex-start, flex-start);
+            gap: 20px;
+            margin-top: 60px;
+            .box{
+                height: 134px;
+                width: 100%;
+                border: 1px solid $--tow;
+                @include flex(row, space-between, flex-start);
+                .img_part{
+                    width: 60px;
+                    height: auto;
+                    img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+                }
+                .text_part{
+                    padding: 26px 20px;
+                    height: 100%;
+                    width: 100%;
+                    p{
+                        font-family: $--second-family;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 162%;
+                        color: $--eight;
+                        span{
+                            color: $--secondary;
+                            margin-right: 5px;
+                        }
+                    }
+                    h6{
+                        font-family: $--font-family;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 150%;
+                        color: $--nine;
+                        width: 200px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+        .tag{
+            margin-top: 60px;
+            
+            ul{
+                padding: 0px;
+                margin-top: 30px;
+                @include flex(row, flex-start, center);
+                gap: 25px;
+                flex-wrap: wrap;
+
+                li{
+                    a{
+                        font-family: $--second-family;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 162%;
+                        color: $--eight;
+                        padding: 5px 10px;
+                        border: 1px solid $--tow;
+                        @include border-radius(5px);
+
+                    }
+                    &:hover a{
+                        background-color: $--primary;
+                        color: $--white;
+                        border: none;
+                        @include transition(0.4s);
+                    }
+                }
+            }
+        }
+       }
+    }
+}
+/*=================,,,,,,,,,Blog page END,,,,,,,,, =======================*/
+
+
+.comments_box{
+    @include flex(column, flex-start, flex-start);
+    gap: 20px;
+    width: 628px;
+    margin-top: 60px;
+    h5{
+        font-family: $--font-family;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 133%;
+        color: $--nine;
+        margin-bottom: 30px;
+    }
+    input{
+        border: 1px solid $--tow;
+        width: 100%;
+        height: 50px;
+        outline: none;
+        border: 1px solid $--tow;
+        padding: 0px 10px;
+    }
+    .email_phn{
+        @include flex(row, flex-start, flex-start);
+        width: 100%;
+        gap: 10px;
+    }
+    textarea{
+        width: 100%;
+        height: 175px;
+        border: 1px solid $--tow;
+        outline: none;
+        padding: 10px;
+
+    }
+    .button_all{
+        .commn_btn{
+            width: 100% !important;
+            color: $--white;
+            background-color: $--primary;
+            font-family: $--font-family;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 147%;
+            text-transform: uppercase;
+            &:hover{
+                background-color: $--white;
+                color: $--nine;
+            }
+        }
+    }
+}
+
+
+
+// contact page start
+
+#message{
+    .container{
+        .row{
+            box-shadow: 0 5px 60px 0 rgba(0, 0, 0, 0.05);
+            background: $--white;
+            padding: 80px;
+            
+            .left_side{
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            .right_side{
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+}
+
+
+#contact{
+    margin: 100px 0px;
+    .container{
+        .row{
+            justify-content: space-between;
+            .part_one{
+                @include flex(row, center, center);
+            }
+            .part_three{
+                @include flex(row, flex-end, center);
+            }
+            .one{
+                background-color: $--white;
+                border: 1px solid $--tow;
+                width: 377px;
+                height: 125px;
+                @include flex(column, center, flex-start);
+                gap: 5px;
+                padding-left: 68px;
+                position: relative;
+                h5{
+                    font-family: $--font-family;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: $--nine;
+                }
+                p{
+                    font-family: $--second-family;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 162%;
+                    color:$--eight;
+                }
+                span{
+                    width: 65px;
+                    height: 65px;
+                    background-color: $--secondary;
+                    text-align: center;
+                    line-height: 65px;
+                    position: absolute;
+                    top: 50%;
+                    @include transformY(-50%);
+                    left: -30px;
+                }
+            }
+        }
+    }
+}
+
+
+#maps{
+    margin-top: 100px;
+}
