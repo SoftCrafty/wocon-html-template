@@ -180,6 +180,10 @@
      #blog_page .container .right_part .latest_blog .box .text_part h6 {
     font-size: 20px !important;
 }
+#about_us .right-side {
+    padding: 0 !important;
+    margin-top: 50px;
+}
 }
 
 /*============= Tablet (768px-1024px)==================== */
@@ -246,7 +250,9 @@
  #blog_page .container .right_part .latest_blog .box .text_part h6 {
     font-size: 20px !important;
 }
-
+ #hero_section .heading_part .right_part {
+     padding-left: 0px;
+ }
 }
 
 /*================== Mobile (Max 767px)=========== */
@@ -350,5 +356,8 @@
 #blog_page .container .right_part .latest_blog .box .text_part h6 {
     font-size: 20px !important;
 }
+ #hero_section .heading_part .right_part {
+     padding-left: 0px;
+ }
 }
 
