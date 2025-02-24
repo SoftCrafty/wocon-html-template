@@ -39,7 +39,7 @@ $(document).ready(function () {
                         $this.text(Math.floor(this.countNum) + "+");
                     },
                     complete: function () {
-                        $this.text(this.countNum + "+");
+                        $this.text(this.countNum + "k+");
                     }
                 }
             );
