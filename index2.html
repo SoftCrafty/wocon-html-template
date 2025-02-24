@@ -26,6 +26,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
+  <style>
+    #footer{
+        margin: 0px;
+    }
+    #footer .container .row {
+        margin: 0px !important;
+    }
+    #contact {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 160px !important;
+        margin-top: 80px;
+        display: inline-block !important;
+    }
+  </style>
   <body>
 <!-- ===============================<<<<<<<<<<NAVIGATION BAR START>>>>>>>>>>============================== -->
     <nav id="second_home_nav">
@@ -85,7 +101,7 @@
           </ul>
         </div>
         <div class="nav_btn col-lg-2 col-6">
-             <span class="menu_btn"><i class="fa-solid fa-bars"></i></span>
+             <span class="menu_btn"><img src="./images/home2/logo/menu.png" alt=""></span>
         </div>
         </div>
     </nav>
@@ -167,26 +183,32 @@
                     <div class="number">
                         <span><img src="./images/home2/hero_section/1.png" alt=""></span>
                         <div class="text">
-                            <p>Send Mail</p>
-                        <h6>lawson@example.com</h6>
+                            <p>Need help?</p>
+                        <h6>(406) 555-0120</h6>
                     </div>
                     </div>
                 </div>
                 <div class="right_side col-lg-11 col-12" style="background-image: url(./images/home2/hero_section/bg.png);">
-                
-
-                        <div class="heading_part gallery_heading">
+                <span class="vector"><img src="./images/home2/hero_section/Vector1.png" alt=""></span>
+                <span class="vector"><img src="./images/home2/hero_section/Vector2.png" alt=""></span>
+                        <div class="heading_part gallery_heading" style="background-image: url(./images/home2/hero_section/hero_2.png);">
                     <div class="left">
                     <div class="sub_heading"><h5>Best construction</h5></div>
                     <h4>Sustainable Building For Greener Future</h4>
                 </div>
                     <div class="right">
                     <p>Construction is the process of designing, building, and assembling structures such as houses, commercial buildings roads bridges and other infrastructure.</p>
-                    <div class="button_all">
+                   <div class="btn_watch">
+                     <div class="button_all">
                         <button class="commn_btn">
-                           explore more &nbsp;<span><i class="fa-solid fa-arrow-right"></i></span>
+                           <a href="#">explore more &nbsp;<span><i class="fa-solid fa-arrow-right"></i></span></a>
                         </button>
                     </div>
+                    <div class="watch">
+                        <a href="#"><span><i class="fa-solid fa-play"></i></span></a>
+                        <a href="#">Watch Now</a>
+                    </div>
+                   </div>
                 </div>
             </div>
                     
@@ -505,7 +527,7 @@
                 <div class="col-lg-5 col-12">
                     <div class="left">
                     <div class="home_sub_heading"><h5>Blog and news</h5></div>
-                    <h4>Professional Reliable Exceptional</h4>
+                    <h4>Committed to Quality Dedicated to You</h4>
                 </div>
                 </div>
                 <div class="col-lg-5 col-12">
@@ -615,7 +637,35 @@
      <!-- =================================<<<<<<<<<<FOOTER START>>>>>>>>>>=============================== -->
   <footer id="footer">
     <div class="container">
-      <div class="contanct_part">
+        <section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="part_one col-lg-4 col-12">
+               <div class="one">
+                   <span><i class="fa-solid fa-phone"></i></span>
+                   <h5>Phone number</h5>
+                   <p>(704) 555-0127</p>
+               </div>
+             </div>
+            <div class="part_one col-lg-4 col-12">
+               <div class="one">
+                   <span><i class="fa-solid fa-envelope"></i></span>
+                  <h5>Email Address</h5>
+            <p>tim.jennings@example.com</p>
+               </div>
+             </div>
+            <div class="part_three col-lg-4 col-12">
+               <div class="one">
+                   <span><i class="fa-solid fa-location-dot"></i></span>
+                   <h5>Address</h5>
+            <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
+               </div>
+             </div>
+      
+        </div>
+    </div>
+</section>
+      <!-- <div class="contanct_part">
         <div class="part_one col-lg-4 col-12">
           <div class="icon">
             <span><i class="fa-solid fa-phone"></i></span>
@@ -643,7 +693,7 @@
             <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="bg_img">
         <img src="./images/footer/Vector.png" alt="">
       </div>
@@ -702,6 +752,7 @@
           <a href="contact.html">Contact Us</a>
         </div>
       </div>
+
     </div>
   </footer>
      <!-- =================================<<<<<<<<<<FOOTER END>>>>>>>>>>=============================== -->
