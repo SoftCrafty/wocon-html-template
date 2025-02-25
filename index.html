@@ -25,37 +25,113 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+
   </head>
   <body>
+
+    
     <!-- ==================================<<<<<<<<<<NAVIGATION BAR START>>>>>>>>>>================================= -->
-    <nav id="navigation">
+     <!-- Header Start !-->
+      <header class="header-area" id="top_nav">
       <div class="container">
+        <div class="row">
+          <div class="col-12">
+           <div class="header_menu_wrapper">
+               <div class="logo_wrapper">
+              <div class="logo">
+                  <a href="index.html" class="standard-logo">
+                    <img src="./images/logo/home_logo.png" alt=""/>
+                  </a>
+                  <a href="index.html" class="sticky-logo">
+                    <img src="./images/logo/home_logo.png" alt=""/>
+                  </a>
+                  <!-- <a href="index.html" class="retina-logo">
+                    <img src="./images/logo/home_logo.png" alt=""/>
+                  </a> -->
+             </div>
+            </div>
+            <div class="menu">
+              <nav class="main_menu">
+                   <ul>
+                <li><a href="#">Home <span><i class="fa-solid fa-angle-down"></i></span></a>
+                    <ul>
+                       <li><a href="index.html">Home</a></li>
+                       <li><a href="index2.html">Home 2</a></li>
+                    </ul>
+                </li>
+            
+                <li><a href="about.html">About Us</a></li>
 
-          <div class="logo">
-          <a href="index.html"
-            ><img src="./images/logo/home_logo.png" alt=""
-          /></a>
-        </div>
-        <div class="menu_iteam">
-          <ul>
-            <li><a href="index2.html">Home</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="support.html">Support</a></li>
-            <li><a href="about.html">About</a></li>
+                <li><a href="#">Services <span><i class="fa-solid fa-angle-down"></i></span></a>
+                     <ul>
+                         <li><a href="services.html">Services</a></li>
+                         <li><a href="service_details.html">Services Details</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Projects <span><i class="fa-solid fa-angle-down"></i></span></a>
+                        <ul>
+                           <li><a href="projects.html">Projects</a></li>
+                           <li><a href="project_details.html">Projects Details</a></li>
+                        </ul>
+                </li>
+
+                 <li><a href="#">Blog <span><i class="fa-solid fa-angle-down"></i></span></a>
+                           <ul>
+                             <li><a href="blog.html">Blog</a></li>
+                              <li><a href="blog_details.html">Blog Details</a></li>
+                         </ul>
+                </li>
+
+
+                <li><a href="#">Page <span><i class="fa-solid fa-angle-down"></i></span></a>
+                    <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index2.html">Home 2</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="service_details.html">Services Details</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="project_details.html">Projects Details</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="blog_details.html">Blog Details</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                </li>
+
+                <li><a href="contact.html">Contact</a></li>
           </ul>
+              </nav>
+            </div>
+            <div class="btn_wrapper">
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <!-- Mobile Menu Toggle Button Start !-->
+              <div class="mobile-menu-bar d-lg-none text-end">
+                <a href="#" class="mobile-menu-toggle-btn"><i class="fa-solid fa-bars"></i></a>
+              </div>
+              <!-- Mobile Menu Toggle Button End !-->
+           </div>
+          </div>
         </div>
 
-        <div class="nav_btn">
-         <a href="contact.html">Contact Us</a>
-        </div>
+        
+        <!-- <nav class="menu_iteam">
+         
+        </nav> -->
+
+        
 
         <div class="mobile_device">
-            <span class="menu_btn"><i class="fa-solid fa-bars"></i></span>
+            <span class="menu_btn"></span>
         </div>
 
       </div>
-    </nav>
+    </header>
+     <!-- Header End !-->
     <!-- ===================================<<<<<<<<<<NAVIGATION BAR END>>>>>>>>>>================================== -->
 
           <!-- ========OFFCANVAS START============ -->
@@ -122,32 +198,40 @@
 
 
     <!-- ==================================<<<<<<<<<<HERO SECTION START>>>>>>>>>>================================= -->
-    <section id="hero_section">
+    <section class="hero_section">
       <div class="container">
-        <div class="heading_part">
-          <h1 class="col-lg-7">Reliable Builders for <br> A <span>Better Tomorrow</span></h1>
-          <div class="right_part col-lg-5">
-            <p>
+        <div class="row">
+          <div class="col-lg-7 col-12">
+            <div class="heading_area">
+             <div class="heading">
+               <h1>Reliable Builders for <br> A <span>Better Tomorrow</h1>
+             </div>
+            </div>
+          </div>
+          <div class="col-lg-5 col-12">
+            <div class="desc">
+              <p>
               Construction is the process of designing, building, and assembling
               structures such as houses, commercial buildings roads bridges and
               other infrastructure.
             </p>
-            <div class="button_all">
-                <button class="commn_btn">
-                  <a href="#">explore more <span
-                    ><i class="fa-solid fa-arrow-right"></i
-                  ></span></a>
-                </button>
             </div>
+            <div class="btn_warpper">
+            <a href="#">Learn More<i class="fa-solid fa-arrow-right"></i></a>
+          </div>
           </div>
         </div>
 
-        <div class="hero_section_img">
+        <div class="row">
+        <div class="col-lg-12 col-12">
+          <div class="hero_img_card">
           <img src="./images/hero_section/Group.png" alt="" />
           <div class="overly_box">
             <span><i class="fa-solid fa-phone"></i></span>
             <p>+88019999998</p>
           </div>
+        </div>
+        </div>
         </div>
       </div>
     </section>
@@ -183,44 +267,53 @@
 
 
         <!-- ==================================<<<<<<<<<<About us START>>>>>>>>>>================================= -->
-    <div id="about_us">
+    <div class="about_us">
       <div class="container">
-        <div class="col-lg-5 col-12">
-          <div class="left_side">
+       <div class="row">
+         <div class="col-lg-5 col-12">
+          <div class="about_image_card">
             <div class="image_part">
               <img
                 src="./images/about/building-construction-workers.png"
                 alt=""
               />
             </div>
-            <p>
+            <div class="heading_area">
+              <div class="desc">
+                <p>
               Construction is one of the oldest and most essential industries,
               serving as the backbone of human civilization. It involves the
               creation of infrastructure, buildings, and other structures,
               supporting economic growth and societal advancement. This article
               delves into various
             </p>
-            <div class="button_all">
-                <button class="commn_btn">
-                  <a href="#">learn more <span
-                    ><i class="fa-solid fa-arrow-right"></i
-                  ></span></a>
-                </button>
+              </div>
+            <div class="btn_warpper">
+            <a href="#">Learn More<i class="fa-solid fa-arrow-right"></i></a>
+          </div>
             </div>
           </div>
         </div>
         <div class="col-lg-7 col-12">
-          <div class="right-side">
-
-            <div class="heading_part">
-              <div class="sub_heading"><h5>About us</h5></div>
-              <h4>Crafting Excellence in Every Structure</h4>
-              <p>
+          <div class="about_info_card">
+          <div class="heading_area">
+          <div class="sub_heading">
+            <h4>About us</h4>
+          </div>
+          <div class="heading">
+             <h2>Crafting Excellence in Every Structure</h2>
+          </div>
+          <div class="desc">
+            <p>
                 Construction is the process of designing, building, and
                 assembling structures such as houses, commercial buildings roads
                 bridges and other infrastructure.
               </p>
-            </div>
+          </div>
+          <!-- <div class="btn_warpper">
+            <a href="#">Learn More<i class="fa-solid fa-arrow-right"></i></a>
+          </div> -->
+        </div>
 
             <div class="progrees_container">
                 <div class="progress_bar">
@@ -241,35 +334,38 @@
             </div>
           </div>
         </div>
+       </div>
       </div>
     </div>
 
     <!-- ===================================<<<<<<<<<<About us END>>>>>>>>>>================================== -->
  
     <!-- ==================================<<<<<<<<<<BOX START>>>>>>>>>>================================= -->
-    <section id="box">
+    <section class="box">
         <div class="container">
             <!-- box heading start -->
-            <div class="heading_part">
-                <h4 style="width: 80%;">Construction is the process of designing building and assembling structures such as houses</h4>
+            <div class="heading_area">
+                <div class="heading">
+                  <h2 style="width: 80%;">Construction is the process of designing building and assembling structures such as houses</h2>
+                </div>
             </div>
             <!-- box heading end -->
             
             <!-- box start -->
-            <div class="parent_box">
-                <div class="child_box">
+            <div class="box_card_wrapper">
+                <div class="box_card">
                     <img src="./images/box/1.png" alt="icon">
-                    <h6 class="counter" data-count="220">0+</h6>
+                    <span class="counter" data-count="220">0+</span>
                     <p>Winnig Award</p>
                 </div>
-                <div class="child_box">
+                <div class="box_card">
                     <img src="./images/box/2.png" alt="icon">
-                    <h6 class="counter" data-count="100k"></h6>
+                    <span class="counter" data-count="100k"></span>
                     <p>Complete Project</p>
                 </div>
-                <div class="child_box">
+                <div class="box_card">
                     <img src="./images/box/3.png" alt="icon">
-                    <h6 class="counter" data-count="330">k</h6>
+                    <span class="counter" data-count="330">k</span>
                     <p>Clints Review</p>
                 </div>
             </div>
@@ -280,29 +376,31 @@
     <!-- ===================================<<<<<<<<<<BOX END>>>>>>>>>>================================== -->
 
               <!-- ================================<<<<<<<<<<GALLERY STAT>>>>>>>>>>=============================== -->
-    <section id="gallery">
+    <section class="gallery">
         <div class="container">
-            <div class="heading_part gallery_heading">
-                <div class="col-lg-5 col-12">
-                    <div class="left">
-                    <div class="sub_heading"><h5>Latest Gallery</h5></div>
-                    <h4>Breathe New Life into Your Property</h4>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="heading_area">
+                  <div class="sub_heading">
+                    <h4>Latest Gallery</h4>
+                  </div>
+                  <div class="heading">
+                    <h2>Breathe New Life into Your Property</h2>
+                  </div>
                 </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="heading_area">
+                  <div class="desc">
+                    <p> Construction is the process of designing, building, and assembling structures such as houses, commercial buildings roads bridges and other infrastructure. </p>
+                  </div>
+                  <div class="btn_warpper">
+                    <a href="#">explore more<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
                 </div>
-                <div class="col-lg-5 col-12">
-                    <div class="right">
-                    <p>Construction is the process of designing, building, and assembling structures such as houses, commercial buildings roads bridges and other infrastructure.</p>
-                    <div class="button_all">
-                <button class="commn_btn">
-                  <a href="#">explore more <span
-                    ><i class="fa-solid fa-arrow-right"></i
-                  ></span></a>
-                </button>
+              </div>
             </div>
-                </div>
-                </div>
-            </div>
-
+            
             <div class="gallery_parent">
 
                 <!-- image one start -->
@@ -399,9 +497,11 @@
     <!-- =================================<<<<<<<<<<SERVICE END>>>>>>>>>>=============================== -->
     <section id="service">
         <div class="container">
-            <div class="heading_part text-center">
-                <div class="sub_heading"><h5>services</h5></div>
-                <h4>We Build with Integrity <br> and Innovation</h4>
+            <div class="heading_area text-center">
+                <div class="sub_heading"><h4>services</h4></div>
+                <div class="heading">
+                  <h2>We Build with Integrity <br> and Innovation</h2>
+                </div>
             </div>
 
             <div class="service_box">
@@ -429,21 +529,26 @@
     <!-- =================================<<<<<<<<<<SERVICE START>>>>>>>>>>=============================== -->
  
           <!-- =================================<<<<<<<<<<EXPERTS START>>>>>>>>>>=============================== -->
-    <section id="experts">
+    <section class="experts">
         <div class="container">
-            <div class="heading_part gallery_heading">
-                <div class="col-lg-5 col-12">
-                    <div class="left">
-                    <div class="sub_heading"><h5>Meet our experts</h5></div>
-                    <h4>Professional Reliable Exceptional</h4>
+           <div class="row">
+              <div class="col-lg-6">
+                <div class="heading_area">
+                  <div class="sub_heading">
+                    <h4>Meet our experts</h4>
+                  </div>
+                  <div class="heading">
+                    <h2>Professional Reliable Exceptional</h2>
+                  </div>
                 </div>
+              </div>
+              <div class="col-lg-5">
+                <div class="heading_area">
+                  <div class="desc">
+                    <p> Construction is the process of designing, building, and assembling structures such as houses, commercial buildings roads bridges and other infrastructure. </p>
+                  </div>
                 </div>
-                <div class="col-lg-5 col-12">
-                    <div class="right">
-                    <p>Construction is the process of designing, building, and assembling structures such as houses, commercial buildings roads bridges and other infrastructure.</p>
-                    
-                </div>
-                </div>
+              </div>
             </div>
 
             <div class="experts_person">
@@ -575,63 +680,81 @@
     
    
   </div>
-  <div class="images">
-     <div class="img">
-      <img src="./images/review/6.png" alt="">
-     <a href="#"><span><i class="fa-solid fa-play"></i></span></a>
-     </div>
-   </div>
+
+<div class="images">
+    <div class="img">
+        <img src="./images/review/6.png" alt="">
+        <a href="#" id="playBtn">
+            <span><i class="fa-solid fa-play"></i></span>
+        </a>
+    </div>
 </div>
+<!-- Video Modal -->
+ <!-- <div class="container">  -->
+<div class="video-modal" id="videoModal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <iframe id="videoFrame" width="700" height="400" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+<!-- </div> -->
   </section>
   <!-- =================================<<<<<<<<<<REVIEW END>>>>>>>>>>=============================== -->
 
 
   <!-- =================================<<<<<<<<<<SUBSCRIBE START>>>>>>>>>>=============================== -->
+
     <section id="subscribe">
-      <div class="container">
+    <div class="container">
         <div class="vector">
-          <img src="./images/subscribe/1.png" alt="">
-          <img src="./images/subscribe/2.png" alt="">
+            <img src="./images/subscribe/1.png" alt="">
+            <img src="./images/subscribe/2.png" alt="">
         </div>
         <div class="row">
-          <div class="left col-lg-5">
-            <h4>Subscribe Our newsletter For Any Update</h4>
-          </div>
-          <div class="right col-lg-7">
-            <input type="email" placeholder="Enter Your Email">
-            <a href="https://gmail.com/">Subscribe Now</a>
-          </div>
+            <div class="left col-lg-5">
+                <h4>Subscribe Our Newsletter For Any Update</h4>
+            </div>
+            <div class="right col-lg-7">
+                <form action="#" method="POST">
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
+
+
+
   <!-- =================================<<<<<<<<<<SUBSCRIBE END>>>>>>>>>>=============================== -->
 
 
   <!-- =================================<<<<<<<<<<BLOG AND NEWS START>>>>>>>>>>=============================== -->
     <section id="blog_news">
       <div class="container">
-        <div class="heading_part gallery_heading">
-                <div class="col-lg-5 col-12">
-                    <div class="left">
-                    <div class="sub_heading"><h5>Blog and news</h5></div>
-                    <h4>Your Dream Project Starts Here</h4>
+         <div class="row">
+              <div class="col-lg-6">
+                <div class="heading_area">
+                  <div class="sub_heading">
+                    <h4>Blog and news</h4>
+                  </div>
+                  <div class="heading">
+                    <h2>Your Dream Project <br> Starts Here</h2>
+                  </div>
                 </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="heading_area style_1">
+                  <div class="desc">
+                    <p> Construction is the process of designing, building, and assembling structures such as houses, commercial buildings roads bridges and other infrastructure. </p>
+                  </div>
+                  <div class="btn_warpper">
+                    <a href="#">explore more<i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
                 </div>
-                
-                <div class="col-lg-5 col-12">
-                    <div class="right">
-                    <p>Construction is the process of designing, building, and assembling structures such as houses, commercial buildings roads bridges and other infrastructure.</p>
-                    <div class="button_all">
-                <button class="commn_btn">
-                  <a href="#">explore more <span
-                    ><i class="fa-solid fa-arrow-right"></i
-                  ></span></a>
-                </button>
+              </div>
             </div>
-                    </div>
-                </div>
-                </div>
-            </div>
+        
 
             <div class="blog_box_parent">
               <!-- box one start -->
@@ -639,52 +762,52 @@
                 <div class="img_part">
                   <img src="./images/blog/1.png" alt="">
                   <div class="overly_part">
-                    <p>Oct 19</p>
-                    <p><span><i class="fa-regular fa-comments"></i></span>Comments (05)</p>
-                    <p><span><i class="fa-solid fa-user"></i></span>Admin</p>
+                    <p><a href="#">Oct 19</a></p>
+                    <p><a href="#"><span><i class="fa-regular fa-comments"></i></span>Comments (05)</a></p>
+                    <p><a href="#"><span><i class="fa-solid fa-user"></i></span>Admin</a></p>
                   </div>
                 </div>
                 <div class="title">
-                  <h6>Building Businesses, One Project at a Time</h6>
+                  <h3><a href="blog.html">Building Businesses, One Project at a Time</a></h3>
                   <a href="blog.html">Read more <span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
               </div>
               <!-- box one end -->
-
+               
               
-              <!-- box one start -->
-              <div class="blog_box">
+              <!-- box tow start -->
+             <div class="blog_box">
                 <div class="img_part">
-                  <img src="./images/blog/2.png" alt="">
+                  <img src="./images/blog/1.png" alt="">
                   <div class="overly_part">
-                    <p>Oct 19</p>
-                    <p><span><i class="fa-regular fa-comments"></i></span>Comments (05)</p>
-                    <p><span><i class="fa-solid fa-user"></i></span>Admin</p>
+                    <p><a href="#">Oct 19</a></p>
+                    <p><a href="#"><span><i class="fa-regular fa-comments"></i></span>Comments (05)</a></p>
+                    <p><a href="#"><span><i class="fa-solid fa-user"></i></span>Admin</a></p>
                   </div>
                 </div>
                 <div class="title">
-                  <h6>Building Businesses, One Project at a Time</h6>
+                  <h3><a href="blog.html">Building Businesses, One Project at a Time</a></h3>
                   <a href="blog.html">Read more <span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
               </div>
-              <!-- box one end -->
+              <!-- box tow end -->
 
-              <!-- box one start -->
+              <!-- box three start -->
               <div class="blog_box">
                 <div class="img_part">
-                  <img src="./images/blog/3.png" alt="">
+                  <img src="./images/blog/1.png" alt="">
                   <div class="overly_part">
-                    <p>Oct 19</p>
-                    <p><span><i class="fa-regular fa-comments"></i></span>Comments (05)</p>
-                    <p><span><i class="fa-solid fa-user"></i></span>Admin</p>
+                    <p><a href="#">Oct 19</a></p>
+                    <p><a href="#"><span><i class="fa-regular fa-comments"></i></span>Comments (05)</a></p>
+                    <p><a href="#"><span><i class="fa-solid fa-user"></i></span>Admin</a></p>
                   </div>
                 </div>
                 <div class="title">
-                  <h6>Building Businesses, One Project at a Time</h6>
-                 <a href="blog.html">Read more <span><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <h3><a href="blog.html">Building Businesses, One Project at a Time</a></h3>
+                  <a href="blog.html">Read more <span><i class="fa-solid fa-arrow-right"></i></span></a>
                 </div>
               </div>
-              <!-- box one end -->
+              <!-- box three end -->
 
 
             </div>
@@ -728,45 +851,54 @@
         <img src="./images/footer/Vector.png" alt="">
       </div>
       <div class="row">
-        <div class="one col-lg-4">
-          <ul>
-            <li><a href="index.html"><img src="./images/logo/footer_logo/logo.png" alt=""></a></li>
-            <li><p>Construction is the process of designing, building, and assembling structures such as houses</p></li>
-            <li>
-              <ul class="social_media_icon">
-                                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                <li><a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a></li>
-                                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
-                            </ul>
-            </li>
-          </ul>
+        <div class="col-lg-4">
+          <div class="iteam_info">
+            <div class="iteam_content">
+              <div class="footer_logo">
+                <a href="index.html"><img src="./images/logo/footer_logo/logo.png" alt=""></a>
+              </div>
+               <p>Construction is the process of designing, building, and assembling structures such as houses</p>
+               <div class="social_media">
+                <ul> 
+                    <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+                </ul>
+               </div>
+            </div>
+          </div>
         </div>
-        <div class="tow col-lg-2">
-          <ul>
-            <li><h5>Service</h5></li>
-            <li><a href="#">Planning & Design </a></li>
-            <li><a href="#">Pre-Construction </a></li>
-            <li><a href="#">Construction Phase </a></li>
-          </ul>
+
+        <div class="col-lg-2">
+          <div class="quicklink">
+            <h3>Service</h3>
+            <ul>
+              <li><a href="#">Planning & Design </a></li>
+              <li><a href="#">Pre-Construction </a></li>
+              <li><a href="#">Construction Phase </a></li>
+            </ul>
+          </div>
         </div>
-        <div class="three col-lg-2">
-          <ul>
-            <li><h5>Links</h5></li>
-            <li><a href="#">Residential </a></li>
-            <li><a href="#">Commercial </a></li>
-            <li><a href="#">Renovation  </a></li>
-          </ul>
+        <div class="col-lg-2">
+          <div class="quicklink">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="#">Residential </a></li>
+              <li><a href="#">Commercial </a></li>
+              <li><a href="#">Renovation  </a></li>
+            </ul>
+          </div>
         </div>
         <div class="four col-lg-4">
-          <ul>
-            <li><h5>Get Free Estimate</h5></li>
-            <li><p>Construction is the process of designing, building, and assembling structures</p></li>
-            <li class="email_sent">
-              <input type="text" placeholder="Your email...">
-              <span><a href="#"><i class="fa-solid fa-paper-plane"></i></a></span>
-            </li>
-          </ul>
+          <div class="quicklink">
+            <h3>Get Free Estimate</h3>
+            <p>Construction is the process of designing, building, and assembling structures</p>
+            <form action="#" method="POST">
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+          </div>
         </div>
       </div>
 
@@ -795,5 +927,19 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <!-- CUSTOM JS -->
     <script src="./js/script.js"></script>
+    <script src="./js/video_popup.js"></script>
+   <script>
+    let nav = document.querySelector('#top_nav');
+
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 120) {
+        nav.classList.add('active');
+    } else {
+        nav.classList.remove('active');
+    }
+});
+
+   </script>
+
   </body>
 </html>

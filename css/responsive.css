@@ -65,23 +65,28 @@
         width: 100% !important;
     }
   
-  #nav_bar .menu_iteam{
+  #nav_bar .main_menu{
     display: none;
   }
 }
 @media (min-width:998px){
-    #navigation .mobile_device{
+
+    .header-area .mobile-menu-bar{
         display: none;
     }
 }
+.heading_area.style_1{
+    padding: 0px;
+    margin-top: 20px;
+}
 @media (max-width:998px) {
-    #navigation .menu_iteam{
+    .header-area .main_menu{
         display: none !important;
     }
-    #navigation .nav_btn{
+    .header-area .btn_wrapper{
         display: none !important;
     }
-    #second_home_nav .right_side .menu_iteam{
+    #second_home_nav .right_side .main_menu{
         display: none !important;
     }
     #second_home_nav {
@@ -180,7 +185,7 @@
      #blog_page .container .right_part .latest_blog .box .text_part h6 {
     font-size: 20px !important;
 }
-#about_us .right-side {
+.about_us .right-side {
     padding: 0 !important;
     margin-top: 50px;
 }
@@ -188,7 +193,7 @@
 
 /*============= Tablet (768px-1024px)==================== */
 @media (min-width:768px) and (max-width: 1024px) {
-    h1 {
+    /* h1 {
         font-size: 24px !important;
     }
     h2{
@@ -199,7 +204,7 @@
     }
     h6{
         font-size: 34px !important;
-    }
+    } */
     p{
         font-size: 14px !important;
     }
@@ -214,7 +219,7 @@
         line-height: 80px;
         text-align : center;
     }
-    #box .heading_part h4{
+    .box .heading_part h4{
         font-size: 30px !important;
     }
     .experts_person {
@@ -273,10 +278,10 @@
 
         font-size: 12px !important;
     }
-    #navigation .container{
+    .header-area .container{
         width: 100% !important;
     }
-    #hero_section .hero_section_img .overly_box {
+    #hero_section .hero_img_card .overly_box {
         font-size: 10px !important;
         padding: 20px;
         bottom: 10px;
@@ -284,13 +289,13 @@
         
         
     }
-    #hero_section .hero_section_img .overly_box span{
+    #hero_section .hero_img_card .overly_box span{
         font-size: 25px;
     }
-    #box .parent_box {
+    .box .parent_box {
         justify-content: center;
     }
-      #gallery .overly_content_text {
+      .gallery .overly_content_text {
         display: none;
       }
     #review{
@@ -371,4 +376,5 @@
         width: 100%;
     }
 }
+
 

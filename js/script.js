@@ -110,5 +110,48 @@ $(document).ready(function () {
             startCounter();
         }
     });
+
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".experts_person_child", {
+        scrollTrigger: {
+            trigger: ".experts_person",
+            start: "top 80%",
+            toggleActions: "play none none reverse",
+        },
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        stagger: 0.3,
+    });
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".blog_box_parent", {
+        scrollTrigger: {
+            trigger: ".experts_person",
+            start: "top 80%",
+            toggleActions: "play none none reverse",
+        },
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        stagger: 0.3,
+    });
+
+    
+
+});
+
+
+window.addEventListener("scroll", function () {
+    let navbar = document.getElementById("header-area");
+
+    if (window.scrollY > 100) { // Show navbar when scrolling 100px down
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled"); // Hide navbar when at the top
+    }
 });
 
