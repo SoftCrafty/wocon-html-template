@@ -1,6 +1,7 @@
 /* COMMOON CSS */
 @import "mixin";
 @import "variables";
+@import "./partials/animation";
 * {
     margin: 0;
     padding: 0;
@@ -214,56 +215,8 @@ text-transform: uppercase;
     }
 }
 
-@keyframes tada {
-    0% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-    10%, 20% {
-        -webkit-transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-        transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-    }
-    30%, 50%, 70%, 90% {
-        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-    }
-    40%, 60%, 80% {
-        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-    }
-    100% {
-        -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
-    }
-}
-/* Animation for play button */
-@keyframes playButtonAnimation {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-        border-color: white;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    }
-    25% {
-        transform: translate(-50%, -50%) scale(1.1);
-        border-color: #ff5733;
-        box-shadow: 0 0 15px rgba(255, 87, 51, 0.8);
-    }
-    50% {
-        transform: translate(-50%, -50%) scale(1);
-        border-color: white;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    }
-    75% {
-        transform: translate(-50%, -50%) scale(1.1);
-        border-color: #ff5733;
-        box-shadow: 0 0 15px rgba(255, 87, 51, 0.8);
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-        border-color: white;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-    }
-}
+
+
 /* COMMOON CSS END */
 
 
@@ -538,38 +491,7 @@ text-transform: uppercase;
             padding:0px 35px;
         }
     }
-    // .heading_part{
-    //     @include flex(row, space-between, center);
-    //     flex-wrap: wrap;
-    //     margin: 0;
-    //     padding: 0;
-    //     h1{
-    //         font-family: $--font-family;
-    //         font-weight: 600;
-    //         font-size: 70px;
-    //         line-height: 129%;
-    //         color: #000;
-    //         span{
-    //             font-style: italic;
-    //             font-weight: 400;
-    //             border-bottom: 3px solid $--primary;
 
-    //         }
-    //     }
-    //     .right_part{
-    //         padding-left: 80px;
-    //         p{
-    //             font-family: $--second-family;
-    //             font-weight: 400;
-    //             font-size: 16px;
-    //             line-height: 162%;
-    //             color: $--eight;
-    //             margin-top: 30px;
-    //             margin-bottom: 7px;
-    //         }
-
-    //     }
-    // }
     .hero_img_card{
         margin-top: 80px;
         position: relative;
@@ -580,20 +502,32 @@ text-transform: uppercase;
         }
         .overly_box{
             position: absolute;
-            bottom: 30px;
-            left: 30px;
+            bottom: 0px;
+            left: 0px;
             background-color: $--one;
-            font-family: $--font-family;
-            font-weight: 400;
-            font-size: 40px;
-            line-height: 125%;
-            color: $--nine;
-            padding: 20px;
-            @include flex(row, space-between, center);
-            span{
-                color: $--primary;
-                font-size: 30px;
-                padding: 0px 10px;
+            // width: 342px;
+            // height: 140px;
+            padding: 40px 49px;
+            @include flex(row, flex-start, center);
+            gap: 20px;
+            .number{
+                p{
+                    font-family: $--second-family;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 162%;
+                    color: $--nine;
+
+                }
+                span{
+                    font-family: $--font-family;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color:$--nine;
+                    margin-top: 4px;
+                }
+                
             }
         }
     }
@@ -602,8 +536,7 @@ text-transform: uppercase;
 
 
 /*=================company logo start=======================*/
-#company_logo{
-    // overflow: hidden;
+.company_logo{
     margin-top: 100px;
     .container{
     @include flex(row, center, center);
@@ -946,7 +879,7 @@ color: $--white;
 
 
 /*=================service start=======================*/
-#service{
+.service{
     .service_box{
         margin-top: 80px;
         @include flex(row, space-between, center);
@@ -956,11 +889,11 @@ color: $--white;
             padding: 20px 50px;
             @include transition(0.3s);
             max-width: 400px;
+            height: 392px;
             @include flex(column, center, flex-start);
             &:hover{
-                // height: 392px;
+                
                 transform: scale(1.1);
-    // box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     z-index: 1;
                 box-shadow: 0 5px 60px 0 rgba(0, 0, 0, 0.05);
                 background: $--white;
@@ -1148,7 +1081,7 @@ color: $--eight;
 
 
 /*=================review start=======================*/
-#review{
+.review{
     width: 100%;
     height: auto;
      background-color: $--nine;
@@ -1391,7 +1324,7 @@ color: $--white;
 
 
 /*=================blog and news start=======================*/
-#blog_news{
+.blog_news{
     margin-top: 150px;
     .blog_box_parent{
         @include flex(row, center, center);
@@ -1473,9 +1406,7 @@ color: $--white;
             }
             .title{
                 padding: 0px 0px 30px 0px;
-                // width: 100%;
                 h3{
-                    
                     margin-top: 51px;
                     margin-bottom: 30px;
                     width: 400px;
@@ -1501,6 +1432,16 @@ color: $--white;
                         margin-left: 5px;
                     }
                 }
+                h3{
+                    &:hover{
+                        a{
+                            color: $--primary;
+                        }
+                    }
+                }
+                a:hover{
+                    color: $--primary;
+                }
             }
             &:hover{
                 .img_part{
@@ -1509,11 +1450,8 @@ color: $--white;
                         transform: scale(1.1);
                     }
                 }
-                .title{
-                    a{
-                        color: $--primary !important;
-                    }
-                }
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        
             }
         }
     }

@@ -128,9 +128,9 @@ $(document).ready(function () {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.from(".blog_box_parent", {
+    gsap.from(".blog_box", {
         scrollTrigger: {
-            trigger: ".experts_person",
+            trigger: ".blog_box_parent",
             start: "top 80%",
             toggleActions: "play none none reverse",
         },
