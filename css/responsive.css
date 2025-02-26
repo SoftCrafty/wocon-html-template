@@ -282,10 +282,11 @@
     h6 {
     font-size: 30px !important;
 } */
- h2{
+
+ /* h2{
     font-size: 0px !important;
  }
- 
+  */
     p{
 
         font-size: 12px !important;
@@ -301,6 +302,9 @@
         
         
     }
+     #top_home_nav {
+        width: 100% !important;
+     }
     #hero_section .hero_img_card .overly_box span{
         font-size: 25px;
     }

@@ -1,4 +1,6 @@
 .heading_area{
+    @include flex(column, center, center);
+    gap: 20px;
     &.style_1{
         padding-left: 180px;
         @include flex(column, flex-end, flex-end);
@@ -6,7 +8,7 @@
     }
     .sub_heading{
         width: 100%;
-        margin-bottom: 20px;
+        // margin-bottom: 20px;
         
         h4{
             border: 1px solid $--tow;
@@ -29,7 +31,7 @@
             line-height: 127%;
             color: $--nine;
             width: 100%;
-            margin-bottom: 20px;
+            // margin-bottom: 20px;
         }
         h1{
             font-family: $--font-family;

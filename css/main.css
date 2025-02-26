@@ -1510,26 +1510,42 @@
 /*=================About start=======================*/
 #home_about .container .row {
   justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 50px; }
+  flex-wrap: wrap; }
   #home_about .container .row:hover img:nth-child(2) {
     animation: tada 2s linear infinite;
     -webkit-animation: tada 2s linear infinite; }
 #home_about .container .home_about_img_card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  width: 613px;
+  height: 563px;
   padding: 0px;
   position: relative; }
   #home_about .container .home_about_img_card img:nth-child(1) {
+    max-width: 512px;
     width: 100%;
-    height: 100%;
+    height: 512px;
     object-fit: cover; }
   #home_about .container .home_about_img_card img:nth-child(2) {
     position: absolute;
-    top: -50px;
-    right: -60px;
+    top: 0px;
+    right: 40px;
     z-index: -10; }
-#home_about .container .home_about_info_card span {
-  margin-top: 40px;
-  margin-bottom: 10px; }
+#home_about .container .home_about_info_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; }
+  #home_about .container .home_about_info_card .sign {
+    width: 100%;
+    margin-top: 20px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
 
 /*=================About end=======================*/
 /*=================BOX GALLARY LOGO START=======================*/
@@ -2240,46 +2256,50 @@
     padding: 0px 20px; }
 
 /*=================navigation end=======================*/
-.heading_area.style_1 {
-  padding-left: 180px;
+.heading_area {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  height: 100%; }
-.heading_area .sub_heading {
-  width: 100%;
-  margin-bottom: 20px; }
-  .heading_area .sub_heading h4 {
-    border: 1px solid #ccc;
-    padding: 10px 15px;
-    font-family: "Kanit", sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 147%;
-    text-transform: uppercase;
-    color: #fe4a22;
-    display: inline; }
-.heading_area .heading {
-  width: 100%; }
-  .heading_area .heading h2 {
-    font-family: "Kanit", sans-serif;
-    font-weight: 400;
-    font-size: 55px;
-    line-height: 127%;
-    color: #1a1a1a;
-    width: 100%;
-    margin-bottom: 20px; }
-  .heading_area .heading h1 {
-    font-family: "Kanit", sans-serif;
-    font-weight: 600;
-    font-size: 70px;
-    line-height: 129%;
-    color: #000; }
-    .heading_area .heading h1 span {
-      font-style: italic;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; }
+  .heading_area.style_1 {
+    padding-left: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%; }
+  .heading_area .sub_heading {
+    width: 100%; }
+    .heading_area .sub_heading h4 {
+      border: 1px solid #ccc;
+      padding: 10px 15px;
+      font-family: "Kanit", sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 147%;
+      text-transform: uppercase;
+      color: #fe4a22;
+      display: inline; }
+  .heading_area .heading {
+    width: 100%; }
+    .heading_area .heading h2 {
+      font-family: "Kanit", sans-serif;
       font-weight: 400;
-      border-bottom: 3px solid #fe4a22; }
+      font-size: 55px;
+      line-height: 127%;
+      color: #1a1a1a;
+      width: 100%; }
+    .heading_area .heading h1 {
+      font-family: "Kanit", sans-serif;
+      font-weight: 600;
+      font-size: 70px;
+      line-height: 129%;
+      color: #000; }
+      .heading_area .heading h1 span {
+        font-style: italic;
+        font-weight: 400;
+        border-bottom: 3px solid #fe4a22; }
 
 #blog_page .container .left_part {
   padding-right: 30px; }
