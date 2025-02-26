@@ -1065,7 +1065,7 @@
           font-size: 20px;
           line-height: 150%;
           color: #fff; }
-        #footer .container .contanct_part .part_one .text p {
+        #footer .container .contanct_part .part_one .text a {
           font-family: "Kanit", sans-serif;
           font-weight: 400;
           font-size: 16px;
@@ -1082,15 +1082,19 @@
     #footer .container .row {
       padding: 30px 0px;
       margin-top: 300px; }
-      #footer .container .row .footer_logo a {
-        width: fit-content;
-        height: fit-content;
-        display: block;
-        cursor: pointer !important; }
-        #footer .container .row .footer_logo a img {
+      #footer .container .row .footer_logo {
+        z-index: 20; }
+        #footer .container .row .footer_logo a {
           width: fit-content;
-          height: 100%;
-          object-fit: contain; }
+          height: fit-content;
+          display: block;
+          cursor: pointer !important; }
+          #footer .container .row .footer_logo a img {
+            width: fit-content;
+            height: 100%;
+            object-fit: contain;
+            z-index: 100;
+            cursor: pointer; }
       #footer .container .row .iteam_content p {
         color: #fff;
         margin: 20px 0px;
