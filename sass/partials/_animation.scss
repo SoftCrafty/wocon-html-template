@@ -1,3 +1,14 @@
+/* Animation for SlideDown */
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
 /* Animation for play button */
 @keyframes playButtonAnimation {
     0% {
@@ -27,6 +38,7 @@
     }
 }
 
+/* Animation for Tada */
 @keyframes tada {
     0% {
         -webkit-transform: scale3d(1, 1, 1);
@@ -49,3 +61,26 @@
         transform: scale3d(1, 1, 1);
     }
 }
+
+/* Animation for Circle */
+@keyframes rotateCircle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* Animation for Moving text */
+@keyframes moveText {
+    0% {
+        transform: translateX(-20px);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(-20px);
+    }
+}
+

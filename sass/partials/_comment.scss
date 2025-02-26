@@ -1,0 +1,53 @@
+.comments_box{
+    @include flex(column, flex-start, flex-start);
+    gap: 20px;
+    width: 628px;
+    margin-top: 60px;
+    h5{
+        font-family: $--font-family;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 133%;
+        color: $--nine;
+        margin-bottom: 30px;
+    }
+    input{
+        border: 1px solid $--tow;
+        width: 100%;
+        height: 50px;
+        outline: none;
+        border: 1px solid $--tow;
+        padding: 0px 10px;
+    }
+    .email_phn{
+        @include flex(row, flex-start, flex-start);
+        width: 100%;
+        gap: 10px;
+    }
+    textarea{
+        width: 100%;
+        height: 175px;
+        border: 1px solid $--tow;
+        outline: none;
+        padding: 10px;
+
+    }
+    .button_all{
+        .commn_btn{
+            width: 100% !important;
+            color: $--white;
+            background-color: $--primary;
+            font-family: $--font-family;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 147%;
+            text-transform: uppercase;
+            padding: 10px;
+            &:hover{
+                background-color: $--white;
+                color: $--nine;
+                border: 1px solid $--tow;
+            }
+        }
+    }
+}

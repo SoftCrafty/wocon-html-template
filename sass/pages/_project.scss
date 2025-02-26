@@ -1,0 +1,80 @@
+#project_information{
+    margin-top: 105px;
+   .container{
+    @include flex(column, center, space-between);
+    gap: 40px;
+    padding: 60px;
+    box-shadow: 0 5px 60px 0 rgba(0, 0, 0, 0.05);
+    background: $--white;
+
+     .image_part{
+        width: 100%;
+        height: fit-content;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    .information_contains{
+        @include flex(row, space-between, center);
+        flex-wrap: wrap;
+            .left_contains{
+        @include flex(column, center, flex-start);
+        gap:20px ;
+        h5{
+            font-family: $--font-family;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 133%;
+            color: $--nine;
+        }
+        b{
+            font-family: $--font-family;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 150%;
+            color: $--nine;
+            span{
+                font-family: $--third-family;
+                font-weight: 900;
+                font-size: 14px;
+                color: #cdd81a;
+            }
+        }
+        p{
+            font-family: $--second-family;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 162%;
+            color: $--eight;
+        }
+    }
+    .center_contains{
+        @include flex(column, center, space-between);
+        gap: 40px;
+        .box{
+            @include flex(row, flex-start, center);
+            gap: 20px;
+            padding: 17px 20px;
+            border: 1px solid $--tow;
+            b{
+                font-family: $--font-family;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 150%;
+                color: $--nine;
+            }
+            p{
+                font-family: $--second-family;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 162%;
+                color: $--eight;
+            }
+        }
+    }
+    }
+   }
+
+}

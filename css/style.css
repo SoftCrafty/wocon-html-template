@@ -1,0 +1,23 @@
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - sass/home-one.scss
+
+Backtrace:
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in 'IO.read'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in 'Sass::Plugin::Compiler#update_stylesheet'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in 'block in Sass::Plugin::Compiler#update_stylesheets'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in 'Array#each'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in 'Sass::Plugin::Compiler#update_stylesheets'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in 'Sass::Plugin::Compiler#watch'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/plugin.rb:109:in 'Sass::Plugin#method_missing'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:358:in 'Sass::Exec::SassScss#watch_or_update'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in 'Sass::Exec::SassScss#process_result'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in 'Sass::Exec::Base#parse'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in 'Sass::Exec::Base#parse!'
+C:/Users/ABC/.local/share/gem/ruby/3.4.0/gems/sass-3.7.4/bin/sass:13:in '<top (required)>'
+C:/Users/ABC/AppData/Local/Microsoft/WindowsApps/sass:36:in 'Kernel#load'
+C:/Users/ABC/AppData/Local/Microsoft/WindowsApps/sass:36:in '<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - sass/home-one.scss"; }

@@ -1,0 +1,50 @@
+.heading_area{
+    &.style_1{
+        padding-left: 180px;
+        @include flex(column, flex-end, flex-end);
+        height: 100%;
+    }
+    .sub_heading{
+        width: 100%;
+        margin-bottom: 20px;
+        
+        h4{
+            border: 1px solid $--tow;
+            padding: 10px 15px;
+            font-family: $--font-family;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 147%;
+            text-transform: uppercase;
+            color: $--primary;
+            display: inline;
+        }
+    }
+    .heading{
+        width: 100%;
+        h2{
+            font-family: $--font-family;
+            font-weight: 400;
+            font-size: 55px;
+            line-height: 127%;
+            color: $--nine;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        h1{
+            font-family: $--font-family;
+            font-weight: 600;
+            font-size: 70px;
+            line-height: 129%;
+            color: #000;
+            
+            span{
+                font-style: italic;
+                font-weight: 400;
+                border-bottom: 3px solid $--primary;
+
+            }
+        }
+        
+    }
+}

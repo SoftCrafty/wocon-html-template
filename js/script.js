@@ -14,6 +14,14 @@ $(document).ready(function () {
     $(".cross_btn").on("click", function () {
         $(".off_canvas").removeClass("active_offcanvas");
     });
+
+    $(".mobile-menu-bar").on("click", function () {
+        $(".off_canvas").addClass("active_offcanvas");
+    });
+
+    $(".cross_btn").on("click", function () {
+        $(".off_canvas").removeClass("active_offcanvas");
+    });
 });
 
 
@@ -148,10 +156,22 @@ $(document).ready(function () {
 window.addEventListener("scroll", function () {
     let navbar = document.getElementById("header-area");
 
-    if (window.scrollY > 100) { // Show navbar when scrolling 100px down
+    if (window.scrollY > 100) { 
         navbar.classList.add("scrolled");
     } else {
-        navbar.classList.remove("scrolled"); // Hide navbar when at the top
+        navbar.classList.remove("scrolled"); 
+    }
+});
+
+
+
+let nav = document.querySelector('#top_nav');
+
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 120) {
+        nav.classList.add('active');
+    } else {
+        nav.classList.remove('active');
     }
 });
 

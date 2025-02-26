@@ -1,0 +1,98 @@
+
+#message{
+    .container{
+        .row{
+            box-shadow: 0 5px 60px 0 rgba(0, 0, 0, 0.05);
+            background: $--white;
+            padding: 80px;
+            
+            .left_side{
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+            .right_side{
+                display: flex;
+                justify-content: flex-end;
+                .commn_btn{
+                    &:hover{
+                       span i{
+                            transform: rotate(0deg) !important;
+                            -webkit-transform: rotate(0deg) !important;
+                            -moz-transform: rotate(0deg) !important;
+                            -ms-transform: rotate(0deg) !important;
+                            -o-transform: rotate(0deg) !important;
+}
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#contact{
+    margin: 100px 0px;
+    .container{
+        .row{
+            justify-content: space-between;
+            width: 100%;
+
+            .part_one{
+                @include flex(row, center, center);
+            }
+            .part_three{
+                @include flex(row, flex-end, center);
+            }
+            .one{
+                background-color: $--white;
+                border: 1px solid $--tow;
+                width: 377px;
+                height: 125px;
+                @include flex(column, center, flex-start);
+                gap: 5px;
+                padding-left: 68px;
+                position: relative;
+                h5{
+                    font-family: $--font-family;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: $--nine;
+                }
+                p{
+                    font-family: $--second-family;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 162%;
+                    color:$--eight;
+                }
+                span{
+                    width: 65px;
+                    height: 65px;
+                    background-color: $--secondary;
+                    text-align: center;
+                    line-height: 65px;
+                    position: absolute;
+                    top: 50%;
+                    @include transformY(-50%);
+                    left: -30px;
+                    font-size: 30px;
+
+                }
+                &:hover{
+                    span i{
+                        animation: tada 1s linear infinite;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+#maps{
+    margin-top: 100px;
+}
