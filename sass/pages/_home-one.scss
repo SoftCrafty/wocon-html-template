@@ -361,19 +361,18 @@
         }
         &{
             @include xs{
+                margin-top: 75px;
+                .box_card_wrapper{
+                    margin-top: 30px !important;
+                    justify-content: center !important;
+                }
                 h2{
                     width: 100% !important;
-                    background-color: red;
                 }
             }
         }
-        .heading{
-            h2{
-                background-color: darkred;
-            }
-        }
+
     .box_card_wrapper{
-        
         @include flex(row, flex-end, center);
         flex-wrap: wrap;
         gap: 30px;
@@ -430,6 +429,22 @@
 
 
 .gallery{
+    &{
+        @include xs{
+            margin-top: 75px;
+            .btn_warpper{
+                padding: 0px !important;
+            }
+            .desc{
+            padding-left: 0px !important;
+            margin-top: 20px;
+        }
+        .btn_warpper{
+            padding-left: 0px !important;
+            margin-top: 5px;
+        }
+        }
+    }
     .row{
         align-items: flex-end;
         .btn_warpper{
@@ -583,6 +598,11 @@ color: $--white;
 
 /*=================service start=======================*/
 .service{
+    &{
+        @include xs{
+            margin-top: 75px;
+        }
+    }
     .service_box{
         margin-top: 80px;
         @include flex(row, space-between, center);

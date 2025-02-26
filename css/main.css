@@ -341,11 +341,13 @@
   .box.style_1 .box_card_wrapper .box_card p {
     color: #fff; }
 @media only screen and (min-width: 0px) and (max-width: 576px) {
-  .box h2 {
-    width: 100% !important;
-    background-color: red; } }
-.box .heading h2 {
-  background-color: darkred; }
+  .box {
+    margin-top: 75px; }
+    .box .box_card_wrapper {
+      margin-top: 30px !important;
+      justify-content: center !important; }
+    .box h2 {
+      width: 100% !important; } }
 .box .box_card_wrapper {
   display: flex;
   flex-direction: row;
@@ -397,6 +399,17 @@
 /*====================Latest Gallery start=======================*/
 .gallery {
   /* Gallery Section */ }
+  @media only screen and (min-width: 0px) and (max-width: 576px) {
+    .gallery {
+      margin-top: 75px; }
+      .gallery .btn_warpper {
+        padding: 0px !important; }
+      .gallery .desc {
+        padding-left: 0px !important;
+        margin-top: 20px; }
+      .gallery .btn_warpper {
+        padding-left: 0px !important;
+        margin-top: 5px; } }
   .gallery .row {
     align-items: flex-end; }
     .gallery .row .btn_warpper {
@@ -513,6 +526,9 @@
 
 /*====================Latest Gallery end=======================*/
 /*=================service start=======================*/
+@media only screen and (min-width: 0px) and (max-width: 576px) {
+  .service {
+    margin-top: 75px; } }
 .service .service_box {
   margin-top: 80px;
   display: flex;
