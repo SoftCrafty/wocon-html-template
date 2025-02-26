@@ -805,7 +805,7 @@
                     @include flex(row, space-evenly, center);
                     
 
-                    p{
+                    a{
                         font-family: $--second-family;
                         font-weight: 400;
                         font-size: 12px;
@@ -817,7 +817,7 @@
                         }
                     }
                 }
-                h4{
+                h3{
                     font-family: $--font-family;
                     font-weight: 500;
                     font-size: 30px;
@@ -893,9 +893,10 @@
             .right_contains{
                 @include flex(row, flex-start, center);
                 padding: 0px;
-                .sub_box{
+                form{
                     position: relative;
                     width: 100% !important;
+                   
                 }
                 input{
                     border: 1px solid $--tow;
@@ -903,10 +904,14 @@
                     height: 65px;
                     padding: 0px 10px;
                     position: relative;
+                    outline: none;
                 }
-                a{
+                button{
+                    position: absolute;
+                    right: 0px;
                     width: 144px;
                     height: 49px;
+                    border: none;
                     font-family: $--font-family;
                     font-weight: 400;
                     font-size: 15px;
@@ -914,13 +919,16 @@
                     text-transform: uppercase;
                     color: $--nine;
                     background-color: $--secondary;
-                    position: absolute;
+                    // position: absolute;
                     top: 50%;
                     @include transformY(-50%);
-                    right: 0px;
-                    display: block;
+                    // right: 0px;
+                    // display: block;
                     text-align: center;
                     line-height: 49px;
+                }
+                a{
+                    
                 }
             }
         }
