@@ -1,58 +1,5 @@
 
 /*=================hero section start=======================*/
-.hero_img_card {
-    position: relative;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.circel_area {
-    position: absolute;
-    top: 55px;
-    left: 54px;
-}
-
-.circle {
-    position: relative;
-    width: 138px;
-    height: 138px;
-}
-
-.rotating-circle {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    animation: rotateCircle 10s linear infinite;
-}
-
-.rotating-circle img {
-    width: 100%;
-    height: 100%;
-}
-.bg_text{
-    position: absolute;
-    bottom:122px;
-    right: 10px;
-    .moving-text {
-        font-size: 30px;
-        font-weight: bold;
-        color: $--secondary;
-        font-family: $--font-family;
-        font-weight: 600;
-        font-size: 250px;
-        line-height: 175%;
-        text-transform: uppercase;
-        animation: moveText 5s ease-in-out infinite alternate;
-    }
-}
-.hero_section_man{
-    position: absolute;
-    right: 45px;
-    bottom: 0px;
-}
 
 .hero_section{
     margin-top: 79px;
@@ -62,30 +9,65 @@
         align-items: center;
         .desc{
             padding:35px 35px 0px 35px;
+            &{
+                @include xs{
+                    padding: 0px;
+                    margin-top: 30px;
+                }
+            }
         }
         .btn_warpper{
             padding:0px 35px;
+            &{
+                @include xs{
+                    padding: 0px;
+                }
+            }
         }
     }
-
+    
     .hero_img_card{
         margin-top: 80px;
         position: relative;
+        @include flex(row, center, center);
+        height: fit-content;
+        overflow: hidden;
+        
 
         img{
             width: 100%;
         height: auto;
         }
+
+/*overly box start*/
         .overly_box{
             position: absolute;
             bottom: 0px;
             left: 0px;
             background-color: $--one;
-            // width: 342px;
-            // height: 140px;
             padding: 40px 49px;
             @include flex(row, flex-start, center);
             gap: 20px;
+            &{
+                @include xs{
+                    gap: 10px !important;
+                    img{
+                        width: 20px ;
+                        height: 20px;
+                    }
+                    padding: 2px 10px 4px 10px!important;
+                    .number{
+                        p{
+                            font-size: 9px !important;
+                            margin-top: 10px;
+                        }
+                        a{
+                            font-size: 10px !important;
+                            margin: 0px !important;
+                        }
+                    }
+                }
+            }
             .number{
                 p{
                     font-family: $--second-family;
@@ -106,6 +88,84 @@
                 
             }
         }
+/*overly box end*/
+
+/*Circel start*/
+        .circel_area {
+            position: absolute;
+            top: 55px;
+            left: 54px;
+            &{
+                @include xs{
+                    top: 15px;
+                    left: 15px;
+                    .circle{
+                        width: 60px !important;
+                        height: 60px !important;
+                    }
+                }
+            }
+                .circle {
+                    position: relative;
+                    width: 138px;
+                    height: 138px;
+                        .rotating-circle {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        animation: rotateCircle 10s linear infinite;
+                            .rotating-circle img {
+                            width: 100%;
+                            height: 100%;
+}
+}
+}
+}
+/*Circel end*/
+
+/*Man start*/
+       .hero_section_man{
+    position: absolute;
+    right: 45px;
+    bottom: 0px;
+    &{
+        @include xs{
+            right: 20px;
+            width: 100px;
+            height: 123px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+/*Man end*/
+
+/*Background text start*/
+       .bg_text{
+            position: absolute;
+            bottom:122px;
+            right: 10px;
+            &{
+                @include xs{
+                        width: 100px;
+                        height: fit-content;
+                        bottom: 50px;
+                        img{
+                            width: 100%;
+                            height: fit-content;
+                            object-fit: contain;
+                        }
+                }
+            }
+            .moving-text {
+                animation: moveText 5s ease-in-out infinite alternate;
+                
+            }
+}        
+/*Background text end*/
     }
 }
 /*=================hero section end=======================*/
@@ -157,9 +217,25 @@
     .about_image_card{
         @include flex(column, flex-start, flex-start);
         padding: 0px;
-        .btn_warpper{
-                margin-top: 50px !important; 
+
+        /*---------Responsive  Start---------*/
+        &{
+            @include xs{
+                .image_part{
+                    height: fit-content !important;
+                    img{
+                        object-fit: contain;
+                    }
+                }
+                .btn_warpper{
+                    margin-top: -10px;
+                }
+                .desc{
+                    margin-top: -20px !important;
+                }
             }
+        }
+         /*---------Responsive  End---------*/
         .image_part{
             width: 100%;
             height: 565px;
@@ -192,6 +268,18 @@
         width: 100%;
         height: 100%;
         padding-left: 80px;
+         /*---------Responsive  Start---------*/
+        &{
+            @include xs{
+                margin-top: 50px;
+                .progress_bar{
+                    span{
+                        font-size: 16px !important;
+                    }
+                }
+            }
+        }
+         /*---------Responsive  End---------*/
         .heading_area{
             .sub_heading{
                 margin-top: 20px;
@@ -257,6 +345,7 @@
 
 /*=================box start=======================*/
 .box{
+
     &.style_1{
             .box_card_wrapper{
             .box_card{
@@ -269,6 +358,19 @@
                 }
             }
         }
+        }
+        &{
+            @include xs{
+                h2{
+                    width: 100% !important;
+                    background-color: red;
+                }
+            }
+        }
+        .heading{
+            h2{
+                background-color: darkred;
+            }
         }
     .box_card_wrapper{
         
@@ -843,7 +945,7 @@ color: $--white;
             height: 134px;
             @include border-radius(50%);
             background-color:$--white;
-            animation: playButtonAnimation 1.5s infinite;
+            // animation: playButtonAnimation 1.5s infinite;
             text-align: center;
             line-height: 134px;
             color: $--primary;
@@ -858,60 +960,27 @@ color: $--white;
                 background-color: $--primary;
                 @include transition(0.4s)
             }
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                background-color:#fff;
+                @include border-radius(50%);
+                animation: pulse 1.5s infinite ease-out;
+
+            }
+            i{
+                position: relative;
+            }
 
 
         }
         }
     }
-         /* Video Modal start*/
-    .video-modal {
-    @include flex(row, center, center);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(1.1);
-    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out, visibility 0.4s;
-    &.active {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1);
-}
-.modal-content {
-    position: relative;
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    width: fit-content;
-    max-width: 90%;
-    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
-    transform: translateY(-20px);
-    transition: transform 0.4s ease-in-out;
-    .close-btn {
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    font-size: 24px;
-    color: white;
-    background: red;
-    width: 30px;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    cursor: pointer;
-}
-/* Video Modal start*/
-}
-&.active .modal-content {
-    transform: translateY(0);
-}
-}
+       
     }
 
    

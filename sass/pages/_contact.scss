@@ -62,7 +62,11 @@
                     line-height: 150%;
                     color: $--nine;
                 }
-                p{
+                
+                a{   
+                    &:nth-child(1){
+                        color: $--nine;
+                    }
                     font-family: $--second-family;
                     font-weight: 400;
                     font-size: 16px;

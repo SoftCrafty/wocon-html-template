@@ -88,3 +88,12 @@ $(document).ready(function () {
     });
 });
 
+let homeNav = document.querySelector('#top_home_nav');
+
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 120) {
+        homeNav.classList.add('active');
+    } else {
+        homeNav.classList.remove('active');
+    }
+})

@@ -86,18 +86,17 @@
     }
 
     ul {
+        
         @include flex(column, center, center);
         position: absolute;
         box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); 
         top: 70px;
         left: -20px;
-        padding: 5px 10px;
+        padding: 0px 0px;
         width: 210px;
-        gap: 5px;
-        visibility: hidden;
-        opacity: 0;
+        gap: 0px;
+        
         background-color: #ffffff;
-         visibility: hidden;
          z-index: 99999;
          -webkit-transition: all 300ms ease;
          transition: all 300ms ease;
@@ -112,15 +111,21 @@
            float: none;
         width: 100%;
         a{
-            line-height: 120%;
+  line-height: 120%;
   padding: 10px 20px;
   color: #26262c;
   border-bottom: 1px solid #E3E3E3;
+  //background-color: red;
   margin-right: 0;
   font-size: 16px;
   width: 100%;
   display: inline-block;
-        }
+  transition:all 0.5s ease-out ;
+  -webkit-transition:all 0.5s ease-out ;
+  -moz-transition:all 0.5s ease-out ;
+  -ms-transition:all 0.5s ease-out ;
+  -o-transition:all 0.5s ease-out ;
+}
 
             &:hover a {
                background-color: #D9A14C;

@@ -163,15 +163,27 @@ window.addEventListener("scroll", function () {
     }
 });
 
+$(document).ready(function () {
+    let nav = $('#top_nav');
 
-
-let nav = document.querySelector('#top_nav');
-
-window.addEventListener('scroll', function () {
-    if (window.scrollY > 120) {
-        nav.classList.add('active');
-    } else {
-        nav.classList.remove('active');
-    }
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop() > 120) {
+            nav.addClass('active');
+        } else {
+            nav.removeClass('active');
+        }
+    });
 });
+
+
+
+// let nav = document.querySelector('#top_nav');
+
+// window.addEventListener('scroll', function () {
+//     if (window.scrollY > 120) {
+//         nav.classList.add('active');
+//     } else {
+//         nav.classList.remove('active');
+//     }
+// });
 

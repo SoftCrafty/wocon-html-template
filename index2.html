@@ -230,9 +230,17 @@
                         <a href="#">Learn More<i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                     <div class="watch">
-                        <a href="#"><span><i class="fa-solid fa-play"></i></span></a>
-                        <a href="#">Watch Now</a>
+                        <a class="playBtn" href="#"><span><i class="fa-solid fa-play"></i></span></a>
+                        <a class="playBtn" href="#">Watch Now</a>
                     </div>
+                    <!-- Video Modal -->
+<div class="video-modal" id="videoModal">
+    <div class="modal-content">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eIrRj6vDddU?si=qOrqlto-i3RczADK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <!-- <iframe id="videoFrame" width="700" height="400" src="https://youtu.be/eIrRj6vDddU?si=76j6HrAaAYHSRhna" frameborder="0" allowfullscreen></iframe> -->
+    </div>
+</div>
                    </div>
             </div>
 
@@ -701,23 +709,25 @@
         <div class="row">
             <div class="part_one col-lg-4 col-12">
                <div class="one">
-                   <span><i class="fa-solid fa-phone"></i></span>
+               <a href="tel:(629) 555-0129"><span><i class="fa-solid fa-phone"></i></span></a>
                    <h5>Phone number</h5>
-                   <p>(704) 555-0127</p>
-               </div>
-             </div>
+                   <a href="tel:(629) 555-0129">(704) 555-0127</a>
+                </div>
+            </div>
             <div class="part_one col-lg-4 col-12">
-               <div class="one">
-                   <span><i class="fa-solid fa-envelope"></i></span>
-                  <h5>Email Address</h5>
-            <p>tim.jennings@example.com</p>
+                <div class="one">
+                    <a href="mailto:info@example.com"><span><i class="fa-solid fa-envelope"></i></span></a>
+                    <h5>Email Address</h5>
+                     <a href="mailto:info@example.com">tim.jennings@example.com</a>
+                  
                </div>
              </div>
             <div class="part_three col-lg-4 col-12">
                <div class="one">
-                   <span><i class="fa-solid fa-location-dot"></i></span>
+                 <a href="https://www.google.com/maps?q=2464+Royal+Ln,+Mesa,+New+Jersey+45463" target="_blank"> <span><i class="fa-solid fa-location-dot"></i></span></a>
                    <h5>Address</h5>
-            <p>2464 Royal Ln. Mesa, New Jersey 45463</p>
+                   <a href="https://www.google.com/maps?q=2464+Royal+Ln,+Mesa,+New+Jersey+45463" target="_blank">2464 Royal Ln. Mesa, New Jersey 45463</a>
+                 <p></p>
                </div>
              </div>
       
@@ -808,16 +818,9 @@
     <!-- CUSTOM JS -->
     <script src="./js/script.js"></script>
     <script src="./js/home2.js"></script>
+    <script src="./js/video_popup.js"></script>
     <script>
-          let homeNav = document.querySelector('#top_home_nav');
-
-window.addEventListener('scroll', function () {
-    if (window.scrollY > 120) {
-        homeNav.classList.add('active');
-    } else {
-        homeNav.classList.remove('active');
-    }
-})
+          
     </script>
   </body>
 </html>

@@ -74,6 +74,54 @@
     opacity: 1;
     transform: translateY(0); } }
 /*=================hero section start=======================*/
+.hero_img_card {
+  position: relative;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; }
+
+.circel_area {
+  position: absolute;
+  top: 55px;
+  left: 54px; }
+
+.circle {
+  position: relative;
+  width: 138px;
+  height: 138px; }
+
+.rotating-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotateCircle 10s linear infinite; }
+
+.rotating-circle img {
+  width: 100%;
+  height: 100%; }
+
+.bg_text {
+  position: absolute;
+  bottom: 122px;
+  right: 10px; }
+  .bg_text .moving-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffd026;
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-size: 250px;
+    line-height: 175%;
+    text-transform: uppercase;
+    animation: moveText 5s ease-in-out infinite alternate; }
+
+.hero_section_man {
+  position: absolute;
+  right: 45px;
+  bottom: 0px; }
+
 .hero_section {
   margin-top: 79px;
   z-index: 1; }
@@ -82,32 +130,11 @@
     align-items: center; }
     .hero_section .row .desc {
       padding: 35px 35px 0px 35px; }
-      @media only screen and (min-width: 0px) and (max-width: 576px) {
-        .hero_section .row .desc {
-          padding: 0px;
-          margin-top: 30px; } }
     .hero_section .row .btn_warpper {
       padding: 0px 35px; }
-      @media only screen and (min-width: 0px) and (max-width: 576px) {
-        .hero_section .row .btn_warpper {
-          padding: 0px; } }
   .hero_section .hero_img_card {
     margin-top: 80px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    overflow: hidden;
-    /*overly box start*/
-    /*overly box end*/
-    /*Circel start*/
-    /*Circel end*/
-    /*Man start*/
-    /*Man end*/
-    /*Background text start*/
-    /*Background text end*/ }
+    position: relative; }
     .hero_section .hero_img_card img {
       width: 100%;
       height: auto; }
@@ -122,19 +149,6 @@
       justify-content: flex-start;
       align-items: center;
       gap: 20px; }
-      @media only screen and (min-width: 0px) and (max-width: 576px) {
-        .hero_section .hero_img_card .overly_box {
-          gap: 10px !important;
-          padding: 2px 10px 4px 10px !important; }
-          .hero_section .hero_img_card .overly_box img {
-            width: 20px;
-            height: 20px; }
-          .hero_section .hero_img_card .overly_box .number p {
-            font-size: 9px !important;
-            margin-top: 10px; }
-          .hero_section .hero_img_card .overly_box .number a {
-            font-size: 10px !important;
-            margin: 0px !important; } }
       .hero_section .hero_img_card .overly_box .number p {
         font-family: "Urbanist", sans-serif;
         font-weight: 400;
@@ -148,57 +162,6 @@
         line-height: 150%;
         color: #1a1a1a;
         margin-top: 4px; }
-    .hero_section .hero_img_card .circel_area {
-      position: absolute;
-      top: 55px;
-      left: 54px; }
-      @media only screen and (min-width: 0px) and (max-width: 576px) {
-        .hero_section .hero_img_card .circel_area {
-          top: 15px;
-          left: 15px; }
-          .hero_section .hero_img_card .circel_area .circle {
-            width: 60px !important;
-            height: 60px !important; } }
-      .hero_section .hero_img_card .circel_area .circle {
-        position: relative;
-        width: 138px;
-        height: 138px; }
-        .hero_section .hero_img_card .circel_area .circle .rotating-circle {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          animation: rotateCircle 10s linear infinite; }
-          .hero_section .hero_img_card .circel_area .circle .rotating-circle .rotating-circle img {
-            width: 100%;
-            height: 100%; }
-    .hero_section .hero_img_card .hero_section_man {
-      position: absolute;
-      right: 45px;
-      bottom: 0px; }
-      @media only screen and (min-width: 0px) and (max-width: 576px) {
-        .hero_section .hero_img_card .hero_section_man {
-          right: 20px;
-          width: 100px;
-          height: 123px; }
-          .hero_section .hero_img_card .hero_section_man img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain; } }
-    .hero_section .hero_img_card .bg_text {
-      position: absolute;
-      bottom: 122px;
-      right: 10px; }
-      @media only screen and (min-width: 0px) and (max-width: 576px) {
-        .hero_section .hero_img_card .bg_text {
-          width: 100px;
-          height: fit-content;
-          bottom: 50px; }
-          .hero_section .hero_img_card .bg_text img {
-            width: 100%;
-            height: fit-content;
-            object-fit: contain; } }
-      .hero_section .hero_img_card .bg_text .moving-text {
-        animation: moveText 5s ease-in-out infinite alternate; }
 
 /*=================hero section end=======================*/
 /*=================company logo start=======================*/
@@ -240,18 +203,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0px;
-    /*---------Responsive  Start---------*/
-    /*---------Responsive  End---------*/ }
-    @media only screen and (min-width: 0px) and (max-width: 576px) {
-      .about_us .about_image_card .image_part {
-        height: fit-content !important; }
-        .about_us .about_image_card .image_part img {
-          object-fit: contain; }
-      .about_us .about_image_card .btn_warpper {
-        margin-top: -10px; }
-      .about_us .about_image_card .desc {
-        margin-top: -20px !important; } }
+    padding: 0px; }
     .about_us .about_image_card .image_part {
       width: 100%;
       height: 565px;
@@ -276,14 +228,7 @@
     align-items: flex-start;
     width: 100%;
     height: 100%;
-    padding-left: 80px;
-    /*---------Responsive  Start---------*/
-    /*---------Responsive  End---------*/ }
-    @media only screen and (min-width: 0px) and (max-width: 576px) {
-      .about_us .about_info_card {
-        margin-top: 50px; }
-        .about_us .about_info_card .progress_bar span {
-          font-size: 16px !important; } }
+    padding-left: 80px; }
     .about_us .about_info_card .heading_area .sub_heading {
       margin-top: 20px; }
     .about_us .about_info_card .heading_area .desc {
@@ -340,12 +285,6 @@
     color: #fff; }
   .box.style_1 .box_card_wrapper .box_card p {
     color: #fff; }
-@media only screen and (min-width: 0px) and (max-width: 576px) {
-  .box h2 {
-    width: 100% !important;
-    background-color: red; } }
-.box .heading h2 {
-  background-color: darkred; }
 .box .box_card_wrapper {
   display: flex;
   flex-direction: row;
@@ -2259,9 +2198,9 @@
           box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
           top: 70px;
           left: -20px;
-          padding: 0px 0px;
+          padding: 0px 10px;
           width: 210px;
-          gap: 0px;
+          gap: 5px;
           background-color: #ffffff;
           z-index: 99999;
           -webkit-transition: all 300ms ease;
@@ -2284,12 +2223,7 @@
               margin-right: 0;
               font-size: 16px;
               width: 100%;
-              display: inline-block;
-              transition: all 0.5s ease-out;
-              -webkit-transition: all 0.5s ease-out;
-              -moz-transition: all 0.5s ease-out;
-              -ms-transition: all 0.5s ease-out;
-              -o-transition: all 0.5s ease-out; }
+              display: inline-block; }
             .header-area .header_menu_wrapper .main_menu ul li ul li:hover a {
               background-color: #D9A14C;
               color: #ffffff; }
@@ -2324,9 +2258,6 @@
     justify-content: flex-end;
     align-items: flex-end;
     height: 100%; }
-  @media only screen and (min-width: 0px) and (max-width: 576px) {
-    .heading_area .heading h2 {
-      font-size: 30px !important; } }
   .heading_area .sub_heading {
     width: 100%; }
     .heading_area .sub_heading h4 {
@@ -2354,9 +2285,6 @@
       font-size: 70px;
       line-height: 129%;
       color: #000; }
-      @media only screen and (min-width: 0px) and (max-width: 576px) {
-        .heading_area .heading h1 {
-          font-size: 35px; } }
       .heading_area .heading h1 span {
         font-style: italic;
         font-weight: 400;

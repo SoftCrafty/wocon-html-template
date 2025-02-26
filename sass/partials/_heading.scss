@@ -6,6 +6,15 @@
         @include flex(column, flex-end, flex-end);
         height: 100%;
     }
+    &{
+        @include xs{
+            .heading{
+                h2{
+                    font-size: 30px !important;
+                }
+            }
+        }
+    }
     .sub_heading{
         width: 100%;
         // margin-bottom: 20px;
@@ -39,6 +48,11 @@
             font-size: 70px;
             line-height: 129%;
             color: #000;
+            &{
+                @include xs{
+                    font-size: 35px;
+                }
+            }
             
             span{
                 font-style: italic;
