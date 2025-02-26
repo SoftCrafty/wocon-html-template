@@ -257,7 +257,21 @@
 
 /*=================box start=======================*/
 .box{
+    &.style_1{
+            .box_card_wrapper{
+            .box_card{
+                background-color: $--seven !important;
+                span{
+                    color: $--white;
+                }
+                p{
+                    color: $--white;
+                }
+            }
+        }
+        }
     .box_card_wrapper{
+        
         @include flex(row, flex-end, center);
         flex-wrap: wrap;
         gap: 30px;

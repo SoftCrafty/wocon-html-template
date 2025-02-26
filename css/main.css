@@ -266,6 +266,12 @@
 
 /*=================about us end=======================*/
 /*=================box start=======================*/
+.box.style_1 .box_card_wrapper .box_card {
+  background-color: #252525 !important; }
+  .box.style_1 .box_card_wrapper .box_card span {
+    color: #fff; }
+  .box.style_1 .box_card_wrapper .box_card p {
+    color: #fff; }
 .box .box_card_wrapper {
   display: flex;
   flex-direction: row;
@@ -1512,8 +1518,8 @@
   justify-content: space-between;
   flex-wrap: wrap; }
   #home_about .container .row:hover img:nth-child(2) {
-    animation: tada 2s linear infinite;
-    -webkit-animation: tada 2s linear infinite; }
+    animation: moveText 2s linear infinite;
+    -webkit-animation: moveText 2s linear infinite; }
 #home_about .container .home_about_img_card {
   display: flex;
   flex-direction: row;
@@ -1553,18 +1559,12 @@
   background-color: #000;
   padding: 50px 0px;
   margin-top: 120px; }
-  .box_gallery_logo .box .box_card_wrapper .box_card {
-    background-color: #252525 !important; }
-    .box_gallery_logo .box .box_card_wrapper .box_card h6 {
-      color: #fff; }
-    .box_gallery_logo .box .box_card_wrapper .box_card p {
-      color: #fff; }
 
-#home_gallery .container .heading_part {
+#home_gallery .container .heading_area {
   margin-bottom: 60px; }
-  #home_gallery .container .heading_part h5 {
+  #home_gallery .container .heading_area h3 {
     color: #fff; }
-  #home_gallery .container .heading_part h4 {
+  #home_gallery .container .heading_area h2 {
     color: #fff; }
 #home_gallery .container .images_slider {
   display: flex;
@@ -1665,7 +1665,7 @@
         line-height: 127%;
         color: #1a1a1a;
         opacity: 0.1; }
-    #home_services .home_service_box .child_box h5 {
+    #home_services .home_service_box .child_box h3 {
       font-family: "Kanit", sans-serif;
       font-weight: 500;
       font-size: 30px;

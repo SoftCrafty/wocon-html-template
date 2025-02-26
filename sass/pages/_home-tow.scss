@@ -336,12 +336,11 @@
         .row{
             justify-content: space-between;
             flex-wrap: wrap;
-            // gap: 100px;
             &:hover{
                 img{
                     &:nth-child(2){
-                    animation: tada 2s linear infinite;
-                    -webkit-animation: tada 2s linear infinite;
+                    animation: moveText 2s linear infinite;
+                    -webkit-animation: moveText 2s linear infinite;
 }
                     
                 }
@@ -390,29 +389,16 @@
     background-color: #000;
     padding: 50px 0px;
     margin-top: 120px;
-    .box{
-        .box_card_wrapper{
-            .box_card{
-                background-color: $--seven !important;
-                h6{
-                    color: $--white;
-                }
-                p{
-                    color: $--white;
-                }
-            }
-        }
-    }
 }
 
 #home_gallery{
     .container{
-        .heading_part{
-            h5{
+        .heading_area{
+            h3{
                 color: $--white;
             }
             margin-bottom: 60px;
-            h4{
+            h2{
                 color: $--white;
                 
             }
@@ -522,7 +508,7 @@
             }
             
         }
-        h5{
+        h3{
                 font-family: $--font-family;
                 font-weight: 500;
                 font-size: 30px;

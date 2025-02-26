@@ -959,7 +959,15 @@
     <script src="./js/script.js"></script>
     <script src="./js/video_popup.js"></script>
    <script>
-    
+    let nav = document.querySelector('#top_nav');
+
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 120) {
+        nav.classList.add('active');
+    } else {
+        nav.classList.remove('active');
+    }
+});
 
    </script>
 
