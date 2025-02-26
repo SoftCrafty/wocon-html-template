@@ -20,17 +20,17 @@
   #hero .hero_container {
       width: 100% !important;
   }
-    #hero .hero_container .tktk .hero_info_card .heading_area{
+    #hero .hero_container .hero_content_warpper .hero_info_card .heading_area{
         padding: 20px;
     }
-    #hero .hero_container .tktk .hero_info_card .heading_area h4 {
+    #hero .hero_container .hero_content_warpper .hero_info_card .heading_area h4 {
       font-size: 40px !important;
   }
-  #hero .hero_container .tktk .hero_contact_card .email {
+  #hero .hero_container .hero_content_warpper .hero_contact_card .email {
    height: 100px;
    left: -185px;
   }
-  #hero .hero_container .tktk .hero_contact_card .number {
+  #hero .hero_container .hero_content_warpper .hero_contact_card .number {
    height: 100px;
    left: -140px;
    bottom: 140px;
@@ -55,16 +55,16 @@
   #hero .hero_container {
       width: 100% !important;
   }
-  #hero .hero_container .tktk{
+  #hero .hero_container .hero_content_warpper{
     position: relative;
   }
-  #hero .hero_container .tktk .hero_contact_card{
+  #hero .hero_container .hero_content_warpper .hero_contact_card{
       display: none;
     }
      #home_about .container .left_side img:nth-child(2) {
         display: none;
      }
-    #hero .hero_container .tktk .hero_info_card{
+    #hero .hero_container .hero_content_warpper .hero_info_card{
         width: 100% !important;
     }
   
@@ -99,18 +99,18 @@
     #hero .hero_container{
         width: 100% !important;
     }
-     #hero .hero_container .tktk{
+     #hero .hero_container .hero_content_warpper{
         /* background-color: transparent !important; */
         z-index: -1;
      }
-     #hero .hero_container .tktk .hero_info_card img{
+     #hero .hero_container .hero_content_warpper .hero_info_card img{
         z-index: 100;
      }
-     #hero .hero_container .tktk .hero_info_card{
+     #hero .hero_container .hero_content_warpper .hero_info_card{
         width: 100%;
         padding: 10px;
      }
-     #hero .hero_container .tktk .hero_info_card .heading_area {
+     #hero .hero_container .hero_content_warpper .hero_info_card .heading_area {
         width: 100%;
         /* background-color: transparent !important; */
      }

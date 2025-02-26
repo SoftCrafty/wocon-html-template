@@ -1373,18 +1373,18 @@
     width: 1680px;
     height: 872px;
     margin: auto; }
-    #hero .hero_container .tktk {
+    #hero .hero_container .hero_content_warpper {
       width: 100%;
       height: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center; }
-      #hero .hero_container .tktk .hero_contact_card {
+      #hero .hero_container .hero_content_warpper .hero_contact_card {
         width: 150px;
         height: 100%;
         position: relative; }
-        #hero .hero_container .tktk .hero_contact_card .email {
+        #hero .hero_container .hero_content_warpper .hero_contact_card .email {
           position: absolute;
           top: 160px;
           left: -160px;
@@ -1398,14 +1398,14 @@
           gap: 20px;
           padding: 20px 30px;
           transform: rotate(-90deg); }
-          #hero .hero_container .tktk .hero_contact_card .email span {
+          #hero .hero_container .hero_content_warpper .hero_contact_card .email span {
             width: 60px;
             height: 60px; }
-            #hero .hero_container .tktk .hero_contact_card .email span img {
+            #hero .hero_container .hero_content_warpper .hero_contact_card .email span img {
               width: 100%;
               height: 100%;
               object-fit: contain; }
-        #hero .hero_container .tktk .hero_contact_card .number {
+        #hero .hero_container .hero_content_warpper .hero_contact_card .number {
           position: absolute;
           bottom: 110px;
           left: -110px;
@@ -1419,14 +1419,14 @@
           gap: 20px;
           padding: 20px 30px;
           transform: rotate(-90deg); }
-          #hero .hero_container .tktk .hero_contact_card .number span {
+          #hero .hero_container .hero_content_warpper .hero_contact_card .number span {
             width: 60px;
             height: 60px; }
-            #hero .hero_container .tktk .hero_contact_card .number span img {
+            #hero .hero_container .hero_content_warpper .hero_contact_card .number span img {
               width: 100%;
               height: 100%;
               object-fit: contain; }
-      #hero .hero_container .tktk .hero_info_card {
+      #hero .hero_container .hero_content_warpper .hero_info_card {
         padding-left: 20px;
         margin: 0;
         padding: 0;
@@ -1440,13 +1440,13 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative; }
-        #hero .hero_container .tktk .hero_info_card .vector {
+        #hero .hero_container .hero_content_warpper .hero_info_card .vector {
           position: absolute;
           bottom: 0px;
           right: 0px; }
-          #hero .hero_container .tktk .hero_info_card .vector img {
+          #hero .hero_container .hero_content_warpper .hero_info_card .vector img {
             opacity: 0.6; }
-        #hero .hero_container .tktk .hero_info_card .heading_area {
+        #hero .hero_container .hero_content_warpper .hero_info_card .heading_area {
           padding: 20px;
           height: 100%;
           background: linear-gradient(90deg, #fff 10%, rgba(255, 255, 255, 0.858) 90%);
@@ -1459,16 +1459,16 @@
           flex-direction: column;
           justify-content: center;
           align-items: flex-start; }
-          #hero .hero_container .tktk .hero_info_card .heading_area h1 {
+          #hero .hero_container .hero_content_warpper .hero_info_card .heading_area h1 {
             font-family: "Kanit", sans-serif;
             font-weight: 600;
             font-size: 70px;
             line-height: 129%;
             color: #1a1a1a;
-            width: 60%; }
-          #hero .hero_container .tktk .hero_info_card .heading_area p {
+            width: 55%; }
+          #hero .hero_container .hero_content_warpper .hero_info_card .heading_area p {
             width: 50%; }
-        #hero .hero_container .tktk .hero_info_card .btn_watch {
+        #hero .hero_container .hero_content_warpper .hero_info_card .btn_watch {
           margin-top: 20px;
           display: flex;
           flex-direction: row;
@@ -1476,13 +1476,13 @@
           align-items: center;
           flex-wrap: wrap;
           gap: 20px; }
-          #hero .hero_container .tktk .hero_info_card .btn_watch .btn_warpper {
+          #hero .hero_container .hero_content_warpper .hero_info_card .btn_watch .btn_warpper {
             width: fit-content; }
-          #hero .hero_container .tktk .hero_info_card .btn_watch .watch {
+          #hero .hero_container .hero_content_warpper .hero_info_card .btn_watch .watch {
             margin-top: 20px; }
-            #hero .hero_container .tktk .hero_info_card .btn_watch .watch:hover a {
+            #hero .hero_container .hero_content_warpper .hero_info_card .btn_watch .watch:hover a {
               color: #fe4a22; }
-            #hero .hero_container .tktk .hero_info_card .btn_watch .watch span {
+            #hero .hero_container .hero_content_warpper .hero_info_card .btn_watch .watch span {
               width: 50px;
               height: 50px;
               text-align: center;
@@ -1496,9 +1496,9 @@
               display: inline-block;
               color: #fe4a22;
               font-size: 20px; }
-              #hero .hero_container .tktk .hero_info_card .btn_watch .watch span i {
+              #hero .hero_container .hero_content_warpper .hero_info_card .btn_watch .watch span i {
                 margin-left: 3px; }
-            #hero .hero_container .tktk .hero_info_card .btn_watch .watch a {
+            #hero .hero_container .hero_content_warpper .hero_info_card .btn_watch .watch a {
               font-family: "Kanit", sans-serif;
               font-weight: 400;
               font-size: 20px;
@@ -1527,7 +1527,7 @@
     top: -50px;
     right: -60px;
     z-index: -10; }
-#home_about .container .right_side span {
+#home_about .container .home_about_info_card span {
   margin-top: 40px;
   margin-bottom: 10px; }
 
