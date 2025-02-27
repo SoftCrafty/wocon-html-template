@@ -1367,16 +1367,36 @@ color: $--white;
 
 
 /*=================footer start=======================*/
-#footer{
+.footer{
     &{
         @include xs{
-            .contanct_part{
+            width: 100% !important;
+            .footer_area_contact{
                 padding: 30px !important;
                 gap: 30px !important;
                 justify-content: center !important;
-                .part_one:last-child{
-                    margin-top: -5px !important;
-                    padding: 0px;
+                
+            }
+            .footer_area_quick_menu{
+                width: 100% !important;
+                // background-color: red;
+                padding: 0px 20px !important;
+                gap: 50px !important;
+            }
+            .footer_last{
+            
+                margin-top: 20px;
+                ul{
+                    justify-content: flex-start !important;
+                    padding: 0px !important;
+                    li{
+                        &:last-child{
+                            display: none;
+                        }
+                        a{
+                            font-size: 14px !important;
+                        }
+                    }
                 }
             }
         }
@@ -1387,7 +1407,7 @@ color: $--white;
     background-color: $--nine;
     .container{
         position: relative;
-        .contanct_part{
+        .footer_area_contact{
             padding:60px;
             width: 100%;
             position:absolute;
@@ -1396,7 +1416,7 @@ color: $--white;
             @include flex(row, space-between, center);
             flex-wrap: wrap;
             background-color: $--seven;
-            .part_one{
+            .footer_contact_widget{
                 &:hover {
                     span{
                            animation: tada 1s linear infinite;
@@ -1451,7 +1471,10 @@ color: $--white;
                 overflow: hidden;
             }
         }
-        .row{
+
+        .footer_area_quick_menu{
+            @include flex(row, space-between, center);
+            flex-wrap: wrap;
             padding:30px 0px;
             margin-top: 300px;
              .footer_logo{
@@ -1597,7 +1620,6 @@ color: $--white;
                         padding: 20px;
                      border: none;
                      outline: none;
-                    //  padding: 10px;
                      background-color: transparent;
                      &::placeholder{
                         color: $--white;
@@ -1616,10 +1638,11 @@ color: $--white;
                 }
             }
         }
+
         .footer_last{
+            min-height: 44px;
             @include flex(row, space-between, flex-end);
             flex-wrap: wrap;
-            height: 44px;
             border-top: 2px solid $--seven;
             width: 100%;
             a{
@@ -1635,11 +1658,17 @@ color: $--white;
                     margin-bottom: 5px;
                 }
             }
-            .right{
-                @include flex(row, flex-end, center);
-                flex-wrap: wrap;
-                gap: 40px;
+            .footer_last_menu{
+                ul{
+                    @include flex(row, flex-end, flex-end);
+                    margin: 0px;
+                    flex-wrap: wrap;
 
+                    gap: 40px;
+                    li{
+                        width: fit-content !important;
+                    }
+                }
             }
         }
     }

@@ -1135,20 +1135,32 @@
 
 /*=================subscribe end=======================*/
 /*=================footer start=======================*/
-#footer {
+.footer {
   margin-top: 247px;
   min-height: 537px;
   max-height: auto;
   background-color: #1a1a1a; }
   @media only screen and (min-width: 0px) and (max-width: 576px) {
-    #footer .contanct_part {
-      padding: 30px !important;
-      gap: 30px !important;
-      justify-content: center !important; }
-      #footer .contanct_part .part_one:last-child {
-        margin-top: -5px !important;
-        padding: 0px; } }
-  #footer .container {
+    .footer {
+      width: 100% !important; }
+      .footer .footer_area_contact {
+        padding: 30px !important;
+        gap: 30px !important;
+        justify-content: center !important; }
+      .footer .footer_area_quick_menu {
+        width: 100% !important;
+        padding: 0px 20px !important;
+        gap: 50px !important; }
+      .footer .footer_last {
+        margin-top: 20px; }
+        .footer .footer_last ul {
+          justify-content: flex-start !important;
+          padding: 0px !important; }
+          .footer .footer_last ul li:last-child {
+            display: none; }
+          .footer .footer_last ul li a {
+            font-size: 14px !important; } }
+  .footer .container {
     position: relative;
     min-height: 537px;
     max-height: auto;
@@ -1158,7 +1170,7 @@
     align-items: center;
     gap: 50px;
     padding-bottom: 30px; }
-    #footer .container .contanct_part {
+    .footer .container .footer_area_contact {
       padding: 60px;
       width: 100%;
       position: absolute;
@@ -1170,16 +1182,16 @@
       align-items: center;
       flex-wrap: wrap;
       background-color: #252525; }
-      #footer .container .contanct_part .part_one {
+      .footer .container .footer_area_contact .footer_contact_widget {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         gap: 20px; }
-        #footer .container .contanct_part .part_one:hover span {
+        .footer .container .footer_area_contact .footer_contact_widget:hover span {
           animation: tada 1s linear infinite;
           -webkit-animation: tada 1s linear infinite; }
-        #footer .container .contanct_part .part_one .icon span {
+        .footer .container .footer_area_contact .footer_contact_widget .icon span {
           width: 65px;
           height: 65px;
           background-color: #fe4a22;
@@ -1188,47 +1200,52 @@
           line-height: 65px;
           display: block;
           font-size: 30px; }
-        #footer .container .contanct_part .part_one .text h5 {
+        .footer .container .footer_area_contact .footer_contact_widget .text h5 {
           font-family: "Kanit", sans-serif;
           font-weight: 400;
           font-size: 20px;
           line-height: 150%;
           color: #fff; }
-        #footer .container .contanct_part .part_one .text a {
+        .footer .container .footer_area_contact .footer_contact_widget .text a {
           font-family: "Kanit", sans-serif;
           font-weight: 400;
           font-size: 16px;
           line-height: 162%;
           color: #fff; }
-    #footer .container .bg_img {
+    .footer .container .bg_img {
       position: absolute;
       bottom: 0;
       left: -24%; }
-      #footer .container .bg_img img {
+      .footer .container .bg_img img {
         width: 100%;
         object-fit: contain;
         overflow: hidden; }
-    #footer .container .row {
+    .footer .container .footer_area_quick_menu {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
       padding: 30px 0px;
       margin-top: 300px; }
-      #footer .container .row .footer_logo {
+      .footer .container .footer_area_quick_menu .footer_logo {
         z-index: 20; }
-        #footer .container .row .footer_logo a {
+        .footer .container .footer_area_quick_menu .footer_logo a {
           width: fit-content;
           height: fit-content;
           display: block;
           cursor: pointer !important; }
-          #footer .container .row .footer_logo a img {
+          .footer .container .footer_area_quick_menu .footer_logo a img {
             width: fit-content;
             height: 100%;
             object-fit: contain;
             z-index: 100;
             cursor: pointer; }
-      #footer .container .row .iteam_content p {
+      .footer .container .footer_area_quick_menu .iteam_content p {
         color: #fff;
         margin: 20px 0px;
         margin-bottom: 20px; }
-      #footer .container .row .iteam_info ul {
+      .footer .container .footer_area_quick_menu .iteam_info ul {
         margin: 0px;
         padding: 0px;
         display: flex;
@@ -1236,9 +1253,9 @@
         justify-content: flex-start;
         align-items: center;
         gap: 10px; }
-        #footer .container .row .iteam_info ul li {
+        .footer .container .footer_area_quick_menu .iteam_info ul li {
           width: fit-content; }
-          #footer .container .row .iteam_info ul li a {
+          .footer .container .footer_area_quick_menu .iteam_info ul li a {
             width: 40px;
             height: 40px;
             border: 1px solid #ccc;
@@ -1247,11 +1264,11 @@
             text-align: center;
             line-height: 40px;
             transition: all 0.4s ease; }
-            #footer .container .row .iteam_info ul li a:hover {
+            .footer .container .footer_area_quick_menu .iteam_info ul li a:hover {
               background-color: #fe4a22;
               border: none;
               color: #fff; }
-      #footer .container .row ul {
+      .footer .container .footer_area_quick_menu ul {
         margin: 0px;
         padding: 0px;
         display: flex;
@@ -1259,37 +1276,37 @@
         justify-content: center;
         align-items: flex-start;
         gap: 30px; }
-        #footer .container .row ul li {
+        .footer .container .footer_area_quick_menu ul li {
           width: 100%; }
-          #footer .container .row ul li img {
+          .footer .container .footer_area_quick_menu ul li img {
             width: fit-content;
             height: 100%;
             object-fit: contain; }
-          #footer .container .row ul li p {
+          .footer .container .footer_area_quick_menu ul li p {
             font-family: "Kanit", sans-serif;
             font-weight: 400;
             font-size: 16px;
             line-height: 162%;
             color: #fff;
             opacity: 0.9; }
-          #footer .container .row ul li a {
+          .footer .container .footer_area_quick_menu ul li a {
             font-family: "Kanit", sans-serif;
             font-weight: 400;
             font-size: 16px;
             line-height: 162%;
             color: #fff;
             opacity: 0.9; }
-          #footer .container .row ul li:hover a {
+          .footer .container .footer_area_quick_menu ul li:hover a {
             margin-left: 5px;
             transition: all 0.3s ease;
             color: #fe4a22; }
-          #footer .container .row ul li input {
+          .footer .container .footer_area_quick_menu ul li input {
             border: none;
             outline: none;
             width: 80%;
             padding: 10px;
             background-color: transparent; }
-        #footer .container .row ul li.email_sent {
+        .footer .container .footer_area_quick_menu ul li.email_sent {
           width: 312px;
           height: 66px;
           border: 1px solid #6a6a6a;
@@ -1297,9 +1314,9 @@
           flex-direction: row;
           justify-content: space-between;
           align-items: center; }
-          #footer .container .row ul li.email_sent span {
+          .footer .container .footer_area_quick_menu ul li.email_sent span {
             width: 20%; }
-            #footer .container .row ul li.email_sent span a {
+            .footer .container .footer_area_quick_menu ul li.email_sent span a {
               width: 45px;
               height: 45px;
               color: #fff;
@@ -1307,14 +1324,14 @@
               display: block;
               line-height: 45px;
               background-color: #fe4a22; }
-      #footer .container .row .quicklink h3 {
+      .footer .container .footer_area_quick_menu .quicklink h3 {
         font-family: "Kanit", sans-serif;
         font-weight: 400;
         font-size: 20px;
         line-height: 150%;
         color: #fff;
         margin-bottom: 30px; }
-      #footer .container .row .quicklink p {
+      .footer .container .footer_area_quick_menu .quicklink p {
         font-family: "Kanit", sans-serif;
         font-weight: 400;
         font-size: 16px;
@@ -1322,21 +1339,21 @@
         color: #fff;
         margin-top: 30px;
         margin-bottom: 20px; }
-      #footer .container .row .quicklink form {
+      .footer .container .footer_area_quick_menu .quicklink form {
         border: 1px solid #ccc;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center; }
-        #footer .container .row .quicklink form input {
+        .footer .container .footer_area_quick_menu .quicklink form input {
           width: 85%;
           padding: 20px;
           border: none;
           outline: none;
           background-color: transparent; }
-          #footer .container .row .quicklink form input::placeholder {
+          .footer .container .footer_area_quick_menu .quicklink form input::placeholder {
             color: #fff; }
-        #footer .container .row .quicklink form button {
+        .footer .container .footer_area_quick_menu .quicklink form button {
           width: 15%;
           height: 100%;
           padding: 10px;
@@ -1344,16 +1361,16 @@
           border: none;
           background-color: #fe4a22;
           color: #fff; }
-    #footer .container .footer_last {
+    .footer .container .footer_last {
+      min-height: 44px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-end;
       flex-wrap: wrap;
-      height: 44px;
       border-top: 2px solid #252525;
       width: 100%; }
-      #footer .container .footer_last a {
+      .footer .container .footer_last a {
         font-family: "Kanit", sans-serif;
         font-weight: 400;
         font-size: 16px;
@@ -1361,16 +1378,19 @@
         color: #fff;
         opacity: 0.8;
         transition: all 0.4s ease; }
-        #footer .container .footer_last a:hover {
+        .footer .container .footer_last a:hover {
           color: #fe4a22;
           margin-bottom: 5px; }
-      #footer .container .footer_last .right {
+      .footer .container .footer_last .footer_last_menu ul {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        align-items: center;
+        align-items: flex-end;
+        margin: 0px;
         flex-wrap: wrap;
         gap: 40px; }
+        .footer .container .footer_last .footer_last_menu ul li {
+          width: fit-content !important; }
 
 /*=================footer end=======================*/
 /*=================Nav bar start=======================*/
@@ -2752,22 +2772,29 @@
       -ms-transform: rotate(0deg) !important;
       -o-transform: rotate(0deg) !important; }
 
-#contact {
+.contact {
   margin: 100px 0px; }
-  #contact .container .row {
+  .contact.style_1 {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100px !important;
+    margin-top: 80px;
+    display: inline-block !important; }
+  .contact .container .row {
     justify-content: space-between;
     width: 100%; }
-    #contact .container .row .part_one {
+    .contact .container .row .part_one {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center; }
-    #contact .container .row .part_three {
+    .contact .container .row .part_three {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
       align-items: center; }
-    #contact .container .row .one {
+    .contact .container .row .one {
       background-color: #fff;
       border: 1px solid #ccc;
       width: 377px;
@@ -2779,21 +2806,21 @@
       gap: 5px;
       padding-left: 68px;
       position: relative; }
-      #contact .container .row .one h5 {
+      .contact .container .row .one h5 {
         font-family: "Kanit", sans-serif;
         font-weight: 400;
         font-size: 20px;
         line-height: 150%;
         color: #1a1a1a; }
-      #contact .container .row .one a {
+      .contact .container .row .one a {
         font-family: "Urbanist", sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 162%;
         color: #6a6a6a; }
-        #contact .container .row .one a:nth-child(1) {
+        .contact .container .row .one a:nth-child(1) {
           color: #1a1a1a; }
-      #contact .container .row .one span {
+      .contact .container .row .one span {
         width: 65px;
         height: 65px;
         background-color: #ffd026;
@@ -2808,7 +2835,7 @@
         -o-transform: translateY(-50%);
         left: -30px;
         font-size: 30px; }
-      #contact .container .row .one:hover span i {
+      .contact .container .row .one:hover span i {
         animation: tada 1s linear infinite; }
 
 #maps {

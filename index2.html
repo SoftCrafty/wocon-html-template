@@ -26,22 +26,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
-  <style>
-    #footer{
-        margin: 0px;
-    }
-    #footer .container .row {
-        margin: 0px !important;
-    }
-    #contact {
-        margin: 0px;
-        padding: 0px;
-        width: 100%;
-        height: 160px !important;
-        margin-top: 80px;
-        display: inline-block !important;
-    }
-  </style>
   <body>
 <!-- ===============================<<<<<<<<<<NAVIGATION BAR START>>>>>>>>>>============================== -->
    <header class="home_header">
@@ -576,7 +560,7 @@
         
     </div>
     </div>
-</section>
+       </section>
 
 <!-- ===============================<<<<<<<<<<Slider END>>>>>>>>>>============================== -->
     
@@ -704,7 +688,11 @@
      <!-- =================================<<<<<<<<<<FOOTER START>>>>>>>>>>=============================== -->
   <footer id="footer">
     <div class="container">
-        <section id="contact">
+     <div class="row">
+      <div class="col-12">
+        <div class="footer_area_widget">
+          <!-- footer contact start -->
+            <div class="contact style_1">
     <div class="container">
         <div class="row">
             <div class="part_one col-lg-4 col-12">
@@ -733,17 +721,21 @@
       
         </div>
     </div>
-</section>
-     
-      <!-- <div class="bg_img">
-        <img src="./images/footer/Vector.png" alt="">
-      </div> -->
+            </div>
+          <!-- footer contact end -->
+           <!-- footer background image start -->
+           <div class="bg_img">
+             <img src="./images/footer/Vector.png" alt="">
+           </div>
+           <!-- footer background image end -->
+
       <div class="row">
-        <div class="col-lg-4">
+       <div class="footer_area_quick_menu">
+         <div class="col-lg-4">
           <div class="iteam_info">
             <div class="iteam_content">
               <div class="footer_logo">
-                <a href="index.html"><img src="./images/logo/footer_logo/logo.png" alt=""></a>
+                <a href="index.html"><img src="./images/logo/footer_logo/logo.png" alt="footer logo"></a>
               </div>
                <p>Construction is the process of designing, building, and assembling structures such as houses</p>
                <div class="social_media">
@@ -768,6 +760,7 @@
             </ul>
           </div>
         </div>
+
         <div class="col-lg-2">
           <div class="quicklink">
             <h3>Links</h3>
@@ -778,6 +771,7 @@
             </ul>
           </div>
         </div>
+
         <div class="four col-lg-4">
           <div class="quicklink">
             <h3>Get Free Estimate</h3>
@@ -788,22 +782,32 @@
             </form>
           </div>
         </div>
+       </div>
       </div>
-
+      <!-- footer last menu start -->
       <div class="footer_last">
-        <div class="left col-lg-5 col-12">
+        <div class="col-lg-5 col-12">
           <p>© Yoursitename  2025 | All Rights Reserved</p>
         </div>
-        <div class="right col-lg-7 col-12">
-        
-          <a href="#">Legal</a>
-          <a href="#">Trams $ Condition</a>
-          <a href="#">Privacy Policy</a>
-          <a href="contact.html">Contact Us</a>
+        <div class="col-lg-7 col-12">
+        <div class="footer_last_menu">
+          <nav>
+            <ul>
+              <li> <a href="#">Legal</a></li>
+              <li><a href="#">Trams $ Condition</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
         </div>
       </div>
-      
+      <!-- footer last menu end -->
 
+
+        </div>
+      </div>
+     </div>
     </div>
   </footer>
      <!-- =================================<<<<<<<<<<FOOTER END>>>>>>>>>>=============================== -->
