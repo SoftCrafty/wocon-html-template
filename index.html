@@ -637,9 +637,43 @@
     <!-- =================================<<<<<<<<<<EXPERTS END>>>>>>>>>>=============================== -->
     <!-- =================================<<<<<<<<<<REVIEW START>>>>>>>>>>=============================== -->
   <section class="review">
-     <div class="service_img">
-      <img src="./images/review/5.png" alt="">
+   <div class="text_slider">
+     <div class="marquee-container">
+    <div class="marquee-content">
+        <span><span><img src="./images/review/Vector.png" alt=""></span> CONSTRUCTION SERVICE</span>
+        <span><span><img src="./images/review/Vector.png" alt=""></span> UNLEASE THE CONSTRUCTION</span>
+        <span><span><img src="./images/review/Vector.png" alt=""></span> CONSTRUCTION HELPER</span>
+        <span><span><img src="./images/review/Vector.png" alt=""></span> BUILDING EXPERTS</span>
+        <span><span><img src="./images/review/Vector.png" alt=""></span> RELIABLE ENGINEERS</span>
+
+        <span><span><img src="./images/review/Vector.png" alt=""></span> CONSTRUCTION SERVICE</span>
+        <span><span><img src="./images/review/Vector.png" alt=""></span> UNLEASE THE CONSTRUCTION</span>
+        <span><span><img src="./images/review/Vector.png" alt=""></span> CONSTRUCTION HELPER</span>
+        <span><span><img src="./images/review/Vector.png" alt=""></span> BUILDING EXPERTS</span>
+        <span><span><img src="./images/review/Vector.png" alt=""></span> RELIABLE ENGINEERS</span>
     </div>
+</div>
+ <div class="marquee-container style_1">
+    <div class="marquee-content">
+        <span><span><img src="./images/review/Vector.png" alt=""></span> CONSTRUCTION SERVICE</span>
+        <span><span><img src="./images/review/Vector.png" alt=""></span> UNLEASE THE CONSTRUCTION</span>
+        <span><span><img src="./images/review/Vector.png" alt=""></span> CONSTRUCTION HELPER</span>
+        <span><span><img src="./images/review/Vector.png" alt=""></span> BUILDING EXPERTS</span>
+        <span><span><img src="./images/review/Vector.png" alt=""></span> RELIABLE ENGINEERS</span>
+
+        <!-- Duplicate Text for Smooth Overlapping Effect -->
+        <span><span><img src="./images/review/Vector.png" alt=""></span> CONSTRUCTION SERVICE</span>
+        <span><span><img src="./images/review/Vector.png" alt=""></span> UNLEASE THE CONSTRUCTION</span>
+        <span><span><img src="./images/review/Vector.png" alt=""></span> CONSTRUCTION HELPER</span>
+        <span><span><img src="./images/review/Vector.png" alt=""></span> BUILDING EXPERTS</span>
+        <span><span><img src="./images/review/Vector.png" alt=""></span> RELIABLE ENGINEERS</span>
+    </div>
+</div>
+
+   </div>
+     <!-- <div class="service_img">
+      <img src="./images/review/5.png" alt="">
+    </div> -->
     <div class="container">
       <div class="review_content">
       <div class="review_box col-lg-6 col-12">
@@ -1007,6 +1041,18 @@ function typeEffect() {
 
 window.onload = typeEffect;
 
+
+   </script>
+   <script>
+   $(document).ready(function(){
+    $(".marquee-content").on("mouseenter", function(){
+        $(this).css("animation-play-state", "paused");
+    });
+
+    $(".marquee-content").on("mouseleave", function(){
+        $(this).css("animation-play-state", "running");
+    });
+});
 
    </script>
 

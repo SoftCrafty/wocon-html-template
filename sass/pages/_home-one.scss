@@ -1065,8 +1065,83 @@ color: $--white;
     }
 
    
+.text_slider{
+    height: 400px;
+    @include flex(column, center, center);
+    position: relative;
+    &{
+        @include xs{
+            height: 200px !important;
+        }
+    }
+
+    .marquee-container {
+        &{
+            @include xs{
+                &.style_1{
+                    top: 40% !important;
+                    transform: rotate(-10deg) !important;
+                    -webkit-transform: rotate(-10deg) !important;
+                    -moz-transform: rotate(-10deg) !important;
+                    -ms-transform: rotate(-10deg) !important;
+                    -o-transform: rotate(-10deg) !important;
+}
+                padding: 10px 0px !important;
+                .marquee-content{
+                    span{
+                        font-size: 20px !important;
+                        img{
+                            width: 40px;
+                            height: 20px;
+                        }
+                    }
+                }
+
+            }
+        }
+        &.style_1{
+            transform: rotate(-7deg) !important;
+            -webkit-transform: rotate(-7deg) !important;
+            -moz-transform: rotate(-7deg) !important;
+            -ms-transform: rotate(-7deg) !important;
+            -o-transform: rotate(-7deg) !important;
+            position: absolute;
+            top: 30%;
+            @include transformY(-50%);
+            background-color: $--secondary;
+}
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    background-color: $--white;
+    padding: 20px 0;
+    display: flex;
+    white-space: nowrap;
+    .marquee-content {
+    display: flex;
+    white-space: nowrap;
+    color: $--nine;
+    animation: marquee-scroll 10s linear infinite;
+    animation-play-state: running; 
+    &{
+        span{
+            font-family: $--font-family;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 146%;
+            text-align: center;
+            color: $--nine;
+            img{
+                margin: 0px 30px;
+            }
+        }
+    }
+}
+}
+}
 
 
+    
 
 
 

@@ -108,3 +108,13 @@
         transform: translateY(0);
     }
 }
+
+//Text Slide
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}

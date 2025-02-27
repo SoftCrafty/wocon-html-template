@@ -73,6 +73,11 @@
   100% {
     opacity: 1;
     transform: translateY(0); } }
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0); }
+  to {
+    transform: translateX(-50%); } }
 /*=================hero section start=======================*/
 .hero_section {
   margin-top: 79px;
@@ -914,6 +919,69 @@
           animation: pulse 1.5s infinite ease-out; }
         .review .images .img span i {
           position: relative; }
+
+.text_slider {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  @media only screen and (min-width: 0px) and (max-width: 576px) {
+    .text_slider {
+      height: 200px !important; } }
+  .text_slider .marquee-container {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    padding: 20px 0;
+    display: flex;
+    white-space: nowrap; }
+    @media only screen and (min-width: 0px) and (max-width: 576px) {
+      .text_slider .marquee-container {
+        padding: 10px 0px !important; }
+        .text_slider .marquee-container.style_1 {
+          top: 40% !important;
+          transform: rotate(-10deg) !important;
+          -webkit-transform: rotate(-10deg) !important;
+          -moz-transform: rotate(-10deg) !important;
+          -ms-transform: rotate(-10deg) !important;
+          -o-transform: rotate(-10deg) !important; }
+        .text_slider .marquee-container .marquee-content span {
+          font-size: 20px !important; }
+          .text_slider .marquee-container .marquee-content span img {
+            width: 40px;
+            height: 20px; } }
+    .text_slider .marquee-container.style_1 {
+      transform: rotate(-7deg) !important;
+      -webkit-transform: rotate(-7deg) !important;
+      -moz-transform: rotate(-7deg) !important;
+      -ms-transform: rotate(-7deg) !important;
+      -o-transform: rotate(-7deg) !important;
+      position: absolute;
+      top: 30%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      background-color: #ffd026; }
+    .text_slider .marquee-container .marquee-content {
+      display: flex;
+      white-space: nowrap;
+      color: #1a1a1a;
+      animation: marquee-scroll 10s linear infinite;
+      animation-play-state: running; }
+      .text_slider .marquee-container .marquee-content span {
+        font-family: "Kanit", sans-serif;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 146%;
+        text-align: center;
+        color: #1a1a1a; }
+        .text_slider .marquee-container .marquee-content span img {
+          margin: 0px 30px; }
 
 /*=================review end=======================*/
 /*=================blog and news start=======================*/
