@@ -452,6 +452,23 @@
       font-size: 40px;
       line-height: 125%;
       color: #fff; }
+  @media (max-width: 768px) {
+    .gallery .gallery_parent {
+      flex-direction: column;
+      height: auto; }
+    .gallery .tab {
+      flex: none;
+      width: 100%;
+      height: 200px; }
+    .gallery .tab img {
+      height: 100%; }
+    .gallery .tab.active {
+      height: 400px; }
+    .gallery .content {
+      position: relative;
+      width: 90%;
+      bottom: 10px;
+      left: 10px; } }
   .gallery .gallery_parent {
     margin-top: 60px;
     display: flex;
