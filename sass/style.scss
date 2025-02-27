@@ -12,6 +12,7 @@
 @import "./pages/contact";
 @import "./pages/project";
 @import "./partials/popvideo";
+@import "./partials/menu-sidebar";
 
 
 * {
@@ -136,7 +137,10 @@ span i{
 
 /* COMMOON CSS END */
 
+// =======================================
 
+
+// ======================================
 
 .off_overly {
     background-color: $--white;
@@ -152,10 +156,10 @@ span i{
     width: 100%;
     height: 100%;
     position: fixed;
-    transform: translateX(-100%);
+    // transform: translateX(-100%);
     transition: 0.5s;
     top: 0;
-    left: 0;
+    right: 0px;
     z-index: 100;
 
     &.active_offcanvas {

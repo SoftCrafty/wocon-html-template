@@ -7,20 +7,41 @@ $(document).ready(function () {
     });
 
     // Off-Canvas Menu
-    $(".menu_btn").on("click", function () {
-        $(".off_canvas").addClass("active_offcanvas");
+    // $(".menu_btn").on("click", function () {
+    //     $(".menu-sidebar-area").addClass("menu-sidebar-area.active");
+    // });
+
+    // $(".cross_btn").on("click", function () {
+    //     $(".menu-sidebar-area").removeClass("menu-sidebar-area.active");
+    // });
+
+    // $(".mobile-menu-bar").on("click", function () {
+    //     $(".menu-sidebar-area").addClass("menu-sidebar-area.active");
+    // });
+
+    // $(".cross_btn").on("click", function () {
+    //     $(".menu-sidebar-area").removeClass("menu-sidebar-area.active");
+    // });
+   
+
+    /*
+      Jquery Sidebar Toggle
+      ============================*/
+    $(".mobile-menu-toggle-btn").on("click", function () {
+        $(".menu-sidebar-area").addClass("active");
+        $(".body-overlay").addClass("active");
+    });
+    $(".menu-sidebar-close-btn").on("click", function () {
+        $(".menu-sidebar-area").removeClass("active");
+        $(".body-overlay").removeClass("active");
     });
 
-    $(".cross_btn").on("click", function () {
-        $(".off_canvas").removeClass("active_offcanvas");
-    });
-
-    $(".mobile-menu-bar").on("click", function () {
-        $(".off_canvas").addClass("active_offcanvas");
-    });
-
-    $(".cross_btn").on("click", function () {
-        $(".off_canvas").removeClass("active_offcanvas");
+    /*
+       Jquery Body Overlay
+       ============================*/
+    $(".body-overlay").on("click", function () {
+        $(".menu-sidebar-area").removeClass("active");
+        $(".body-overlay").removeClass("active");
     });
 });
 

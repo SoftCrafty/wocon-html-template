@@ -148,7 +148,7 @@
   
     .mobile-menu-bar {
         @include flex(row, flex-end, center);
-        .menu_btn{
+        .mobile-menu-toggle-btn{
             background-color: $--secondary;
             width: 60px;
             height: 60px;
