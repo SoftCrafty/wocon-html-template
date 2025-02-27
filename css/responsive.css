@@ -20,12 +20,12 @@
   #hero .hero_container {
       width: 100% !important;
   }
-    #hero .hero_container .hero_content_warpper .hero_info_card .heading_area{
+    /* #hero .hero_container .hero_content_warpper .hero_info_card .heading_area{
         padding: 20px;
     }
     #hero .hero_container .hero_content_warpper .hero_info_card .heading_area h4 {
       font-size: 40px !important;
-  }
+  } */
   #hero .hero_container .hero_content_warpper .hero_contact_card .email {
    height: 100px;
    left: -185px;
@@ -64,9 +64,9 @@
      #home_about .container .left_side img:nth-child(2) {
         display: none;
      }
-    #hero .hero_container .hero_content_warpper .hero_info_card{
+    /* #hero .hero_container .hero_content_warpper .hero_info_card{
         width: 100% !important;
-    }
+    } */
   
   #nav_bar .main_menu{
     display: none;
@@ -134,7 +134,7 @@
     #footer .container .row ul {
         margin: 20px 0px;
     }
-    #home_slider .slider_parent .slider_child {
+    /* #home_slider .slider_parent .slider_child {
     justify-content: center !important;
 }
 
@@ -144,7 +144,7 @@
 
 #home_slider .slider_parent .slider_child .col-lg-3 {
     float: none;
-}
+} */
   /* #home_blog_news .parent_box .box .left_contains {
     align-items: center;
   }
@@ -235,7 +235,7 @@
 }
 
 
-#home_slider .slider_parent .slider_child .col-lg-3 img:nth-child(1){
+/* #home_slider .slider_parent .slider_child .col-lg-3 img:nth-child(1){
     float: none;
 }
 #home_slider .slider_parent .right-arrow{
@@ -243,7 +243,7 @@
 }
 #home_slider .slider_parent .left-arrow{
     bottom: 10px;
-}
+} */
 #service_details .container .contains{
     text-align: center;
     gap: 30px;
@@ -344,12 +344,12 @@
 #home_services .home_service_box .child_box {
     width: 100%;
 }
-  #home_slider .slider_parent .left-arrow {
+  /* #home_slider .slider_parent .left-arrow {
     display: none;
   }
   #home_slider .slider_parent .right-arrow {
     display: none;
-  }
+  } */
     #service_details .container .contains {
         text-align: center;
         gap: 30px;

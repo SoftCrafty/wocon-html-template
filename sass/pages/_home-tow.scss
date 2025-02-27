@@ -180,6 +180,40 @@
 
 /*=================hero section start=======================*/
 #hero{
+    &{
+        @include sm {
+            
+            margin-top: -200px !important;
+            .heading{
+                width: 100% !important;
+                h1{
+                    width: 100% !important;
+                }
+                
+            }
+             .vector{
+                display: none;
+             }
+             .hero_info_card{
+                padding: 0px !important;
+                width: 100% !important;
+                height: fit-content !important;
+                background-position: left;
+             }
+             .heading_area{
+                background-color: #ffffffaa !important;
+                width: 100%;
+                margin: 0 !important;
+                padding: 10 !important;
+                .desc{
+                    p{
+                        width: 100% !important;
+                    }
+                }
+             }
+        }
+    }
+    overflow: hidden;
     margin-top: 30px !important;
     .hero_container{
         width: 1680px;
@@ -243,8 +277,8 @@
                   padding-left: 20px;
                 margin: 0;
                 padding: 0;
-                height: 100%;
-                width: 90%;
+                height: 100vh;
+                width: 100%;
                 @include flex(row, flex-start, center);
                 background-position: center;
                 background-repeat: no-repeat;
@@ -259,14 +293,14 @@
                     }
                 }
                 .heading_area{
-                    padding: 20px;
+                    padding: 20px 20px 20px 40px;
                     height: 100%;
                     background: linear-gradient(90deg, #fff 10%, rgba(255, 255, 255, 0.858) 90%);
                     width: 100%;
                     background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
-                margin-left: 30px;
+
 
                     @include flex(column, center, flex-start);
                     h1{
@@ -331,21 +365,42 @@
 }
 /*=================hero section end=======================*/
 /*=================About start=======================*/
-#home_about{
-    .container{
-        .row{
-            justify-content: space-between;
-            flex-wrap: wrap;
-            &:hover{
-                img{
-                    &:nth-child(2){
-                    animation: moveText 2s linear infinite;
-                    -webkit-animation: moveText 2s linear infinite;
-}
+
+.home_about_wrapper{
+    &{
+        @include sm {
+            margin-top: -90px;
+        
+        
+        .home_about_img_card{
+            width: 100% !important;
+            height: fit-content !important;
+            img{
+                &:nth-child(1){
+                    
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
                     
                 }
+                &:nth-child(2){
+                    position: absolute;
+                    top: 0px;
+                    right: 40px;
+                    z-index: -10;
+                    display: none;
+                }
+                
             }
         }
+
+        
+    }
+    }
+        .home_about_inner{
+            @include flex(row, space-between, center);
+            flex-wrap: wrap;
+        
         .home_about_img_card{
             @include flex(row, flex-start, flex-end);
             
@@ -372,7 +427,9 @@
             
         }
         .home_about_info_card{
-            @include flex(column, center, flex-start);
+            margin-top: 50px;
+            @include flex(column, center, center);
+            height: 100% !important;
             .sign{
                 width: 100%;
                 margin-top: 20px;
@@ -380,7 +437,7 @@
                @include flex(column, flex-start, flex-start);
             }
         }
-    }
+}
 }
 /*=================About end=======================*/
 /*=================BOX GALLARY LOGO START=======================*/
@@ -392,6 +449,19 @@
 }
 
 #home_gallery{
+    &{
+        @include sm {
+            .left-arrow{
+            display: none;
+            opacity: 0;
+        }
+        .right-arrow{
+            display: none;
+            opacity: 0;
+        }
+        }
+        
+    }
     .container{
         .heading_area{
             h3{
@@ -542,6 +612,11 @@
 /*=================services section end=======================*/
 /*=================Our team start =======================*/
 #our_teams{
+    &{
+        .heading{
+            margin: 10px 0px;
+        }
+    }
     .our_teams_box{
         margin-top: 63px;
         @include flex(row, space-between, center);
@@ -631,8 +706,20 @@
 
 
 /*=================Slider end =======================*/
-#home_slider{
-
+.albert_slider_wrapper{
+&{
+        @include sm {
+            .left-arrow{
+            display: none;
+            opacity: 0;
+        }
+        .right-arrow{
+            display: none;
+            opacity: 0;
+        }
+        }
+        
+    }
     .service_img{
         width: 100%;
         height: auto;
@@ -758,6 +845,14 @@
 
 /*=================blog and news start =======================*/
 #home_blog_news{
+    &{
+        .desc{
+            margin-top: 20px;
+        }
+        .btn_warpper{
+            margin-top: -1px;
+        }
+    }
     .box_card_wrapper{
         margin-top: 20px !important;
         
