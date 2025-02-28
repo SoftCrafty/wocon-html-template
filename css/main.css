@@ -285,6 +285,8 @@
 /*=================company logo start=======================*/
 .company_logo {
   margin-top: 100px; }
+  .company_logo.style_1 {
+    margin-top: 350px; }
   .company_logo .logo-carousel {
     display: flex;
     flex-direction: row;
