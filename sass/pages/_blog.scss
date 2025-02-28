@@ -13,6 +13,7 @@
             }
         }
         .meta-info {
+            
             @include flex(row, space-between, center);
             gap: 10px;
             padding-left: 10px;
@@ -24,13 +25,18 @@
 
             
              span {
-                     font-family: $--second-family;
+                    a{
+                         font-family: $--second-family;
                     font-weight: 400;
                     font-size: 14px;
                     line-height: 186%;
                     color: $--eight;
+                    @include xs{
+                     font-size: 10px;
+            }
                     i{
                         color: $--primary !important;
+                    }
                     }
             } 
             .date{
@@ -46,6 +52,11 @@
                     padding: 0px 5px;
                     line-height: 40px;
                     width: 100%;
+                    @include xs{
+                        p{
+                            font-size: 12px;
+                        }
+            }
 }
             }
 

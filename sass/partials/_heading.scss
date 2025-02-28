@@ -5,6 +5,9 @@
         padding-left: 180px;
         @include flex(column, flex-end, flex-end);
         height: 100%;
+        @include sm {
+            padding-left: 0px;
+        }
     }
     &{
         @include sm{

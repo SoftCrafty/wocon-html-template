@@ -101,7 +101,8 @@
         border-top: 1px solid #dfe2e9;
         width: 100%;
         padding-top: 20px;
-
+        @include flex(row, flex-start, center);
+        gap: 10px;
         a {
           color: #26262c;
           font-size: 22px;
@@ -138,6 +139,10 @@
 }
 
 .mean-nav{
+  display: none;
+  @include sm {
+    display: block;
+  }
   ul{
     padding: 0px;
     li{
@@ -189,4 +194,7 @@
       }
     }
   }
+}
+.mobile-menu-toggle-btn{
+  cursor: pointer;
 }

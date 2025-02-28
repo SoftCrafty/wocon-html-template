@@ -48,7 +48,7 @@
     @include flex(row, space-between, center);
     height: 92px;
     width: 1680px;
-    padding: 0pc 20px;
+    padding: 0px 20px;
     background-color: $--primary;
     .logo{
         width: fit-content;
@@ -176,6 +176,13 @@
     
     
 }
+// @media (max-width: 768px) {
+//     .hero_info_card {
+//         padding-left: 10px;
+//         background-size: cover;
+//     }
+// }
+
 /*=================Nav bar end=======================*/
 
 /*=================hero section start=======================*/
@@ -211,6 +218,16 @@
                     }
                 }
              }
+        }
+        @include nesthub{
+            .vector{
+                height: 200px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
         }
     }
     overflow: hidden;
@@ -396,6 +413,25 @@
 
         
     }
+      @include nesthub {
+        .home_about_img_card{
+            width: 430px !important;
+            height: fit-content !important;
+            img{
+                &:nth-child(1){
+                    
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    
+                }
+                &:nth-child(2){
+                    display: none;
+                }
+                
+            }
+        }
+      }
     }
         .home_about_inner{
             @include flex(row, space-between, center);
@@ -542,18 +578,32 @@
 
 
 /*=================services section start=======================*/
-#home_services{
+.home_services_card{
 
-    .home_service_box{
+    .home_service_card_wrapper{
+        &{
+            @include sm {
+            justify-content: center !important;
+            gap: 30px;
+        }
+        @include md {
+            justify-content: center;
+            gap: 30px;
+
+        }
+        @include nesthub {
+            
+        }
+        }
         @include flex(row, space-between, center);
         flex-wrap: wrap;
-        gap: 30px;
         margin-top : 70px ;
-        .child_box{
-            width: calc(33.33% - 30px);
+        gap: 30px;
+        .home_services_card_info{
             padding: 40px;
+            width: calc(100% - 30px);
+            max-width: 410px;
             box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.05);
-            background: $--white;
             @include flex(column, center, flex-start);
             gap: 30px;
             &:hover{
@@ -562,7 +612,6 @@
             }
             .heading{
             @include flex(row, space-between, center);
-            // background: red;
             width: 100%;
             img{
                 padding: 20px;
@@ -611,10 +660,17 @@
 }
 /*=================services section end=======================*/
 /*=================Our team start =======================*/
-#our_teams{
+.our_team_expert_member{
     &{
-        .heading{
+        @include sm{
+            .heading{
             margin: 10px 0px;
+        }
+        }
+        @include md{
+            .heading{
+            margin: 10px 0px;
+        }
         }
     }
     .our_teams_box{
@@ -622,13 +678,22 @@
         @include flex(row, space-between, center);
         flex-wrap: wrap;
         gap: 30px;
-        .child_box{
+        @include sm{
+            padding:0px 20px;
+        }
+        .our_expert_team_info{
             height: 479px;
             @include flex(column, center, center);
             width: calc(33.33% - 30px);
             box-shadow: 0 5px 60px 0 rgba(0, 0, 0, 0.05);
             background: $--white;
             overflow: hidden;
+            @include sm{
+                width: 100%;
+            }
+            @include md{
+                width: calc(50% - 30px);
+            }
 
             :hover{
                 img{
@@ -731,7 +796,7 @@
             object-fit: cover;
         }
     }
-    .slider_parent{
+    .albert_slider_contains{
         margin-top: 80px;
         @include flex(row, center, center);
         position: relative;
@@ -774,14 +839,14 @@
                 }
                 
             }
-        .slider_child{
+        .albert_info{
             @include flex(row, center, flex-start);
             flex-direction: row !important;
             flex-wrap: wrap;
             padding: 58px 50px;
             border: 1px solid $--tow;
 
-            .col-lg-8{
+            .albert_contains{
                 float: left;
                 p{
                 font-family: $--font-family;
@@ -807,7 +872,7 @@
                 opacity: 0.7;
             }
             }
-            .col-lg-3{
+            .albert_img{
                 // background: green;
                 float: right;
                 span{
@@ -844,20 +909,75 @@
 /*=================Slider start =======================*/
 
 /*=================blog and news start =======================*/
-#home_blog_news{
+.home_blog_news{
     &{
-        .desc{
+        @include sm {
+            
+            .desc{
             margin-top: 20px;
         }
         .btn_warpper{
             margin-top: -1px;
+        
+        }
+        .home_blog_card{
+            gap: 20px;
+            h3{
+                a{
+                    font-size: 20px !important;
+                }
+            }
+            .home_blog_img_card{
+                justify-content: flex-start !important;
+                img{
+                    margin-left: -10px;
+                }
+            }
         }
     }
-    .box_card_wrapper{
+        @include md {
+            
+            .desc{
+            margin-top: 20px;
+        }
+        .btn_warpper{
+            margin-top: -1px;
+        
+        }
+        .home_blog_img_card{
+            @include flex(column, center, center);
+                span{
+                    width: 250px;
+                    height: 250px;
+                    display: block;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+        }
+        .home_blog_card{
+            gap: 20px;
+            h3{
+                a{
+                    font-size: 30px !important;
+                }
+            }
+            .home_blog_img_card{
+                justify-content: flex-start !important;
+                img{
+                    margin-left: -10px;
+                }
+            }
+        }
+    }
+}
+    .home_blog_card_wrapper{
         margin-top: 20px !important;
         
         
-        .box{
+        .home_blog_card{
             margin:  60px 0px;
             @include flex(row, center, center);
             flex-wrap: wrap;
@@ -875,7 +995,7 @@
             }
             
 
-            .left_contains{
+            .home_blog_subtitel{
                 @include flex(column, center, flex-start);
                 b{
                     font-family: $--font-family;
@@ -889,7 +1009,7 @@
                     background-color: $--primary;
                 }
             }
-            .center_contains{
+            .home_blog_title{
                 @include flex(column, center, flex-start);
                 gap: 30px;
 
@@ -910,6 +1030,9 @@
                             color: $--primary;
                             margin-right: 5px;
                         }
+                        &:hover{
+                            color: $--primary;
+                        }
                     }
                 }
                 h3{
@@ -918,6 +1041,9 @@
                     font-size: 30px;
                     line-height: 133%;
                     color: $--nine;
+                    a{
+                        font-size: 30px;
+                    }
                 }
                 a{
                     font-family: $--font-family;
@@ -930,17 +1056,16 @@
                         margin-left: 5px;
                         color: $--nine;
                     }
-                }
-                &:hover{
-                    a{
+                    &:hover{
+                        color: $--primary;
+                        span{
                             color: $--primary;
-                            span{
-                                color: $--primary;
-                            }
+                        }
                     }
                 }
+                
             }
-            .right_contains{
+            .home_blog_img_card{
                 @include flex(column, center, flex-end);
                 span{
                     width: 250px;
@@ -960,10 +1085,53 @@
 
 /*=================subscribe start =======================*/
 #home_subscribe{
+    &{
+        @include sm {
+            .home_subscribe_area{
+                justify-content: center !important;
+                .vector{
+                    width: 100% !important;
+                    @include flex(row, center, center);
+                    img{
+                        object-fit: contain;
+                    }
+                }
+                h4{
+                    font-size: 30px !important;
+                }
+            }
+        }
+        @include md {
+            .home_subscribe_area{
+                gap: 40px !important;
+                justify-content: center !important;
+                .home_subscribe_title{
+                    text-align: center;
+                }
+                .vector{
+                    width: 100% !important;
+                    @include flex(row, center, center);
+                    img{
+                        object-fit: contain;
+                    }
+                }
+                h4{
+                    font-size: 40px !important;
+                }
+            }
+            .home_subscribe_submit_form{
+                button{
+                    right: 30px !important;
+                }
+                input{
+                    margin-left: 30px;
+                }
+            }
+        }
+    }
     padding: 30px 0px;
     background-color: $--one;
-    .container{
-        .row{
+        .home_subscribe_area{
             @include flex(row, space-between, center);
             flex-wrap: wrap;
             gap: 20px;
@@ -985,7 +1153,7 @@
                 line-height: 125%;
                 color: $--nine;
             }
-            .right_contains{
+            .home_subscribe_submit_form{
                 @include flex(row, flex-start, center);
                 padding: 0px;
                 form{
@@ -1014,19 +1182,14 @@
                     text-transform: uppercase;
                     color: $--nine;
                     background-color: $--secondary;
-                    // position: absolute;
                     top: 50%;
                     @include transformY(-50%);
-                    // right: 0px;
-                    // display: block;
                     text-align: center;
                     line-height: 49px;
-                }
-                a{
-                    
                 }
             }
         }
     }
-}
+    
+
 /*=================subscribe end =======================*/

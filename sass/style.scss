@@ -13,6 +13,7 @@
 @import "./pages/project";
 @import "./partials/popvideo";
 @import "./partials/menu-sidebar";
+@import "./partials/footer";
 
 
 * {
@@ -142,94 +143,6 @@ span i{
 
 // ======================================
 
-.off_overly {
-    background-color: $--white;
-    width: 80%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.off_canvas {
-    background-color: #00000072;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    // transform: translateX(-100%);
-    transition: 0.5s;
-    top: 0;
-    right: 0px;
-    z-index: 100;
-
-    &.active_offcanvas {
-        transform: translateX(0);
-    }
-
-    .cross_btn {
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        border: 2px solid #202020;
-        text-align: center;
-        line-height: 30px;
-        border-radius: 50%;
-        cursor: pointer;
-        
-        &:hover {
-            transform: rotate(360deg);
-            transition: 0.5s;
-            color: $--white;
-            border: 2px solid #000;
-        }
-    }
-
-    .nav_iteam {
-        @include flex(column, flex-start, flex-start);
-        height: 90%;
-        padding: 50px 0 0 50px;
-        overflow-y: scroll;
-        gap: 10px;
-
-        li:hover .list_text {
-            color: $--white !important;
-        }
-    }
-
-    ul {
-        li {
-            a {
-                font-family: $--font-family;
-                        font-weight: 400;
-                        font-size: 15px;
-                        line-height: 147%;
-                        text-transform: uppercase;
-                        color: $--nine;
-                        &:hover{
-                            color: $--primary;
-                        }
-            }
-            
-            ul {
-                display: none;
-                
-                li:hover a {
-                    color: $--white !important;
-                }
-            }
-            
-            &:hover ul {
-                @include flex(column, flex-start, flex-start);
-            }
-        }
-    }
-
-    
-}
-
-// ---------
 
 
 
@@ -504,112 +417,123 @@ span i{
     }
 }
 
-#nav_bar{
-    position: sticky;
-    top: 0px;
-    height: 92px; 
-    @include flex(0, center, center);
-    .container{ 
-        background-color: $--white;
-        padding: 0 30px;
-        height: 92px;
-         .logo{
-        width: fit-content;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
+// #nav_bar{
+//     position: sticky;
+//     top: 0px;
+//     height: 92px; 
+//     @include flex(0, center, center);
+//     .container{ 
+//         background-color: $--white;
+//         padding: 0 30px;
+//         height: 92px;
+//          .logo{
+//         width: fit-content;
+//         img{
+//             width: 100%;
+//             height: 100%;
+//             object-fit: contain;
 
-        }
-    }
-        @include flex(row, space-between, center);
-        .main_menu{
-        ul{
-            @include flex(row, flex-end, center);
-            gap: 24px;
-            margin: 0;
+//         }
+//     }
+//         @include flex(row, space-between, center);
+//         .main_menu{
+//         ul{
+//             @include flex(row, flex-end, center);
+//             gap: 24px;
+//             margin: 0;
 
-            li {
-    position: relative;
+//             li {
+//     position: relative;
 
-    &:hover > a {
-        color: $--secondary;
-    }
+//     &:hover > a {
+//         color: $--secondary;
+//     }
 
-    &:hover {
-        ul {
-            visibility: visible;
-            opacity: 1;
-            transform: scaleY(1);
-            transition-delay: 0.2s; // Show er age ekto delay
-        }
-    }
+//     &:hover {
+//         ul {
+//             visibility: visible;
+//             opacity: 1;
+//             transform: scaleY(1);
+//             transition-delay: 0.2s; // Show er age ekto delay
+//         }
+//     }
 
-    a {
-        font-family: $--font-family;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 147%;
-        text-transform: uppercase;
-        color: $--nine;
-    }
+//     a {
+//         font-family: $--font-family;
+//         font-weight: 400;
+//         font-size: 15px;
+//         line-height: 147%;
+//         text-transform: uppercase;
+//         color: $--nine;
+//     }
 
-    ul {
-        @include flex(column, center, center);
-        position: absolute;
-        background: $--white;
-        top: 55px;
-        left: -20px;
-        padding: 5px 10px;
-        width: 150px;
-        gap: 5px;
-        visibility: hidden;
-        opacity: 0;
-        transform: scaleY(0);
-        transform-origin: top;
-        @include border-radius(5px);
-        transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
+//     ul {
+//         @include flex(column, center, center);
+//         position: absolute;
+//         background: $--white;
+//         top: 55px;
+//         left: -20px;
+//         padding: 5px 10px;
+//         width: 150px;
+//         gap: 5px;
+//         visibility: hidden;
+//         opacity: 0;
+//         transform: scaleY(0);
+//         transform-origin: top;
+//         @include border-radius(5px);
+//         transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
 
-        li {
-            width: 100%;
+//         li {
+//             width: 100%;
 
-            &:hover a {
-                color: $--secondary;
-            }
-        }
-    }
+//             &:hover a {
+//                 color: $--secondary;
+//             }
+//         }
+//     }
 
-    &:not(:hover) ul {
-        transition-delay: 0.2s; 
-    }
-}
+//     &:not(:hover) ul {
+//         transition-delay: 0.2s; 
+//     }
+// }
 
-        }
-    }
-    .btn_wrapper{
-        @include flex(row, flex-end, center);
-        span{
-            width: 52px ;
-            height: 52px;
-            background-color: $--primary;
-            display: block;
-            text-align: center;
-            line-height: 52px;
-            color:$--white ;
-            cursor: pointer;
-        }
-    }
-    }
-}
+//         }
+//     }
+//     .btn_wrapper{
+//         @include flex(row, flex-end, center);
+//         span{
+//             width: 52px ;
+//             height: 52px;
+//             background-color: $--primary;
+//             display: block;
+//             text-align: center;
+//             line-height: 52px;
+//             color:$--white ;
+//             cursor: pointer;
+//         }
+//     }
+//     }
+// }
 /*=================NAV AND BANNER END =======================*/
 
 /*=================GENERAL SERVICE START =======================*/
 #general_service{
     margin-top: 150px;
-    .row{
-        justify-content: space-between;
+    .general_service_wrapper{
+         @include md{
+                justify-content: flex-start;
+                gap: 50px;
+            }
+            @include sm {
+                gap: 50px;
+            }
+        @include flex(row, center, flex-start);
+        flex-wrap: wrap;
 
-        .left_side{
+        .meain_contains{
+            @include nesthub{
+                padding-right: 20px;
+            }
             &:nth-child(2){
                 margin-top: 80px;
             }
@@ -619,6 +543,12 @@ span i{
             @include flex(column, center, flex-start);
             gap: 40px;
               h4{
+                @include sm{
+                    font-size: 30px;
+                }
+                  @include nesthub{
+                font-size: 48px;
+            }
                 font-family: $--font-family;
                 font-weight: 400;
                 font-size: 55px;
@@ -626,6 +556,7 @@ span i{
                 color: $--nine;
                 span{
                     font-weight: 300;
+                    
                 }
             }
             p{
@@ -634,6 +565,9 @@ span i{
                 font-size: 16px;
                 line-height: 150%;
                 color: $--eight;
+                  @include nesthub{
+                padding-right:55px;
+            }
             }
             b{
                 font-family: $--font-family;
@@ -641,11 +575,20 @@ span i{
                 font-size: 20px;
                 line-height: 150%;
                 color: $--nine;
+                @include xs{
+                    font-size: 16px;
+                }
             }
             ul{
                 padding: 0;
                 @include flex(column, center, flex-start);
                 li a{
+                    @include sm{
+                        font-size: 18px;
+                    }
+                    @include xs{
+                        font-size: 16px;
+                    }
                     font-family: $--font-family;
                     font-weight: 400;
                     font-size: 20px;
@@ -662,6 +605,11 @@ span i{
                     }
                     &:hover{
                         margin-left: 8px;
+                    }
+                }
+                li{
+                    span{
+                        margin-right: 5px;
                     }
                 }
             }
@@ -718,13 +666,26 @@ span i{
             }
           }
         }
-        .right_side{
+        .sidebar_contains{
+             
             padding: 0px;
             padding-left: 30px;
+            @include sm{
+                padding: 0px;
+            }
+            @include nesthub{
+                padding: 0px;
+                width: 100%;
+            }
             @include flex(column, flex-start, flex-end);
             .phn{
                 background-color: $--primary;
-                padding: 85px 100px;
+                padding: 85px;
+                @include sm{
+                    width: 100%;
+                    height: 300px;
+                    padding: 0px;
+                }
                 @include flex(column, center, center);
                 width: 100%;
                 gap: 20px;
@@ -746,7 +707,7 @@ span i{
                     font-size: 30px;
 
                 }
-                b{
+                a{
                     font-family: $--font-family;
                     font-weight: 500;
                     font-size: 30px;

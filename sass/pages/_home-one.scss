@@ -269,7 +269,7 @@
 /*=================company logo start=======================*/
 .company_logo{
     margin-top: 100px;
-    .container{
+    .logo-carousel{
     @include flex(row, center, center);
     gap: 10px;
     overflow: hidden;
@@ -377,6 +377,7 @@
          /*---------Responsive  Start---------*/
         &{
             @include sm{
+                padding-left: 0px;
                 margin-top: 50px;
                 .progress_bar{
                     span{
@@ -453,16 +454,18 @@
 
 
     }
+
+    
 }
 /*=================about us end=======================*/
 
 
 /*=================box start=======================*/
-.box{
+.our_achievement_card{
 
     &.style_1{
-            .box_card_wrapper{
-            .box_card{
+            .achievement_card_wrapper{
+            .achievement_contains{
                 background-color: $--seven !important;
                 span{
                     color: $--white;
@@ -476,7 +479,7 @@
         &{
             @include sm{
                 margin-top: 75px;
-                .box_card_wrapper{
+                .achievement_card_wrapper{
                     margin-top: 30px !important;
                     justify-content: center !important;
                 }
@@ -486,7 +489,7 @@
             }
             @include md{
                 margin-top: 75px;
-                .box_card_wrapper{
+                .achievement_card_wrapper{
                     margin-top: 30px !important;
                     justify-content: flex-start !important;
                 }
@@ -495,15 +498,20 @@
                     font-size: 38px !important;
                 }
             }
+            @include nesthub {
+                .achievement_card_wrapper{
+                    justify-content: center !important;
+                }
+            }
         }
 
-    .box_card_wrapper{
+    .achievement_card_wrapper{
         @include flex(row, flex-end, center);
         flex-wrap: wrap;
         gap: 30px;
         margin-top: 18px;
 
-         .box_card{
+         .achievement_contains{
             width: 299px;
             height: 246px;
             background-color: $--one;
@@ -553,7 +561,7 @@
 /*====================Latest Gallery start=======================*/
 
 
-.gallery{
+.our_service_gallery{
     &{
         @include sm{
             margin-top: 75px;
@@ -783,17 +791,17 @@ color: $--white;
 
 
 /*=================service start=======================*/
-.service{
+.service_card_wrapper{
     &{
         @include sm{
             margin-top: 75px;
-            .service_box{
+            .service_card{
                 border: none !important; 
                 gap: 20px;
                 margin-left:14px;
 
             }
-            .service_box_child{
+            .service_card_info{
                 border: 1px solid $--tow;
                 &:hover{
                    margin-top: 10px;
@@ -803,14 +811,14 @@ color: $--white;
         }
         @include md{
             margin-top: 75px;
-            .service_box{
+            .service_card{
                 border: none !important; 
                 gap: 20px;
                 margin-left:14px;
                 justify-content: center !important;
 
             }
-            .service_box_child{
+            .service_card_info{
                 border: 1px solid $--tow;
                 &:hover{
                    margin-top: 10px;
@@ -819,12 +827,12 @@ color: $--white;
             }
         }
     }
-    .service_box{
+    .service_card{
         margin-top: 80px;
         @include flex(row, space-between, center);
         flex-wrap: wrap;
         border: 1px solid $--tow;
-        .service_box_child{
+        .service_card_info{
             padding: 20px 50px;
             @include transition(0.3s);
             max-width: 400px;
@@ -932,6 +940,7 @@ color: $--white;
             .experts_person{
                 margin-left: 10px;
                 padding: 0px 10px;
+
             }
             .experts_person_child{
              width: 50% !important;
@@ -957,8 +966,8 @@ color: $--white;
     .experts_person{
         margin-top: 60px;
         @include flex(row, center, center);
-        gap: 30px;
         flex-wrap: wrap;
+
         .experts_person_child{
             overflow: hidden;
             &:hover{
@@ -1035,12 +1044,15 @@ color: $--eight;
         padding: 0;
         opacity: 0;
         visibility: hidden;
+        @include flex(column, center, center);
+        gap :10px;
+
         li
 {
             width: 40px;
             height: 40px;
             background-color:$--secondary;
-            border: 2px solid $--tow;
+            border: 1px solid $--tow;
             text-align: center;
             line-height: 40px;
             &:hover a{
@@ -1064,21 +1076,28 @@ color: $--eight;
 /*=================review start=======================*/
 .review{
     &{
+        
         @include sm{
+            .review_card_wapper {
+        width: 100% !important;
+        margin-bottom: 100px;
+    }
             padding: 0px !important;
             .review_content{
                 padding: 0px 20px;
 
 
             }
-            .review_box{
+            .review_card_wapper{
                 margin-top: 50px;
             }
             .profile{
                 width: 100% !important;
                 .name{
                     h5{
-                        font-size: 16px !important;
+                        a{
+                            font-size: 16px !important;
+                        }
                     }
                 }
             }
@@ -1176,7 +1195,7 @@ color: $--eight;
                 }
                 
             }
-        .review_box{
+        .review_card_wapper{
             padding: 50px;
             @include flex(column, center, flex-start);
             border: 1px solid $--tow;
@@ -1216,11 +1235,13 @@ color: $--eight;
                 .name{
                     padding-left: 20px;
                     h5{
-                        font-family: $--font-family;
-font-weight: 400;
-font-size: 20px;
-line-height: 150%;
-color: $--white;
+                       a{
+                         font-family: $--font-family;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 150%;
+                        color: $--white;
+                       }
                     }
                 }
 
@@ -1294,7 +1315,7 @@ color: $--white;
     position: relative;
     &{
         @include sm{
-            height: 200px !important;
+            display: none;
         }
     }
 
@@ -1366,13 +1387,6 @@ color: $--white;
 
     
 
-
-
-
-
-
-
-
 /*=================review end=======================*/
 
 
@@ -1384,19 +1398,25 @@ color: $--white;
             margin-top: 75px;
             .desc{
                 margin: -25px 0px !important;
+                width: 100%;
+                padding: 0;
             }
             .blog_box{
                 width: 100% !important;
-                // padding: 0px 30px;
+                height: fit-content;
                 
             }
             .blog_box_parent{
                 width: 100% !important;
                 padding: 0px 20px;
             }
+            .blog_box{
+                height: fit-content !important;
+            }
             .img_part{
                 width: 100% !important;
                 height: fit-content !important;
+               
             }
             .title{
                 width: 100% !important;
@@ -1546,7 +1566,7 @@ color: $--white;
 
 /*=================subscribe start=======================*/
 
-#subscribe {
+.subscribe_form_wrapper {
     &{
         @include sm{
             padding: 0px !important;
@@ -1590,7 +1610,7 @@ color: $--white;
             }
         }
 
-        .title {
+        .subscribe_title {
             h4 {
                 font-family: $--font-family;
                 font-weight: 400;
@@ -1665,310 +1685,5 @@ color: $--white;
 
 
 /*=================footer start=======================*/
-.footer{
-    &{
-        @include sm{
-            width: 100% !important;
-            .footer_area_contact{
-                padding: 30px !important;
-                gap: 30px !important;
-                justify-content: center !important;
-                
-            }
-            .footer_area_quick_menu{
-                width: 100% !important;
-                // background-color: red;
-                padding: 0px 20px !important;
-                gap: 50px !important;
-            }
-            .footer_last{
-            
-                margin-top: 20px;
-                ul{
-                    justify-content: flex-start !important;
-                    padding: 0px !important;
-                    li{
-                        &:last-child{
-                            display: none;
-                        }
-                        a{
-                            font-size: 14px !important;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    margin-top: 247px;
-    min-height: 537px;
-    max-height: auto;
-    background-color: $--nine;
-    .container{
-        position: relative;
-        .footer_area_contact{
-            padding:60px;
-            width: 100%;
-            position:absolute;
-            top: -90px;
-            left: 0px;
-            @include flex(row, space-between, center);
-            flex-wrap: wrap;
-            background-color: $--seven;
-            .footer_contact_widget{
-                &:hover {
-                    span{
-                           animation: tada 1s linear infinite;
-                           -webkit-animation: tada 1s linear infinite;
-}
-                }
-                @include flex(row, flex-start, center);
-                gap: 20px;
-                .icon{
-                    span{
-                            width: 65px ;
-                            height: 65px;
-                            background-color: $--primary;
-                            color: $--white;
-                            text-align: center;
-                            line-height: 65px;
-                            display: block;
-                            font-size: 30px;
-}
-                }
-                .text{
-                    h5{
-                        font-family: $--font-family;
-                        font-weight: 400;
-                        font-size: 20px;
-                        line-height: 150%;
-                        color: $--white;
-                    }
-                    a{
-                        font-family: $--font-family;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 162%;
-                        color: $--white;
-                    }
-                }
-            }
-        }
-       min-height: 537px;
-       max-height: auto;
-        @include flex(column, flex-start, center);
-        gap:50px;
-        padding-bottom: 30px;
 
-        .bg_img{
-            position: absolute;
-            bottom: 0;
-            left: -24%;
-            img{
-                width: 100%;
-                object-fit: contain;
-                overflow: hidden;
-            }
-        }
-
-        .footer_area_quick_menu{
-            @include flex(row, space-between, center);
-            flex-wrap: wrap;
-            padding:30px 0px;
-            margin-top: 300px;
-             .footer_logo{
-                z-index: 20;
-                            a{
-                                width: fit-content;
-                                height: fit-content;
-                                display: block;
-                                cursor: pointer !important;
-                                img{
-                            width: fit-content;
-                            height: 100%;
-                            object-fit: contain;
-                            z-index: 100;
-                            cursor: pointer;
-                        }
-                            }
-                        }
-            .iteam_content{
-                p{
-                    color: $--white;
-                    margin: 20px 0px;
-                    margin-bottom: 20px;
-                }
-            }
-            .iteam_info ul{
-               margin: 0px;
-               padding: 0px;
-               @include flex(row, flex-start, center);
-               gap: 10px;
-               li{
-                   width: fit-content;
-                   a{
-                    
-                       width:40px;
-                       height: 40px;
-                       border: 1px solid $--tow;
-                       color: $--tow;
-                       display: block;
-                       text-align: center;
-                       line-height: 40px;
-                       @include transition(0.4s);
-                       &:hover{
-                           background-color: $--primary;
-                           border: none;
-                           color: $--white;
-                       }
-                   }
-                        }
-
-                       
-            }
-            ul{
-                margin: 0px;
-                padding: 0px;
-                @include flex(column, center, flex-start);
-                gap: 30px;
-                li{
-                    width: 100%;
-
-                    img{
-                        width: fit-content;
-                        height: 100%;
-                        object-fit: contain;
-                    }
-                    p{
-                        font-family: $--font-family;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 162%;
-                        color: $--white;
-                        opacity: 0.9;
-                    }
-                    a{
-                        font-family: $--font-family;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 162%;
-                        color: $--white;
-                        opacity: 0.9;
-                    }
-                    &:hover a{
-                        margin-left: 5px;
-                        @include transition(.3s);
-                        color: $--primary;
-                    }
-                    
-                    input{
-                        border: none;
-                        outline: none;
-                        width: 80%;
-                        padding: 10px;
-                        background-color: transparent;
-                        
-                    }
-                }
-                li.email_sent{
-                    width: 312px;
-                    height: 66px;
-                    border: 1px solid $--eight;
-                    @include flex(row, space-between, center);
-                    span{
-                        width: 20%;
-                        a{
-
-                            width: 45px;
-                            height: 45px;
-                            color: $--white;
-                            text-align: center !important;
-                            display: block;
-                            line-height: 45px;
-                            background-color: $--primary;
-
-                        }
-                    }
-
-
-                }
-            }
-            .quicklink{
-                h3{
-                    font-family: $--font-family;
-                        font-weight: 400;
-                        font-size: 20px;
-                        line-height: 150%;
-                        color: $--white;
-                        margin-bottom: 30px
-                }
-                p{
-                    font-family: $--font-family;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 150%;
-                        color: $--white;
-                        margin-top: 30px;
-                        margin-bottom: 20px;
-                }
-                form{
-                   border: 1px solid $--tow;
-                    @include flex(row, space-between, center);
-                    input{
-                        width: 85%;
-                        padding: 20px;
-                     border: none;
-                     outline: none;
-                     background-color: transparent;
-                     &::placeholder{
-                        color: $--white;
-                     }
-                     
-                }
-                button{
-                    width: 15%;
-                    height: 100%;
-                    padding: 10px;
-                    margin: 0px 5px;
-                    border: none;
-                    background-color: $--primary;
-                    color: $--white;
-                }
-                }
-            }
-        }
-
-        .footer_last{
-            min-height: 44px;
-            @include flex(row, space-between, flex-end);
-            flex-wrap: wrap;
-            border-top: 2px solid $--seven;
-            width: 100%;
-            a{
-                font-family: $--font-family;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 150%;
-                color: $--white;
-                opacity: 0.8;
-                @include transition(0.4s);
-                &:hover{
-                    color: $--primary;
-                    margin-bottom: 5px;
-                }
-            }
-            .footer_last_menu{
-                ul{
-                    @include flex(row, flex-end, flex-end);
-                    margin: 0px;
-                    flex-wrap: wrap;
-
-                    gap: 40px;
-                    li{
-                        width: fit-content !important;
-                    }
-                }
-            }
-        }
-    }
-}
 /*=================footer end=======================*/
