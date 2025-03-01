@@ -1384,6 +1384,18 @@ color: $--eight;
 
    
 .text_slider{
+    &.style_1{
+        margin-top: 150px;
+        .style_2{
+            background-color: $--primary !important;
+            .marquee-content{
+                span{
+                    color: $--white !important;
+                }
+            }
+        }
+    }
+
     height: 400px;
     @include flex(column, center, center);
     position: relative;

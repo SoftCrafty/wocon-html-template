@@ -1162,6 +1162,12 @@
   justify-content: center;
   align-items: center;
   position: relative; }
+  .text_slider.style_1 {
+    margin-top: 150px; }
+    .text_slider.style_1 .style_2 {
+      background-color: #fe4a22 !important; }
+      .text_slider.style_1 .style_2 .marquee-content span {
+        color: #fff !important; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .text_slider {
       display: none; } }
