@@ -7,25 +7,18 @@
     <!-- SLICK SLIDER -->
     <link rel="stylesheet" href="./css/slick.min.css" />
     <!-- FONTAWESOME -->
-    <link rel="stylesheet" href="./css/font-awesome-all.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+     <link rel="stylesheet" href="./css/fontawesome.min.css">
     <!-- BOOTSTRAP 5.3 -->
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <!-- CUSTOM STYLE -->
-    <link rel="stylesheet" href="./css/main.css" />
+    
     <!-- RESPONSIVE CSS -->
     <link rel="stylesheet" href="./css/responsive.css" />
     <!-- FONTS STYLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <!-- CUSTOM STYLE -->
+    <link rel="stylesheet" href="./css/main.css" />
 </head>
   <body>
         <!-- ==================================<<<<<<<<<<NAVIGATION BAR START>>>>>>>>>>================================= -->
@@ -210,11 +203,12 @@
 </section>
 
 <!-- ===================================<<<<<<<<<<NAVIGATION BAR END>>>>>>>>>>================================== -->
-   <section id="blog_page">
+   <section class="blog_page_area">
     <div class="container">
         <div class="row">
-            <div class="left_part col-lg-8">
-               <div class="blog_page_main_content">
+          <div class="col-lg-8 col-12">
+                <div class="blog_main_content_wrapper">
+            <div class="blog_page_main_content">
                  <div class="contains">
                     <div class="img_part">
                     <img src="./images/Blog_details_page/1.png" alt="">
@@ -288,16 +282,24 @@
            </div>
                </div>
 
+          </div>
+            
             </div>
-            <div class="right_part col-lg-4 col-12">
-                <div class="search">
+         
+
+            <div class="col-lg-4 col-12">
+              <div class="blog_sidebar_content_wrapper">
+                <!-- Search bar start -->
+                <div class="blog_page_search">
                     <h5>Search</h5>
-                    <div class="search_box">
+                    <div class="blog_page_search_box">
                         <input type="search" placeholder="Search">
                     <span><i class="fas fa-search"></i></span>
                     </div>
                 </div>
-                <div class="category">
+                <!-- Search bar end -->
+                 <!-- Category satart -->
+                <div class="blog_page_category">
                     <h5>Categroy</h5>
                     <ul>
                         <li><a href="#">General Contracting<span><i class="fa-solid fa-arrow-right"></i></span></a></li>
@@ -306,39 +308,45 @@
                         <li><a href="#">Commercial Construction <span><i class="fa-solid fa-arrow-right"></i></span></a></li>
                     </ul>
                 </div>
+                <!-- Category End -->
+
+                 
+                <!-- latest blog start -->
                 <div class="latest_blog">
                     <h5>Latest Blog</h5>
-                    <div class="box">
-                        <div class="img_part">
+                    <div class="latest_blog_bar">
+                        <div class="latest_blog_img">
                             <img src="./images/Blog_page/latest_blog/1.png" alt="">
                         </div>
-                        <div class="text_part">
+                        <div class="latest_blog_title">
                             <p><span><i class="fa-solid fa-calendar"></i></span>MAY 10,2025</p>
                             
                             <a href="blog_details.html">Building the Future Restoring the Past</a>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="img_part">
+                    <div class="latest_blog_bar">
+                        <div class="latest_blog_img">
                             <img src="./images/Blog_page/latest_blog/2.png" alt="">
                         </div>
-                        <div class="text_part">
+                        <div class="latest_blog_title">
                             <p><span><i class="fa-solid fa-calendar"></i></span>MAY 10,2025</p>
                              <a href="blog_details.html">Building the Future Restoring the Past</a>
                         </div>
                     </div>
-                    <div class="box">
-                        <div class="img_part">
+                    <div class="latest_blog_bar">
+                        <div class="latest_blog_img">
                             <img src="./images/Blog_page/latest_blog/3.png" alt="">
                         </div>
-                        <div class="text_part">
+                        <div class="latest_blog_title">
                             <p><span><i class="fa-solid fa-calendar"></i></span>MAY 10,2025</p>
                              <a href="blog_details.html">Building the Future Restoring the Past</a>
                         </div>
                     </div>
                 </div>
+                <!-- latest blog end -->
 
-                <div class="tag">
+                <!-- Blog page Tag start -->
+                <div class="blog_page_tag">
                     <h5>Tag</h5>
                     <ul>
                         <li><a href="#">Industrial</a></li>
@@ -349,6 +357,9 @@
                         <li><a href="#">Contracting</a></li>
                     </ul>
                 </div>
+                 <!-- Blog page Tag end -->
+              </div>
+                
             </div>
         </div>
     </div>

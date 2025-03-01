@@ -59,26 +59,9 @@ $(document).ready(function () {
         ]
     });
 
-    // Slick Carousel - Images Slider
-    $('.images_slider').slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
-        nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        responsive: [
-            { breakpoint: 1024, settings: { slidesToShow: 1, slidesToScroll: 1 } }
-        ]
-    });
+    
 
-    // Slick Carousel - albert_slider
-    $('.albert_slider_contains').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
-        nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
-    });
+    
 
     // Counter Animation
     function startCounter() {
@@ -130,18 +113,32 @@ $(document).ready(function () {
     });
 
 });
-$(document).ready(function () {
-    $(".dropdown_btn").click(function () {
-        // Get the dropdown associated with the clicked button
-        var $dropdown = $(this).closest("li").find(".dropdown");
 
-        // If the dropdown is currently visible (has active class), hide it
-        if ($dropdown.hasClass("active")) {
-            $dropdown.removeClass("active");
-        } else {
-            // Otherwise, hide all dropdowns and show the clicked one
-            $(".dropdown").removeClass("active");
-            $dropdown.addClass("active");
-        }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdownBtns = document.querySelectorAll(".dropdown_btn");
+
+    dropdownBtns.forEach((btn) => {
+        btn.addEventListener("click", function () {
+            const dropdown = this.parentElement.nextElementSibling;
+
+            // যদি বর্তমানে খোলা থাকে, তাহলে বন্ধ করবো
+            if (dropdown.classList.contains("active")) {
+                dropdown.classList.remove("active");
+                this.innerHTML = '<i class="fal fa-plus"></i>';
+            } else {
+                // অন্য সব সাবমেনু বন্ধ করা
+                document.querySelectorAll(".dropdown").forEach((drop) => drop.classList.remove("active"));
+                document.querySelectorAll(".dropdown_btn i").forEach((icon) => icon.classList.replace("fa-minus", "fa-plus"));
+
+                // নতুন সাবমেনু ওপেন করা
+                dropdown.classList.add("active");
+                this.innerHTML = '<i class="fal fa-minus"></i>';
+            }
+        });
     });
 });
+
+
+

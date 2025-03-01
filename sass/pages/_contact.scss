@@ -74,8 +74,11 @@
             flex-wrap: wrap;
             width: 100%;
             &.style_1{
+                // padding: 0px 50px;
                 margin-top: 120px;
                 .contact_info{
+                    margin-left: 20px;
+                    width: 90%;
                     background-color: $--seven;
                     border: 1px solid rgba(204, 204, 204, 0.5);
                     h5, a{

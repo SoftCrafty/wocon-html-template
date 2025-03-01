@@ -4,27 +4,6 @@
 .hero_section{
     margin-top: 79px;
     z-index: 1;
-    .row{
-        justify-content: space-between;
-        align-items: center;
-        .desc{
-            padding:35px 35px 0px 35px;
-            &{
-                @include xs{
-                    padding: 0px;
-                    margin-top: 30px;
-                }
-            }
-        }
-        .btn_warpper{
-            padding:0px 35px;
-            &{
-                @include sm{
-                    padding: 0px;
-                }
-            }
-        }
-    }
     
     .hero_img_card{
         margin-top: 80px;
@@ -103,6 +82,26 @@
                         }
                     }
                 }
+                @include nesthub{
+                    width: 200px;
+                    height: 100px;
+                    gap: 20px !important;
+                    img{
+                        width: 50px ;
+                        height: 50px;
+                    }
+                    padding: 10px;
+                    .number{
+                        p{
+                            font-size: 12px !important;
+                            margin-top: 14px;
+                        }
+                        a{
+                            font-size: 12px !important;
+                            margin: 0px !important;
+                        }
+                    }
+                }
             }
             .number{
                 p{
@@ -149,6 +148,14 @@
                     }
                 }
                 @include md{
+                    top: 20px;
+                    left: 20px;
+                    .circle{
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+                @include nesthub{
                     top: 20px;
                     left: 20px;
                     .circle{
@@ -211,6 +218,16 @@
                 object-fit: contain;
             }
         }
+        @include nesthub{ 
+            right: 20px;
+            width: 350px;
+            height: 423px;
+            img{
+                width: 100% ;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
     }
 }
 /*Man end*/
@@ -251,6 +268,16 @@
                             object-fit: contain;
                         }
                 }
+                @include nesthub{
+                        width: 500px;
+                        height: fit-content;
+                        bottom: 90px;
+                        img{
+                            width: 100%;
+                            height: fit-content;
+                            object-fit: contain;
+                        }
+                }
             }
             .moving-text {
                 animation: moveText 5s ease-in-out infinite alternate;
@@ -273,6 +300,7 @@
     }
     margin-top: 100px;
     .logo-carousel{
+        
     @include flex(row, center, center);
     gap: 10px;
     overflow: hidden;
@@ -301,7 +329,7 @@
 .about_us{
     margin-top: 100px;
     .row{
-        align-items: center;
+        // align-items: center;
     }
     .container{
         @include flex(row, space-between, space-between);
@@ -363,11 +391,17 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                @include nesthub{
+
+                }
                 transition: transform 0.3s ease-in-out; 
             }
         }
         p{
             margin: 50px 0px 20px 0px;
+            @include nesthub{
+                margin: 20px 0px 0px 0px;
+            }
         }
 
     }
@@ -377,6 +411,7 @@
         width: 100%;
         height: 100%;
         padding-left: 80px;
+        margin-top: -10px;
          /*---------Responsive  Start---------*/
         &{
             @include sm{
@@ -389,6 +424,7 @@
                 }
             }
             @include md{
+                padding-left: 0px;
                 margin-top: 50px;
                 .progress_bar{
                     span{
@@ -404,6 +440,11 @@
             }
             .desc{
                 margin-bottom: 30px;
+            }
+            @include nesthub{
+                h2{
+                 font-size: 40px;
+                }
             }
         }
 
@@ -465,7 +506,14 @@
 
 /*=================box start=======================*/
 .our_achievement_card{
-
+    .heading_area{
+        @include nesthub{
+            h2{
+                width: 100% !important;
+                font-family: 40px;
+            }
+        }
+    }
     &.style_1{
             .achievement_card_wrapper{
             .achievement_contains{
@@ -494,7 +542,7 @@
                 margin-top: 75px;
                 .achievement_card_wrapper{
                     margin-top: 30px !important;
-                    justify-content: flex-start !important;
+                    justify-content: center !important;
                 }
                 h2{
                     width: 100% !important;
@@ -513,6 +561,7 @@
         flex-wrap: wrap;
         gap: 30px;
         margin-top: 18px;
+        
 
          .achievement_contains{
             width: 299px;
@@ -520,6 +569,9 @@
             background-color: $--one;
             @include flex(column, center, center);
             transition: transform 0.3s ease-in-out;
+            &.style_1{
+            display: none;
+        }
             h6{
                 font-family: $--font-family;
                 font-weight: 400;
@@ -595,20 +647,12 @@
         }
         }
     }
-    .row{
-        align-items: flex-end;
-        .btn_warpper{
-            padding-bottom: 20px;
-        }
-        .desc{
-            padding-left: 200px;
-        }
-        .btn_warpper{
-            padding-left: 200px;
-        }
-    }
+  
 .overly_content_text{
-    width: 400px !important;
+    width: 420px;
+    @include nesthubmax{
+        width: 360px !important;
+    }
     height: 100%;
     display: block;
     @include flex(column, center, flex-start);
@@ -801,7 +845,8 @@ color: $--white;
             .service_card{
                 border: none !important; 
                 gap: 20px;
-                margin-left:14px;
+                padding: 20px;
+                // margin-left:14px;
 
             }
             .service_card_info{
@@ -921,7 +966,6 @@ color: $--white;
 
             }
             .experts_person{
-                margin-left: 10px;
                 padding: 0px 10px;
             }
             .experts_person_child{
@@ -930,7 +974,6 @@ color: $--white;
              .img_part{
                 width: 100% !important;
                 height: fit-content !important;
-                background-color: red;
              }
             }
         }
@@ -947,40 +990,46 @@ color: $--white;
             }
             .experts_person_child{
              width: 50% !important;
+
              height: fit-content;
              .img_part{
                 width: 100% !important;
                 height: fit-content !important;
-                background-color: red;
              }
             }
         }
     }
     margin-top: 120px;
-    .row{
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-    .heading_area{
-        .desc{
-            padding: 0px 0px 0px 70px;
-        }
-    }
     .experts_person{
+        
         margin-top: 60px;
         @include flex(row, center, center);
         flex-wrap: wrap;
+        gap: 30px;
 
         .experts_person_child{
+            &.style_1{
+            display: none;
+            opacity: 0;
+            
+        }
+            @include nesthub{
+                width: calc( 50% - 30px);
+                &.style_1{
+            display: block;
+            opacity: 1;
+        }
+            }
             overflow: hidden;
             &:hover{
                 img{
                 transform: scale(1.1);
 }
             }
-            width: 410px;
+            max-width: 410px;
             box-shadow: 3px 3px 10px #ddd;
             position: relative;
+            width: calc(33.33% - 30px);
             img{
                 width: 100%;
                 height: auto;
@@ -1078,16 +1127,26 @@ color: $--eight;
 
 /*=================review start=======================*/
 .review{
+    @include nesthub{
+                    width: 100% !important;
+                }
+    // overflow: hidden;
     &{
         
         @include sm{
             .review_card_wapper {
+                @include nesthub{
+                    width: 100% !important;
+                    padding: 0px;
+                }
         width: 100% !important;
         margin-bottom: 100px;
     }
             padding: 0px !important;
             .review_content{
                 padding: 0px 20px;
+                overflow: hidden;
+                
 
 
             }
@@ -1105,6 +1164,10 @@ color: $--eight;
                 }
             }
             .images{
+                background-color: red;
+                // padding: 100px;
+                overflow: hidden;
+                width: 100%;
                 span{
                     width: 60px !important;
                     height: 60px !important;
@@ -1202,6 +1265,7 @@ color: $--eight;
             padding: 50px;
             @include flex(column, center, flex-start);
             border: 1px solid $--tow;
+            max-width: 629px;
             ul{
                 @include flex(row, flex-start, center);
                 padding: 0px;
@@ -1212,7 +1276,7 @@ color: $--eight;
                 }
 
             }
-            p{
+            & > p{
                 font-family: $--second-family;
                 font-weight: 400;
                 font-size: 20px;
@@ -1246,6 +1310,13 @@ color: $--eight;
                         color: $--white;
                        }
                     }
+                    p{
+                        font-family: $--second-family;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 162%;
+                        color: $--white;
+                    }
                 }
 
             }
@@ -1273,7 +1344,7 @@ color: $--eight;
             width: 134px;
             height: 134px;
             @include border-radius(50%);
-            background-color:$--white;
+            background-color: #ffffff71;
             text-align: center;
             line-height: 134px;
             color: $--primary;
@@ -1295,7 +1366,7 @@ color: $--eight;
                 left: 0px;
                 width: 100%;
                 height: 100%;
-                background-color:#fff;
+                background-color:#ffffff73;
                 @include border-radius(50%);
                 animation: pulse 1.5s infinite ease-out;
 
@@ -1399,11 +1470,11 @@ color: $--eight;
     &{
         @include sm{
             margin-top: 75px;
-            .desc{
-                margin: -25px 0px !important;
-                width: 100%;
-                padding: 0;
-            }
+            // .desc{
+            //     margin: -25px 0px !important;
+            //     width: 100%;
+            //     padding: 0;
+            // }
             .blog_box{
                 width: 100% !important;
                 height: fit-content;

@@ -104,284 +104,11 @@ span i{
     height: 100%;
 }
 
-// .heading_area{
-//     // @include flex(column, center, flex-start);
-//     // flex-wrap: wrap;
- 
-//     // .sub_heading{
-//     //     width: 100%;
-//     //     margin-bottom: 20px;
-
-//     //     h5{
-//     //         border: 1px solid $--tow;
-//     //         padding: 10px 15px;
-//     //         font-family: $--font-family;
-//     //         font-weight: 500;
-//     //         font-size: 15px;
-//     //         line-height: 147%;
-//     //         text-transform: uppercase;
-//     //         color: $--primary;
-//     //         display: inline;
-//     //     }
-//     // }
-//         // h4{
-//         //     font-family: $--font-family;
-//         //     font-weight: 400;
-//         //     font-size: 55px;
-//         //     line-height: 127%;
-//         //     color: $--nine;
-//         //     width: 100%;
-//         //     margin-bottom: 20px;
-//         // }
-// }
-
-
-/* COMMOON CSS END */
-
-// =======================================
-
-
-// ======================================
 
 
 
 
 
-
-// #footer{
-//     margin-top: 247px;
-//     min-height: 537px;
-//     max-height: auto;
-//     background-color: $--nine;
-//     .container{
-//         position: relative;
-//         .contanct_part{
-//             padding:60px;
-//             width: 100%;
-//             position:absolute;
-//             top: -90px;
-//             left: 0px;
-//             @include flex(row, space-between, center);
-//             flex-wrap: wrap;
-//             background-color: $--seven;
-//             .part_one{
-//                 &:hover {
-//                     span{
-//                            animation: tada 1s linear infinite;
-//                            -webkit-animation: tada 1s linear infinite;
-// }
-//                 }
-//                 @include flex(row, flex-start, center);
-//                 gap: 20px;
-//                 .icon{
-//                     span{
-//                             width: 65px ;
-//                             height: 65px;
-//                             background-color: $--primary;
-//                             color: $--white;
-//                             text-align: center;
-//                             line-height: 65px;
-//                             display: block;
-//                             font-size: 30px;
-// }
-//                 }
-//                 .text{
-//                     h5{
-//                         font-family: $--font-family;
-//                         font-weight: 400;
-//                         font-size: 20px;
-//                         line-height: 150%;
-//                         color: $--white;
-//                     }
-//                     p{
-//                         font-family: $--font-family;
-//                         font-weight: 400;
-//                         font-size: 16px;
-//                         line-height: 162%;
-//                         color: $--white;
-//                     }
-//                 }
-//             }
-//         }
-//        min-height: 537px;
-//        max-height: auto;
-//         @include flex(column, flex-start, center);
-//         gap:50px;
-//         padding-bottom: 30px;
-
-//         .bg_img{
-//             position: absolute;
-//             bottom: 0;
-//             left: -24%;
-//             img{
-//                 width: 100%;
-//                 object-fit: contain;
-//                 overflow: hidden;
-//             }
-//         }
-//         .row{
-//             padding:30px 0px;
-//             margin-top: 300px;
-            
-//             ul{
-//                 margin: 0px;
-//                 padding: 0px;
-//                 @include flex(column, center, flex-start);
-//                 gap: 30px;
-//                 li{
-//                     width: 100%;
-
-//                     img{
-//                         width: fit-content;
-//                         height: 100%;
-//                         object-fit: contain;
-//                     }
-//                     h5{
-//                         font-family: $--font-family;
-//                         font-weight: 400;
-//                         font-size: 20px;
-//                         line-height: 150%;
-//                         color: $--white;
-//                     }
-//                     p{
-//                         font-family: $--font-family;
-//                         font-weight: 400;
-//                         font-size: 16px;
-//                         line-height: 162%;
-//                         color: $--white;
-//                         opacity: 0.9;
-//                     }
-//                     a{
-//                         font-family: $--font-family;
-//                         font-weight: 400;
-//                         font-size: 16px;
-//                         line-height: 162%;
-//                         color: $--white;
-//                         opacity: 0.9;
-//                     }
-//                     &:hover a{
-//                         margin-left: 5px;
-//                         @include transition(.3s);
-//                         color: $--primary;
-//                     }
-//                     .social_media_icon{
-//                         margin: 0px;
-//                         padding: 0px;
-//                         @include flex(row, flex-start, center);
-//                         gap: 10px;
-//                         li{
-//                             width: fit-content;
-//                             a{
-//                                 width:40px;
-//                                 height: 40px;
-//                                 border: 1px solid $--tow;
-//                                 color: $--tow;
-//                                 display: block;
-//                                 text-align: center;
-//                                 line-height: 40px;
-//                                 @include transition(0.4s);
-//                                 &:hover{
-//                                     background-color: $--primary;
-//                                     border: none;
-//                                     color: $--white;
-//                                 }
-//                             }
-//                         }
-//                     }
-//                     input{
-//                         // padding: 0px 10px;
-//                         border: none;
-//                         outline: none;
-//                         width: 80%;
-//                         padding: 10px;
-//                         background-color: transparent;
-                        
-//                     }
-//                 }
-//                 li.email_sent{
-//                     width: 312px;
-//                     height: 66px;
-//                     border: 1px solid $--eight;
-//                     @include flex(row, space-between, center);
-//                     span{
-//                         width: 20%;
-//                         // height: 0%;
-//                         // background-color: $--primary;
-//                         a{
-
-//                             width: 45px;
-//                             height: 45px;
-//                             color: $--white;
-//                             text-align: center !important;
-//                             display: block;
-//                             line-height: 45px;
-//                             background-color: $--primary;
-
-//                         }
-//                     }
-
-
-//                 }
-//             }
-            
-//         }
-//         .footer_last{
-//             @include flex(row, space-between, flex-end);
-//             flex-wrap: wrap;
-//             height: 44px;
-//             border-top: 2px solid $--seven;
-//             width: 100%;
-//             a{
-//                 font-family: $--font-family;
-//                 font-weight: 400;
-//                 font-size: 16px;
-//                 line-height: 150%;
-//                 color: $--white;
-//                 opacity: 0.8;
-//                 @include transition(0.4s);
-//                 &:hover{
-//                     color: $--primary;
-//                     margin-bottom: 5px;
-//                 }
-//             }
-//             .right{
-//                 @include flex(row, flex-end, center);
-//                 flex-wrap: wrap;
-//                 gap: 40px;
-
-//             }
-//         }
-//     }
-// }
-
-
-
-
-/*=================,,,,,,,,,SECOND HOME START ,,,,,,,,,=======================*/
-
-
-/*=================,,,,,,,,,SECOND HOME END,,,,,,,,, =======================*/
-.off_canvas{
-    ul{
-        li{
-            &:hover > a{
-                color: $--secondary !important;
-            }
-            ul{
-                li{
-                    &:hover > a{
-                        color: $--secondary !important;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-
-
-/*=================,,,,,,,,,SERVICE DETAILS START,,,,,,,,, =======================*/
 
 
 /*=================NAV AND BANNER START =======================*/
@@ -390,14 +117,30 @@ span i{
     margin: 0 !important;
     background-color: #ddd;
     .container{
-        // padding: 0;
         padding-left: 0;
         padding-right: 0;
             .contains{
                 @include flex(row, space-between, center);
+                @include nesthub{
+                    justify-content: center;
+                }
+                @include sm{
+                    justify-content: center;
+                    
+                }
                 padding: 70px 0px;
                 flex-wrap: wrap;
                 .right_side{
+                    @include sm{
+                        text-align: center;
+                    }
+                    @include md{
+                        text-align: center;
+                    }
+                    @include nesthub{
+                        text-align: center;
+                    }
+                    
                     text-align: right;
                 }
                 h2{
@@ -417,104 +160,6 @@ span i{
     }
 }
 
-// #nav_bar{
-//     position: sticky;
-//     top: 0px;
-//     height: 92px; 
-//     @include flex(0, center, center);
-//     .container{ 
-//         background-color: $--white;
-//         padding: 0 30px;
-//         height: 92px;
-//          .logo{
-//         width: fit-content;
-//         img{
-//             width: 100%;
-//             height: 100%;
-//             object-fit: contain;
-
-//         }
-//     }
-//         @include flex(row, space-between, center);
-//         .main_menu{
-//         ul{
-//             @include flex(row, flex-end, center);
-//             gap: 24px;
-//             margin: 0;
-
-//             li {
-//     position: relative;
-
-//     &:hover > a {
-//         color: $--secondary;
-//     }
-
-//     &:hover {
-//         ul {
-//             visibility: visible;
-//             opacity: 1;
-//             transform: scaleY(1);
-//             transition-delay: 0.2s; // Show er age ekto delay
-//         }
-//     }
-
-//     a {
-//         font-family: $--font-family;
-//         font-weight: 400;
-//         font-size: 15px;
-//         line-height: 147%;
-//         text-transform: uppercase;
-//         color: $--nine;
-//     }
-
-//     ul {
-//         @include flex(column, center, center);
-//         position: absolute;
-//         background: $--white;
-//         top: 55px;
-//         left: -20px;
-//         padding: 5px 10px;
-//         width: 150px;
-//         gap: 5px;
-//         visibility: hidden;
-//         opacity: 0;
-//         transform: scaleY(0);
-//         transform-origin: top;
-//         @include border-radius(5px);
-//         transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s ease;
-
-//         li {
-//             width: 100%;
-
-//             &:hover a {
-//                 color: $--secondary;
-//             }
-//         }
-//     }
-
-//     &:not(:hover) ul {
-//         transition-delay: 0.2s; 
-//     }
-// }
-
-//         }
-//     }
-//     .btn_wrapper{
-//         @include flex(row, flex-end, center);
-//         span{
-//             width: 52px ;
-//             height: 52px;
-//             background-color: $--primary;
-//             display: block;
-//             text-align: center;
-//             line-height: 52px;
-//             color:$--white ;
-//             cursor: pointer;
-//         }
-//     }
-//     }
-// }
-/*=================NAV AND BANNER END =======================*/
 
 /*=================GENERAL SERVICE START =======================*/
 #general_service{
@@ -768,17 +413,6 @@ span i{
     }
 }
 /*=================GENERAL SERVICE END =======================*/
-
-/*=================,,,,,,,,,SERVICE DETAILS END,,,,,,,,, =======================*/
-
-/*=================,,,,,,,,,Project DETAILS start,,,,,,,,, =======================*/
-
-/*=================,,,,,,,,,Project DETAILS END,,,,,,,,, =======================*/
-
-
-/*=================,,,,,,,,,Blog page start,,,,,,,,, =======================*/
-
-/*=================,,,,,,,,,Blog page END,,,,,,,,, =======================*/
 
 
 

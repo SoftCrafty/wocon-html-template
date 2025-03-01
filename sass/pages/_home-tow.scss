@@ -190,7 +190,7 @@
     &{
         @include sm {
             
-            margin-top: -200px !important;
+            margin-top: -160px !important;
             .heading{
                 width: 100% !important;
                 h1{
@@ -220,6 +220,9 @@
              }
         }
         @include nesthub{
+            width: 100%;
+            height: 600px;
+            background-color: red;
             .vector{
                 height: 200px;
                 img{
@@ -291,6 +294,11 @@
                 }
             }
             .hero_info_card{  
+                @include nesthub{
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                }
                   padding-left: 20px;
                 margin: 0;
                 padding: 0;
@@ -661,6 +669,9 @@
 /*=================services section end=======================*/
 /*=================Our team start =======================*/
 .our_team_expert_member{
+   
+    
+    
     &{
         @include sm{
             .heading{
@@ -845,9 +856,15 @@
             flex-wrap: wrap;
             padding: 58px 50px;
             border: 1px solid $--tow;
+            
 
             .albert_contains{
                 float: left;
+                width: 50%;
+                @include sm{
+                    float: none;
+                width: 100%;
+            }
                 p{
                 font-family: $--font-family;
                 font-weight: 400;
