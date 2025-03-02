@@ -39,12 +39,8 @@
       font-size: 16px;
       height: 45px;
       width: 45px;
-      background-color: #D9A14C;
+      background-color: $--primary;
       color: #ffffff;
-
-      &:hover {
-        background-color: #D9A14C;
-      }
     }
   }
 
@@ -90,7 +86,7 @@
             font-family: "Rubik", sans-serif;
 
             &:hover {
-              color: #D9A14C;
+              color: $--primary;
             }
           }
         }
@@ -104,11 +100,11 @@
         @include flex(row, flex-start, center);
         gap: 10px;
         a {
-          color: #26262c;
+          color: $--nine;
           font-size: 22px;
 
           &:hover {
-            color: #D9A14C;
+            color: $--primary;
           }
         }
       }
@@ -140,7 +136,7 @@
 
 .mean-nav{
   display: none;
-  @include sm {
+  @include navmenu {
     display: block;
   }
   ul{
@@ -164,8 +160,9 @@
           }
         @include flex(row, space-between, center);
         span{
-          background-color: #D9A14C;
+          background-color: $--primary;
           padding: 5px 10px;
+          color: $--white;
           
 
         }

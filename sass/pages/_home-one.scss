@@ -328,14 +328,10 @@
 /*=================about us start=======================*/
 .about_us{
     margin-top: 100px;
-    .row{
-        // align-items: center;
-    }
     .container{
         @include flex(row, space-between, space-between);
         flex-wrap: wrap;
         height: 100%;
-        
     }
     .about_image_card{
         @include flex(column, flex-start, flex-start);
@@ -721,12 +717,6 @@ color: $--white;
     }
 
     
-
-    
-
-    
-
-    
 }
 
 /* Gallery Section */
@@ -832,11 +822,6 @@ color: $--white;
 
 /*====================Latest Gallery end=======================*/
 
-
-
-
-
-
 /*=================service start=======================*/
 .service_card_wrapper{
     &{
@@ -846,7 +831,6 @@ color: $--white;
                 border: none !important; 
                 gap: 20px;
                 padding: 20px;
-                // margin-left:14px;
 
             }
             .service_card_info{
@@ -944,17 +928,11 @@ color: $--white;
             
                 }
 
-
-
             }
         }
     }
 
 /*=================service end=======================*/
-
-
-
-
 
 /*=================experts start=======================*/
 .experts{
@@ -1130,7 +1108,6 @@ color: $--eight;
     @include nesthub{
                     width: 100% !important;
                 }
-    // overflow: hidden;
     &{
         
         @include sm{
@@ -1165,7 +1142,6 @@ color: $--eight;
             }
             .images{
                 background-color: red;
-                // padding: 100px;
                 overflow: hidden;
                 width: 100%;
                 span{
@@ -1352,7 +1328,6 @@ color: $--eight;
             position: absolute;
             top: 40%;
             left: 50%;
-            // @include transformY(-50%);
             @include transformX(-50%);
             &:hover{
                 color: $--white;
@@ -1482,11 +1457,6 @@ color: $--eight;
     &{
         @include sm{
             margin-top: 75px;
-            // .desc{
-            //     margin: -25px 0px !important;
-            //     width: 100%;
-            //     padding: 0;
-            // }
             .blog_box{
                 width: 100% !important;
                 height: fit-content;
@@ -1511,7 +1481,6 @@ color: $--eight;
                     width: 100% !important;
                     a{
                         font-size: 24px !important;
-                        // background-color: red;
                     }
                 }
             }

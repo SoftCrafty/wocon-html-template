@@ -28,7 +28,6 @@
     }
     .sub_heading{
         width: 100%;
-        // margin-bottom: 20px;
         
         h4{
             border: 1px solid $--tow;
@@ -47,13 +46,6 @@
     }
     .heading{
         width: 100%;
-//         #typing-text {
-//     font-size: 30px;
-//     font-weight: bold;
-//     white-space: nowrap;
-//     overflow: hidden;
-//     border-right: 2px solid black;
-// }
 
         h2{
              font-family: $--font-family;
@@ -64,7 +56,6 @@
              width: 100%;
              opacity: 0;
              animation: fadeUp 1s ease-in-out forwards;
-             //margin-bottom: 20px;
              -webkit-animation: fadeUp 1s ease-in-out forwards;
 }
         h1{

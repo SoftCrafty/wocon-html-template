@@ -158,30 +158,10 @@
 
         }
     }
-    // .btn_wrapper{
-    //     @include flex(row, flex-end, center);
-    //     background-color: green;
-    //     span{
-    //         width: 52px ;
-    //         height: 52px;
-    //         background-color: $--secondary;
-    //         display: block;
-    //         text-align: center;
-    //         line-height: 52px;
-    //         color:$--nine ;
-    //         cursor: pointer;
-    //     }
-    // }
     }
     
     
 }
-// @media (max-width: 768px) {
-//     .hero_info_card {
-//         padding-left: 10px;
-//         background-size: cover;
-//     }
-// }
 
 /*=================Nav bar end=======================*/
 
@@ -254,7 +234,6 @@
                     height: 150px;
                     width: 468px;
                     background: linear-gradient(90deg, rgba(255, 208, 38, 0.21) 0%, rgba(254, 74, 34, 0) 100%);
-                    // background: linear-gradient(90deg, rgba(255, 208, 38, 0.21) 0%, rgba(254, 74, 34, 0) 100%);
                     @include flex(row,flex-start,flex-start);
                     gap: 20px;
                     padding: 20px 30px;
@@ -890,11 +869,8 @@
             }
             }
             .albert_img{
-                // background: green;
                 float: right;
                 span{
-                // width: 299px;
-                // height: 283px;
                 display: block;
                 background-color: yellow;
                 position: relative;

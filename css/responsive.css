@@ -20,12 +20,7 @@
   #hero .hero_container {
       width: 100% !important;
   }
-    /* #hero .hero_container .hero_content_warpper .hero_info_card .heading_area{
-        padding: 20px;
-    }
-    #hero .hero_container .hero_content_warpper .hero_info_card .heading_area h4 {
-      font-size: 40px !important;
-  } */
+
   #hero .hero_container .hero_content_warpper .hero_contact_card .email {
    height: 100px;
    left: -185px;
@@ -38,9 +33,7 @@
      #our_teams .our_teams_box .child_box {
         width: calc(50% - 30px);
      }
-     /* .home_services_card .home_service_card_wrapper .home_services_card_info {
-    width: calc(50% - 30px);
-} */
+
 }
 @media (max-width:1024px){
     #service .service_box .service_box_child {
@@ -64,9 +57,7 @@
      #home_about .container .left_side img:nth-child(2) {
         display: none;
      }
-    /* #hero .hero_container .hero_content_warpper .hero_info_card{
-        width: 100% !important;
-    } */
+
   
   #nav_bar .main_menu{
     display: none;
@@ -100,7 +91,6 @@
         width: 100% !important;
     }
      #hero .hero_container .hero_content_warpper{
-        /* background-color: transparent !important; */
         z-index: -1;
      }
      #hero .hero_container .hero_content_warpper .hero_info_card img{
@@ -112,7 +102,6 @@
      }
      #hero .hero_container .hero_content_warpper .hero_info_card .heading_area {
         width: 100%;
-        /* background-color: transparent !important; */
      }
     h2{
         font-size: 48px !important;
@@ -125,32 +114,13 @@
         display: none;
         visibility: hidden;
     }
-    /* #subscribe .right {
-        margin-top: 40px !important;
-    } */
     #footer {
         margin-top: 300px;
     }
     #footer .container .row ul {
         margin: 20px 0px;
     }
-    /* #home_slider .slider_parent .slider_child {
-    justify-content: center !important;
-}
 
-#home_slider .slider_parent .slider_child .col-lg-8 {
-    float: none;
-}
-
-#home_slider .slider_parent .slider_child .col-lg-3 {
-    float: none;
-} */
-  /* #home_blog_news .parent_box .box .left_contains {
-    align-items: center;
-  }
-  #home_blog_news .parent_box .box .center_contains {
-    align-items: center;
-  } */
   #home_blog_news .parent_box .box{
     gap: 20px;
   }
@@ -195,18 +165,7 @@
 /*============= Tablet (768px-1024px)==================== */
 @media (min-width:768px) and (max-width: 1024px) {
     
-    /* h1 {
-        font-size: 24px !important;
-    }
-    h2{
-        font-size: 58px !important;
-    }
-    h4{
-        font-size: 48px !important;
-    }
-    h6{
-        font-size: 34px !important;
-    } */
+
     p{
         font-size: 14px !important;
     }
@@ -221,29 +180,15 @@
         line-height: 80px;
         text-align : center;
     }
-    /* .box .heading_part h4{
-        font-size: 30px !important;
-    } */
+/
     .experts_person {
         justify-content: center !important;
     }
      #our_teams .our_teams_box .child_box {
      width: 100%;
  }
- /* .home_services_card .home_service_card_wrapper .home_services_card_info {
-    width: 100%;
-} */
 
 
-/* #home_slider .slider_parent .slider_child .col-lg-3 img:nth-child(1){
-    float: none;
-}
-#home_slider .slider_parent .right-arrow{
-    bottom: 10px;
-}
-#home_slider .slider_parent .left-arrow{
-    bottom: 10px;
-} */
 #service_details .container .contains{
     text-align: center;
     gap: 30px;
@@ -264,23 +209,7 @@
 
 /*================== Mobile (Max 767px)=========== */
 @media (max-width: 767px) {
-    /* h1 {
-        font-size: 18px !important;
-    }
-    h2 {
-    font-size: 30px !important;
-    }
-    h4 {
-    font-size: 24px !important;
-}
-    h6 {
-    font-size: 30px !important;
-} */
 
- /* h2{
-    font-size: 0px !important;
- }
-  */
     p{
 
         font-size: 12px !important;
@@ -302,9 +231,7 @@
     #hero_section .hero_img_card .overly_box span{
         font-size: 25px;
     }
-    /* .box .parent_box {
-        justify-content: center;
-    } */
+ 
       .gallery .overly_content_text {
         display: none;
       }
@@ -328,8 +255,6 @@
 }
 #footer{
     width: 100% !important;
-    /* overflow-x: hidden; */
-    /* overflow-y:hidden ; */
 }
 #footer .container .footer_last .right {
     justify-content: flex-start !important;
@@ -338,15 +263,7 @@
 #our_teams .our_teams_box .child_box {
     width: 100%;
 }
-/* .home_services_card .home_service_card_wrapper .home_services_card_info {
-    width: 100%;
-} */
-  /* #home_slider .slider_parent .left-arrow {
-    display: none;
-  }
-  #home_slider .slider_parent .right-arrow {
-    display: none;
-  } */
+
     #service_details .container .contains {
         text-align: center;
         gap: 30px;
@@ -362,9 +279,7 @@
   #blog_page .container .meta-info span {
     font-size: 12px;
 }
-  /* #blog_page .container .meta-info .date {
-    font-size: 15px !important;
-} */
+
 #blog_page .container .right_part .latest_blog .box .text_part h6 {
     font-size: 20px !important;
 }

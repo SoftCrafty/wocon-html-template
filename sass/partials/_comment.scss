@@ -1,10 +1,7 @@
 .comments_box{
     @include flex(column, flex-start, flex-start);
     gap: 20px;
-    // width: 628px;
     width: 100%;
-
-    // margin-top: 60px;
     h5{
         font-family: $--font-family;
         font-weight: 500;
