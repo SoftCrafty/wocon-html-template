@@ -762,6 +762,7 @@
 
 /*=================Slider end =======================*/
 .albert_slider_wrapper{
+    margin-top: 10px;
 &{
         @include sm {
             .left-arrow{
@@ -801,7 +802,7 @@
                 line-height: 40px;
                 color: $--primary;
                 position: absolute;
-                bottom: 30px;
+                bottom: 60px;
                 left: 50px;
                 &:hover{
                     background-color: $--primary;
@@ -820,7 +821,7 @@
                 line-height: 40px;
                 color: $--primary;
                 position: absolute;
-                 bottom: 30px;
+                 bottom: 60px;
                 left: 130px;
                 &:hover{
                     background-color: $--primary;
@@ -833,13 +834,13 @@
             @include flex(row, center, flex-start);
             flex-direction: row !important;
             flex-wrap: wrap;
-            padding: 58px 50px;
+            padding: 60px 50px;
             border: 1px solid $--tow;
             
 
             .albert_contains{
                 float: left;
-                width: 50%;
+                width: 70%;
                 @include sm{
                     float: none;
                 width: 100%;
@@ -857,7 +858,7 @@
                 font-size: 30px;
                 line-height: 133%;
                 color: $--nine;
-                margin: 10px 0px;
+                margin-top: 20px;
             }
             b{
                 font-family: $--font-family;
@@ -1081,6 +1082,7 @@
     &{
         @include sm {
             .home_subscribe_area{
+
                 justify-content: center !important;
                 .vector{
                     width: 100% !important;
@@ -1127,7 +1129,6 @@
         .home_subscribe_area{
             @include flex(row, space-between, center);
             flex-wrap: wrap;
-            gap: 20px;
 
             .vector{
                 width: 253px;

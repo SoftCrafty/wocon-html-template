@@ -22,7 +22,7 @@ $(document).ready(function () {
         });
     }
     addStickyNav('#top_nav');
-    addStickyNav('#top_home_nav'); // Home page er navbar
+    // addStickyNav('#top_home_nav'); // Home page er navbar
 
     // Header Scroll Effect
     $(window).on("scroll", function () {
@@ -105,6 +105,9 @@ $(document).ready(function () {
         opacity: 0, y: 50, duration: 1, stagger: 0.3,
     });
 
+
+  
+
     // Social Icon Hover Effect
     $(".plus_btn").on("mouseenter", function () {
         $(".social_icon").addClass("active_icon");
@@ -123,16 +126,15 @@ document.addEventListener("DOMContentLoaded", function () {
         btn.addEventListener("click", function () {
             const dropdown = this.parentElement.nextElementSibling;
 
-            // যদি বর্তমানে খোলা থাকে, তাহলে বন্ধ করবো
             if (dropdown.classList.contains("active")) {
                 dropdown.classList.remove("active");
                 this.innerHTML = '<i class="fal fa-plus"></i>';
             } else {
-                // অন্য সব সাবমেনু বন্ধ করা
+               
                 document.querySelectorAll(".dropdown").forEach((drop) => drop.classList.remove("active"));
                 document.querySelectorAll(".dropdown_btn i").forEach((icon) => icon.classList.replace("fa-minus", "fa-plus"));
 
-                // নতুন সাবমেনু ওপেন করা
+ 
                 dropdown.classList.add("active");
                 this.innerHTML = '<i class="fal fa-minus"></i>';
             }
@@ -140,5 +142,22 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+    let progressBars = document.querySelectorAll(".progress-fill");
+    let progressValues = document.querySelectorAll(".progress-value");
+
+    progressBars.forEach((bar, index) => {
+        let value = bar.getAttribute("data-value");
+        gsap.to(bar, { width: value + "%", duration: 2, ease: "power2.out" });
+
+        gsap.to(progressValues[index], {
+            innerHTML: value + "%",
+            duration: 2,
+            snap: { innerHTML: 1 },
+            ease: "power2.out"
+        });
+    });
+});
 
 

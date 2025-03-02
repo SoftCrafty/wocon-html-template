@@ -1,5 +1,6 @@
 
 .btn_warpper{
+
     &.style_1{
         a{
             background-color: $--primary !important;
@@ -11,7 +12,7 @@
         }
     }
     width: 100%;
-    margin-top: 20px;
+    margin-top: 8px;
 border: none;
 @include border-radius(none);
 text-transform: uppercase;
