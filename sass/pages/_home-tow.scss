@@ -650,8 +650,6 @@
             }
             &:hover{
                 img{
-                    //animation: tada 1s linear infinite;
-                    //-webkit-animation: tada 1s linear infinite;
                     transform: rotate(360deg);
                     @include transition(1s);
                     -webkit-transform: rotate(360deg);

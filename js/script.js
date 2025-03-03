@@ -161,3 +161,56 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+// gsap.from(".home_services_card_info", {
+//     opacity: 0,
+//     y: 50,
+//     duration: 1,
+//     stagger: 0.2, 
+//     scrollTrigger: {
+//         trigger: ".home_services_card_info",
+//         start: "top 80%", 
+//     }
+// });
+
+
+gsap.utils.toArray(".home_services_card_info").forEach(card => {
+    card.addEventListener("mouseenter", () => {
+        gsap.to(card, {
+            scale: 1.05,
+            boxShadow: "0px 10px 20px rgba(0,0,0,0.1)",
+            duration: 0.3
+        });
+    });
+
+    card.addEventListener("mouseleave", () => {
+        gsap.to(card, {
+            scale: 1,
+            boxShadow: "0px 0px 0px rgba(0,0,0,0)",
+            duration: 0.3
+        });
+    });
+});
+gsap.from(".number", {
+    textContent: 0,
+    duration: 1.5,
+    ease: "power1.in",
+    snap: { textContent: 1 }, // Number smoothly count hobe
+    stagger: 0.3
+});
+
+gsap.from(".team-card", {
+    opacity: 0,
+    y: 50,
+    duration: 1,
+    stagger: 0.3, // Ek ek kore asbe
+    scrollTrigger: {
+        trigger: ".team-card",
+        start: "top 80%",
+    }
+});
+
+
+
+
+
