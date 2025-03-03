@@ -1657,7 +1657,12 @@
             #hero .hero_container .hero_content_warpper .hero_contact_card .email span img {
               width: 100%;
               height: 100%;
-              object-fit: contain; }
+              object-fit: contain;
+              transform: rotate(-270deg);
+              -webkit-transform: rotate(-270deg);
+              -moz-transform: rotate(-270deg);
+              -ms-transform: rotate(-270deg);
+              -o-transform: rotate(-270deg); }
         #hero .hero_container .hero_content_warpper .hero_contact_card .number {
           position: absolute;
           bottom: 110px;
@@ -1678,7 +1683,12 @@
             #hero .hero_container .hero_content_warpper .hero_contact_card .number span img {
               width: 100%;
               height: 100%;
-              object-fit: contain; }
+              object-fit: contain;
+              transform: rotate(-270deg);
+              -webkit-transform: rotate(-270deg);
+              -moz-transform: rotate(-270deg);
+              -ms-transform: rotate(-270deg);
+              -o-transform: rotate(-270deg); }
       #hero .hero_container .hero_content_warpper .hero_info_card {
         padding-left: 20px;
         margin: 0;
@@ -1815,7 +1825,9 @@
       position: absolute;
       top: 0px;
       right: 40px;
-      z-index: -10; }
+      z-index: -10;
+      animation: moveText 4s linear infinite;
+      -webkit-animation: moveText 4s linear infinite; }
   .home_about_wrapper .home_about_inner .home_about_info_card {
     margin-top: 50px;
     display: flex;
@@ -1866,7 +1878,8 @@
       height: 100%;
       object-fit: cover; }
       #home_gallery .container .images_slider .one img:hover {
-        animation: tada 1s linear infinite; }
+        animation: tada 1s linear infinite;
+        -webkit-animation: tada 1s linear infinite; }
   #home_gallery .container .images_slider .left-arrow {
     border-radius: 50%;
     -moz-border-radius: 50%;
@@ -1976,7 +1989,12 @@
         .home_services_card .home_service_card_wrapper .home_services_card_info .button_all .commn_btn a:hover span {
           color: #fff; }
     .home_services_card .home_service_card_wrapper .home_services_card_info:hover img {
-      animation: tada 1s linear infinite; }
+      transform: rotate(360deg);
+      transition: all 1s ease;
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg); }
 
 /*=================services section end=======================*/
 /*=================Our team start =======================*/

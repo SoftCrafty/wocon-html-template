@@ -241,12 +241,17 @@
                     span{ 
                         width: 60px;
                         height: 60px;
+
                         img{
                             width: 100%;
                             height: 100%;
                             object-fit: contain;
-                            
-                        }
+                            transform: rotate(-270deg);
+                            -webkit-transform: rotate(-270deg);
+                            -moz-transform: rotate(-270deg);
+                            -ms-transform: rotate(-270deg);
+                            -o-transform: rotate(-270deg);
+}
                     }
                 }
                 .number{
@@ -267,8 +272,12 @@
                             width: 100%;
                             height: 100%;
                             object-fit: contain;
-                            
-                        }
+                            transform: rotate(-270deg);
+                            -webkit-transform: rotate(-270deg);
+                            -moz-transform: rotate(-270deg);
+                            -ms-transform: rotate(-270deg);
+                            -o-transform: rotate(-270deg);
+}
                     }
                 }
             }
@@ -444,7 +453,9 @@
                     top: 0px;
                     right: 40px;
                     z-index: -10;
-                }
+                    animation: moveText 4s linear infinite;
+                    -webkit-animation: moveText 4s linear infinite;
+}
                 
             }
             
@@ -508,7 +519,8 @@
                     object-fit: cover;
                     &:hover{
                         animation: tada 1s linear infinite;
-                    }
+                        -webkit-animation: tada 1s linear infinite;
+}
                 }
             }
                      .left-arrow{
@@ -638,8 +650,15 @@
             }
             &:hover{
                 img{
-                    animation: tada 1s linear infinite;
-                }
+                    //animation: tada 1s linear infinite;
+                    //-webkit-animation: tada 1s linear infinite;
+                    transform: rotate(360deg);
+                    @include transition(1s);
+                    -webkit-transform: rotate(360deg);
+                    -moz-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    -o-transform: rotate(360deg);
+}
             }
 
         }
