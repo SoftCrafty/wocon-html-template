@@ -191,13 +191,13 @@ gsap.utils.toArray(".home_services_card_info").forEach(card => {
         });
     });
 });
-gsap.from(".number", {
-    textContent: 0,
-    duration: 1.5,
-    ease: "power1.in",
-    snap: { textContent: 1 }, 
-    stagger: 0.3
-});
+// gsap.from(".number", {
+//     textContent: 0,
+//     duration: 1.5,
+//     ease: "power1.in",
+//     snap: { textContent: 1 }, 
+//     stagger: 0.3
+// });
 
 gsap.from(".our_expert_team_info", {
     opacity: 0,

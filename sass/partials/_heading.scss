@@ -2,7 +2,6 @@
     @include flex(column, center, flex-start);
     gap: 20px;
     &.style_3{
-        background-color: red;
         width: 100%;
     }
     &.style_1{
@@ -37,6 +36,7 @@
             
         }
         &.style_2{
+
             h4{
                 border: none;
                border-bottom: 1px solid $--secondary;

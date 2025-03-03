@@ -4,7 +4,13 @@
 .hero_section{
     margin-top: 79px;
     z-index: 1;
-    
+    .heading_area{
+        .desc{
+            p{
+                margin-top: 20px;
+            }
+        }
+    }
     .hero_img_card{
         margin-top: 80px;
         position: relative;
@@ -298,7 +304,7 @@
     &.style_1{
         margin-top: 350px;
     }
-    margin-top: 100px;
+    margin-top: 150px;
     .logo-carousel{
         
     @include flex(row, center, center);
@@ -327,7 +333,7 @@
 
 /*=================about us start=======================*/
 .about_us{
-    margin-top: 100px;
+    margin-top: 150px;
     .container{
         @include flex(row, space-between, space-between);
         flex-wrap: wrap;
@@ -985,7 +991,7 @@ color: $--white;
             }
         }
     }
-    margin-top: 120px;
+    margin-top: 150px;
     .experts_person{
         
         margin-top: 60px;

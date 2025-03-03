@@ -1146,6 +1146,9 @@
         .home_subscribe_area{
             @include flex(row, space-between, center);
             flex-wrap: wrap;
+            @include sm {
+                gap: 20px;
+            }
 
             .vector{
                 width: 253px;

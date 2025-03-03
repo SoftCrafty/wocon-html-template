@@ -78,10 +78,21 @@
     transform: translateX(0); }
   to {
     transform: translateX(-50%); } }
+@keyframes img-anim-top {
+  0% {
+    transform: translateY(-5%);
+    clip-path: inset(0 0 100% 0);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    clip-path: inset(0 0 0 0);
+    opacity: 1; } }
 /*=================hero section start=======================*/
 .hero_section {
   margin-top: 79px;
   z-index: 1; }
+  .hero_section .heading_area .desc p {
+    margin-top: 20px; }
   .hero_section .hero_img_card {
     margin-top: 80px;
     position: relative;
@@ -310,7 +321,7 @@
 /*=================hero section end=======================*/
 /*=================company logo start=======================*/
 .company_logo {
-  margin-top: 100px; }
+  margin-top: 150px; }
   .company_logo.style_1 {
     margin-top: 350px; }
   .company_logo .logo-carousel {
@@ -334,7 +345,7 @@
 /*=================company logo end=======================*/
 /*=================about us start=======================*/
 .about_us {
-  margin-top: 100px; }
+  margin-top: 150px; }
   .about_us .container {
     display: flex;
     flex-direction: row;
@@ -801,7 +812,7 @@
 /*=================service end=======================*/
 /*=================experts start=======================*/
 .experts {
-  margin-top: 120px; }
+  margin-top: 150px; }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .experts .desc {
       padding: 0px !important;
@@ -2403,6 +2414,9 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      #home_subscribe .home_subscribe_area {
+        gap: 20px; } }
     #home_subscribe .home_subscribe_area .vector {
       width: 253px;
       height: 300px; }
@@ -2612,6 +2626,9 @@
         color: #ffd026 !important; }
   .header-area.style_2 {
     background-color: #ddd; }
+    @media only screen and (min-width: 0px) and (max-width: 767px) {
+      .header-area.style_2 {
+        background-color: #fff; } }
     .header-area.style_2 .header_menu_wrapper {
       background-color: #fff;
       padding: 0px 10px; }
@@ -2731,7 +2748,6 @@
   align-items: flex-start;
   gap: 20px; }
   .heading_area.style_3 {
-    background-color: red;
     width: 100%; }
   .heading_area.style_1 {
     padding-left: 180px;

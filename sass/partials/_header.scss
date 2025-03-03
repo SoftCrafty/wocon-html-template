@@ -87,6 +87,11 @@
         }
         &.style_2{
             background-color: #ddd;
+            @include sm{
+                background-color: $--white;
+            }
+            
+
             
             .header_menu_wrapper{
                 background-color: #fff;
