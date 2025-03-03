@@ -1348,11 +1348,9 @@
           color: #fe4a22; }
         .blog_news .blog_box_parent .blog_box .title a:hover {
           color: #fe4a22; }
-      .blog_news .blog_box_parent .blog_box:hover {
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); }
-        .blog_news .blog_box_parent .blog_box:hover .img_part img {
-          overflow: hidden;
-          transform: scale(1.1); }
+      .blog_news .blog_box_parent .blog_box:hover .img_part img {
+        overflow: hidden;
+        transform: scale(1.1); }
 
 /*=================blog and news end=======================*/
 /*=================subscribe start=======================*/
