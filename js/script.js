@@ -22,7 +22,6 @@ $(document).ready(function () {
         });
     }
     addStickyNav('#top_nav');
-    // addStickyNav('#top_home_nav'); // Home page er navbar
 
     // Header Scroll Effect
     $(window).on("scroll", function () {
@@ -162,16 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// gsap.from(".home_services_card_info", {
-//     opacity: 0,
-//     y: 50,
-//     duration: 1,
-//     stagger: 0.2, 
-//     scrollTrigger: {
-//         trigger: ".home_services_card_info",
-//         start: "top 80%", 
-//     }
-// });
+
 
 
 gsap.utils.toArray(".home_services_card_info").forEach(card => {
@@ -191,13 +181,7 @@ gsap.utils.toArray(".home_services_card_info").forEach(card => {
         });
     });
 });
-// gsap.from(".number", {
-//     textContent: 0,
-//     duration: 1.5,
-//     ease: "power1.in",
-//     snap: { textContent: 1 }, 
-//     stagger: 0.3
-// });
+
 
 gsap.from(".our_expert_team_info", {
     opacity: 0,

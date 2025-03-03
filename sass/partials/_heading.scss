@@ -115,6 +115,9 @@
         @include  sm {
             @include flex(column, center, flex-start);
         }
+        @include  md {
+            @include flex(column, center, flex-start);
+        }
         @include nesthubmax{
             h1{
                 font-size: 60px !important;

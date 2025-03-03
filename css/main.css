@@ -638,7 +638,7 @@
           gap: 2px !important;
           left: 10px !important;
           bottom: 10px !important;
-          padding: 10px !important; }
+          padding: 12px 10px !important; }
           .our_service_gallery .gallery_parent .tab .content h2 {
             font-size: 20px !important; }
           .our_service_gallery .gallery_parent .tab .content h3 {
@@ -2831,6 +2831,12 @@
       justify-content: center;
       align-items: flex-start; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
+    .heading_area_wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start; } }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
     .heading_area_wrapper {
       display: flex;
       flex-direction: column;
