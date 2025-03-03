@@ -195,20 +195,34 @@ gsap.from(".number", {
     textContent: 0,
     duration: 1.5,
     ease: "power1.in",
-    snap: { textContent: 1 }, // Number smoothly count hobe
+    snap: { textContent: 1 }, 
     stagger: 0.3
 });
 
-gsap.from(".team-card", {
+gsap.from(".our_expert_team_info", {
     opacity: 0,
     y: 50,
     duration: 1,
-    stagger: 0.3, // Ek ek kore asbe
+    stagger: 0.3, 
     scrollTrigger: {
         trigger: ".team-card",
         start: "top 80%",
     }
 });
+
+gsap.utils.toArray(".our_expert_team_info").forEach(card => {
+    let icons = card.querySelectorAll(".social_media_icon a");
+
+    card.addEventListener("mouseenter", () => {
+        gsap.fromTo(icons, { y: 10, opacity: 0 },
+            { y: 0, opacity: 1, duration: 0.3, stagger: 0.1, ease: "power2.out" });
+    });
+
+    card.addEventListener("mouseleave", () => {
+        gsap.to(icons, { opacity: 0, y: 10, duration: 0.3, stagger: 0.1 });
+    });
+});
+
 
 
 
