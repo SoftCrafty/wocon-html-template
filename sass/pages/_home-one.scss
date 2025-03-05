@@ -3,6 +3,9 @@
 
 .hero_section{
     margin-top: 79px;
+    @include sm{
+        margin-top: 10px;
+    }
     z-index: 1;
     .heading_area{
         .desc{
@@ -12,7 +15,10 @@
         }
     }
     .hero_img_card{
-        margin-top: 80px;
+        margin-top: 60px;
+        @include sm{
+            margin-top: 30px;
+        }
         position: relative;
         @include flex(row, center, center);
         height: fit-content;
@@ -302,9 +308,19 @@
 /*=================company logo start=======================*/
 .company_logo{
     &.style_1{
-        margin-top: 350px;
+        @include sm{
+            margin-top: 70px !important;
+            margin-bottom: 20px !important;
+        }
     }
-    margin-top: 150px;
+    @include sm{
+        margin-top: 70px;
+    }
+    &.style_1{
+        margin-top: 150px;
+        margin-bottom: 95px;
+    }
+    margin-top: 149px;
     .logo-carousel{
         
     @include flex(row, center, center);
@@ -333,7 +349,10 @@
 
 /*=================about us start=======================*/
 .about_us{
-    margin-top: 150px;
+    @include sm{
+        margin-top: 70px;
+    }
+    margin-top: 143px;
     .container{
         @include flex(row, space-between, space-between);
         flex-wrap: wrap;
@@ -516,6 +535,7 @@
 
 /*=================box start=======================*/
 .our_achievement_card{
+    margin-top: 130px;
     .heading_area{
         @include nesthub{
             h2{
@@ -628,6 +648,10 @@
 
 
 .our_service_gallery{
+    margin-top: 158px;
+    @include sm{
+        margin-top: 80px;
+    }
     &{
         @include sm{
             margin-top: 75px;
@@ -842,6 +866,7 @@ color: $--white;
 
 /*=================service start=======================*/
 .service_card_wrapper{
+    margin-top: 159px;
     &{
         @include sm{
             margin-top: 75px;
@@ -878,7 +903,13 @@ color: $--white;
         }
     }
     .service_card{
-        margin-top: 80px;
+        &.style_1{
+            margin-top: 10px;
+        }
+        &.style_2{
+            margin-top: -10px;
+        }
+        margin-top: 42px;
         @include flex(row, space-between, center);
         flex-wrap: wrap;
         border: 1px solid $--tow;
@@ -956,6 +987,7 @@ color: $--white;
 .experts{
     &{
         @include sm{
+            margin-top: 70px;
             .desc{
                 padding: 0px !important;
                 margin-top: 10px;
@@ -995,10 +1027,10 @@ color: $--white;
             }
         }
     }
-    margin-top: 150px;
+    margin-top: 160px;
     .experts_person{
         
-        margin-top: 60px;
+        margin-top: 56px;
         @include flex(row, space-between, center);
         flex-wrap: wrap;
         gap: 30px;
@@ -1123,12 +1155,14 @@ color: $--eight;
 
 /*=================review start=======================*/
 .review{
+    
     @include nesthub{
                     width: 100% !important;
                 }
     &{
         
         @include sm{
+            margin-top: 70px;
             .review_card_wapper {
                 @include nesthub{
                     width: 100% !important;
@@ -1141,12 +1175,15 @@ color: $--eight;
             .review_content{
                 padding: 0px 20px;
                 overflow: hidden;
+                margin-top: 50px;
                 
 
 
             }
             .review_card_wapper{
                 margin-top: 50px;
+                background-color: violet;
+
             }
             .profile{
                 width: 100% !important;
@@ -1324,9 +1361,9 @@ color: $--eight;
         .img{
             position: relative;
 
-            &:hover{
-                transform: scale(1.1);
-            }
+            // &:hover{
+            //     transform: scale(1.1);
+            // }
             
             img{ 
             width: 100%;
@@ -1378,7 +1415,7 @@ color: $--eight;
    
 .text_slider{
     &.style_1{
-        margin-top: 100px;
+        margin-top: 125px;
         .style_2{
             background-color: $--primary !important;
             .marquee-content{
@@ -1468,7 +1505,127 @@ color: $--eight;
 
 /*=================review end=======================*/
 
+/*=================subscribe start=======================*/
 
+.subscribe_form_wrapper {
+    &{
+        @include sm{
+            padding: 0px !important;
+            margin-top: 250px !important;
+            h4{
+                font-size: 28px !important;
+            }
+            input{
+                width: 350px !important;
+                margin-top: 20px;
+            }
+        }
+    }
+    margin-top: 405px;
+    .container {
+        position: relative;
+        background-color: $--nine;
+        @include flex(row, center, center);
+        flex-wrap: wrap;
+        gap: 50px;
+        padding: 80px 80px;
+
+        .vector {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+
+            img {
+                &:nth-child(1) {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                &:nth-child(2) {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+        }
+
+        .subscribe_title {
+            @include flex(row, center, center);
+            h4 {
+                font-family: $--font-family;
+                font-weight: 400;
+                font-size: 40px;
+                line-height: 125%;
+                color: $--white;
+
+            }
+        }
+
+        .submit_form {
+            margin-top: 10px;
+            @include flex(row, center, center);
+            flex-wrap: wrap;
+            gap: 20px;
+
+            /* Form Start*/
+            form {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                flex-wrap: wrap;
+
+                input {
+                    border: 0.5px solid $--tow;
+                    width: 389px;
+                    height: 65px;
+                    outline: none;
+                    padding: 0px 10px;
+                    z-index: 10;
+                    font-size: 16px;
+                    background: transparent;
+                    color: $--white;
+                    &::placeholder{
+                        color: $--white;
+                    }
+                }
+
+                button {
+                    width: 190px;
+                    height: 65px;
+                    border: none;
+                    background-color: $--primary;
+                    font-family: $--font-family;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 147%;
+                    text-transform: uppercase;
+                    color: $--white;
+                    text-align: center;
+                    cursor: pointer;
+                    position: relative;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            background-color: #dddddd2d;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+            /* form end */
+        }
+    }
+}
+
+/*=================subscribe end=======================*/
 
 /*=================blog and news start=======================*/
 .blog_news{
@@ -1504,11 +1661,11 @@ color: $--eight;
             }
         }
     }
-    margin-top: 150px;
+    margin-top: 158px;
     .blog_box_parent{
         @include flex(row, center, center);
         flex-wrap: wrap;
-        margin-top: 80px;
+        margin-top: 58px;
         gap: 30px;
         .blog_box{
             width: 410px;
@@ -1638,127 +1795,7 @@ color: $--eight;
 /*=================blog and news end=======================*/
 
 
-/*=================subscribe start=======================*/
 
-.subscribe_form_wrapper {
-    &{
-        @include sm{
-            padding: 0px !important;
-            margin-top: 250px !important;
-            h4{
-                font-size: 28px !important;
-            }
-            input{
-                width: 350px !important;
-                margin-top: 20px;
-            }
-        }
-    }
-    margin-top: 400px;
-    .container {
-        position: relative;
-        background-color: $--nine;
-        @include flex(row, center, center);
-        flex-wrap: wrap;
-        gap: 50px;
-        padding: 80px 80px;
-
-        .vector {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            width: 100%;
-            height: 100%;
-
-            img {
-                &:nth-child(1) {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                }
-                &:nth-child(2) {
-                    position: absolute;
-                    bottom: 0;
-                    right: 0;
-                }
-            }
-        }
-
-        .subscribe_title {
-            @include flex(row, center, center);
-            h4 {
-                font-family: $--font-family;
-                font-weight: 400;
-                font-size: 40px;
-                line-height: 125%;
-                color: $--white;
-
-            }
-        }
-
-        .submit_form {
-            margin-top: 10px;
-            @include flex(row, center, center);
-            flex-wrap: wrap;
-            gap: 20px;
-
-            /* Form Start*/
-            form {
-                display: flex;
-                gap: 20px;
-                align-items: center;
-                flex-wrap: wrap;
-
-                input {
-                    border: 0.5px solid $--tow;
-                    width: 389px;
-                    height: 65px;
-                    outline: none;
-                    padding: 0px 10px;
-                    z-index: 10;
-                    font-size: 16px;
-                    background: transparent;
-                    color: $--white;
-                    &::placeholder{
-                        color: $--white;
-                    }
-                }
-
-                button {
-                    width: 190px;
-                    height: 65px;
-                    border: none;
-                    background-color: $--primary;
-                    font-family: $--font-family;
-                    font-weight: 400;
-                    font-size: 15px;
-                    line-height: 147%;
-                    text-transform: uppercase;
-                    color: $--white;
-                    text-align: center;
-                    cursor: pointer;
-                    position: relative;
-                    transition: 0.3s ease-in-out;
-
-                    &:hover {
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            top: 0px;
-                            left: 0px;
-                            background-color: #dddddd2d;
-                            width: 100%;
-                            height: 100%;
-                        }
-                    }
-                }
-            }
-            /* form end */
-        }
-    }
-}
-
-/*=================subscribe end=======================*/
 
 
 /*=================footer start=======================*/

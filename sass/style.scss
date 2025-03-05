@@ -164,6 +164,9 @@ span i{
 /*===========GENERAL SERVICE START ============*/
 #general_service{
     margin-top: 150px;
+    @include sm{
+        margin-top: 30px;
+    }
     .general_service_wrapper{
          @include md{
                 justify-content: flex-start;
@@ -187,6 +190,9 @@ span i{
           .contains_title{
             @include flex(column, center, flex-start);
             gap: 40px;
+            @include sm{
+                gap: 20px ;
+            }
               h4{
                 @include sm{
                     font-size: 30px;
@@ -263,8 +269,14 @@ span i{
                 flex-wrap: wrap;
             }
           }
+          .service_contains_wrapper{
+            @include flex(column, flex-start, flex-start);
+            gap: 60px;
+            margin-top: 24px;
+          }
           .contains_box{
-            margin-top: 60px;
+            
+            // margin-top: 60px;
             border: 1px solid $--tow;
             padding: 80px 40px 45px 40px;
             position: relative;

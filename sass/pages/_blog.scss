@@ -2,8 +2,16 @@
     .container{
        .blog_main_content_wrapper{
         padding-right: 30px;
+        @include sm{
+            padding-right: 0px !important;
+            margin-top: -100px;
+        }
         .contains{
             margin-bottom: 80px;
+            @include sm{
+                width: 100%;
+                margin-bottom: 40px;
+            }
              .img_part{
             width: 100%;
             height: auto;
@@ -15,7 +23,7 @@
         .meta-info {
             
             @include flex(row, space-between, center);
-            gap: 10px;
+            gap: 15px;
             padding-left: 10px;
             border: 1px solid $--tow;
             border-radius: 5px;
@@ -60,6 +68,23 @@
 }
             }
 
+        }
+        .gallery_heading{
+            @include flex(column, flex-start, flex-start);
+            @include sm{
+                margin-top: -40px;
+            }
+            h4{
+                font-family: $--font-family;
+                font-weight: 400;
+                font-size: 55px;
+                line-height: 127%;
+                color: $--nine;
+                margin-bottom: 5px;
+                @include sm{
+                    font-size: 26px;
+                }
+            }
         }
         .button_all{
             .commn_btn{
@@ -118,6 +143,10 @@
                     font-size: 20px;
                     line-height: 150%;
                     color: $--nine;
+                    @include sm{
+                        font-size: 16px;
+
+                    }
                     span{
                         margin-right: 5px;
                         font-size: 12px;

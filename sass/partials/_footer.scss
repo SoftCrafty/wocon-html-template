@@ -1,10 +1,16 @@
 .footer{
-    &.style_1{
-        margin-top: 0px;
-        .footer_area_quick_menu{
-            margin-top: 80px !important;
+    &.style_2{
+        @include sm{
+            margin-top: -0px !important;
         }
     }
+    @include sm{
+        margin-top: 140px !important;
+    }
+    &.style_1{
+        margin-top:250px;
+    }
+    
     &{
         @include sm{
             width: 100% !important;
@@ -111,8 +117,18 @@
         }
 
         .footer_area_quick_menu{
+            &.style_4{
+                @include sm{
+                    margin-top: 50px !important;
+                }
+            }
+            &.style_2{
+                @include sm{
+                    margin-top: 300px !important;
+                }
+            }
             margin-bottom: 95px;
-            margin-top: 195px;
+            margin-top: 191px !important;
             @include sm{
                 margin-top: 300px;
             }
@@ -177,9 +193,9 @@
                 padding: 0px;
                 @include flex(column, center, flex-start);
                 gap: 30px;
+                width: fit-content;
                 li{
-                    width: 100%;
-
+                    width:fit-content ;
                     img{
                         width: fit-content;
                         height: 100%;
@@ -200,11 +216,12 @@
                         line-height: 162%;
                         color: $--white;
                         opacity: 0.9;
+                        display: block;
                     }
                     &:hover a{
-                        margin-left: 5px;
                         @include transition(.3s);
                         color: $--primary;
+                        margin-left: 5px;
                     }
                     
                     input{
@@ -240,6 +257,19 @@
                 }
             }
             .quicklink{
+                // &.style_1{
+                //     background-color: blue;
+                //     ul{
+                //         li{
+                //             a{
+                //                 &:hover{
+                //                     margin-left: 5px;
+
+                //                 }
+                //             }
+                //         }
+                //     }
+                // }
                 h3{
                     font-family: $--font-family;
                         font-weight: 400;
@@ -287,6 +317,9 @@
         }
 
         .footer_last{
+            @include sm{
+                margin-top: -50px;
+            }
             padding-bottom: 20px;
             padding-top: 20px;
             @include md {
@@ -318,6 +351,9 @@
                 }
             }
             .footer_last_menu{
+                @include sm{
+                    margin-bottom: -10px;
+                }
                 ul{
                     @include flex(row, flex-end, flex-end);
                     margin: 0px;

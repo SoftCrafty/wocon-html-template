@@ -1,5 +1,8 @@
 
 .comment_box_wrapper{
+    @include sm{
+        margin-top: 40px;
+    }
         .comment_box_area{
             box-shadow: 0 5px 60px 0 rgba(0, 0, 0, 0.05);
             background: $--white;
@@ -49,6 +52,9 @@
 
 
 .contact_area_widget{
+    @include sm{
+        margin: 50px 0px;
+    }
     margin: 100px 0px;
     &{
         @include sm {
@@ -69,11 +75,15 @@
             @include sm{
                 gap: 30px !important;
                 
+                
             }
             @include flex(row, space-between, center);
             flex-wrap: wrap;
             width: 100%;
             &.style_1{
+                @include sm{
+                    margin-top: 50px;
+                }
                 margin-top: 120px;
                 .contact_info{
                     margin-left: 20px;
