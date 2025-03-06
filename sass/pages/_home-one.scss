@@ -61,18 +61,20 @@
                 @include sm{
                     gap: 10px !important;
                     img{
-                        width: 20px ;
-                        height: 20px;
+                        width: 30px ;
+                        height: 30px;
                     }
                     padding: 2px 10px 4px 10px!important;
                     .number{
+                        padding-bottom: 10px;
+                        height: fit-content !important;
+                        @include flex(column, flex-start, center);
                         p{
                             font-size: 9px !important;
-                            margin-top: 10px;
+                            margin-left: -18px !important;
                         }
                         a{
                             font-size: 10px !important;
-                            margin: 0px !important;
                         }
                     }
                 }
@@ -84,6 +86,7 @@
                     }
                     padding: 10px;
                     .number{
+                       
                         p{
                             font-size: 12px !important;
                             margin-top: 14px;
@@ -312,9 +315,16 @@
             margin-top: 70px !important;
             margin-bottom: 20px !important;
         }
+        @include nesthub{ 
+            margin-top: 110px !important;
+            margin-bottom: 60px !important;
+        }
     }
     @include sm{
         margin-top: 70px;
+    }
+    @include nesthub{ 
+        margin-top: 110px;
     }
     &.style_1{
         margin-top: 150px;
@@ -351,6 +361,9 @@
 .about_us{
     @include sm{
         margin-top: 70px;
+    }
+    @include nesthub{
+        margin-top: 103px;
     }
     margin-top: 143px;
     .container{
@@ -536,6 +549,9 @@
 /*=================box start=======================*/
 .our_achievement_card{
     margin-top: 130px;
+    @include nesthub{
+        margin-top: 90px;
+    }
     .heading_area{
         @include nesthub{
             h2{
@@ -652,6 +668,9 @@
     @include sm{
         margin-top: 80px;
     }
+    @include nesthub{ 
+        margin-top: 120px;
+    }
     &{
         @include sm{
             margin-top: 75px;
@@ -687,6 +706,9 @@
     width: 420px;
     @include nesthubmax{
         width: 360px !important;
+    }
+    @include nesthub{
+        width: 305px !important;
     }
     
     height: 100%;
@@ -867,7 +889,11 @@ color: $--white;
 /*=================service start=======================*/
 .service_card_wrapper{
     margin-top: 159px;
+
     &{
+        @include nesthub{
+            margin-top: 118px;
+        }
         @include sm{
             margin-top: 75px;
             .service_card{
@@ -986,6 +1012,9 @@ color: $--white;
 /*=================experts start=======================*/
 .experts{
     &{
+        @include nesthub{
+            margin-top: 117px;
+        }
         @include sm{
             margin-top: 70px;
             .desc{
@@ -1157,6 +1186,7 @@ color: $--eight;
 .review{
     
     @include nesthub{
+        margin-top: 110px;
                     width: 100% !important;
                 }
     &{
@@ -1182,7 +1212,9 @@ color: $--eight;
             }
             .review_card_wapper{
                 margin-top: 50px;
-                background-color: violet;
+                @include nesthub{
+                    margin-top: -10px !important;
+                }
 
             }
             .profile{
@@ -1196,7 +1228,9 @@ color: $--eight;
                 }
             }
             .images{
-                background-color: red;
+                @include sm{
+                    height: 200px;
+                }
                 overflow: hidden;
                 width: 100%;
                 span{
@@ -1322,13 +1356,18 @@ color: $--eight;
                 padding: 30px;
                 margin-top: 30px;
                 @include flex(row, flex-start, center);
+                
                 .pic{
                     img{
                         width: 100%;
                         height: 100%;
                         object-fit: contain;
-                        animation: tada 1s linear infinite;
-                    }
+                        &:hover{
+                            animation: tada 1s;
+                            -webkit-animation: tada 1s;
+}
+                        
+}
                 }
                 .name{
                     padding-left: 20px;
@@ -1353,6 +1392,9 @@ color: $--eight;
             }
         }
             .images{
+                @include nesthub{
+                   top: 1200px;
+                }
         position: absolute;
         top: 100%;
         @include transformY(-80%);
@@ -1361,9 +1403,6 @@ color: $--eight;
         .img{
             position: relative;
 
-            // &:hover{
-            //     transform: scale(1.1);
-            // }
             
             img{ 
             width: 100%;
@@ -1414,8 +1453,11 @@ color: $--eight;
 
    
 .text_slider{
+    @include nesthub{
+        margin-top: 50px !important;
+    }
     &.style_1{
-        margin-top: 125px;
+        margin-top: 145px;
         .style_2{
             background-color: $--primary !important;
             .marquee-content{
@@ -1508,10 +1550,13 @@ color: $--eight;
 /*=================subscribe start=======================*/
 
 .subscribe_form_wrapper {
+    @include nesthub{
+        margin-top: 290px;
+    }
     &{
         @include sm{
             padding: 0px !important;
-            margin-top: 250px !important;
+            margin-top: 145px !important;
             h4{
                 font-size: 28px !important;
             }
@@ -1630,6 +1675,9 @@ color: $--eight;
 /*=================blog and news start=======================*/
 .blog_news{
     &{
+        @include nesthub{
+            margin-top: 118px;
+        }
         @include sm{
             margin-top: 75px;
             .blog_box{

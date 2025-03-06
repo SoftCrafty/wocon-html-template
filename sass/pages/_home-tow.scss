@@ -4,9 +4,9 @@
 #hero{
 
     &{
+        
         @include sm {
-            
-            margin-top: -160px !important;
+            margin-top: -220px !important;
             .heading{
                 width: 100% !important;
                 h1{
@@ -143,6 +143,9 @@
                 }
                 .heading_area{
                     padding: 20px 20px 20px 40px;
+                    @include sm{
+                        padding-left: 20px;
+                    }
                     height: 100%;
                     background: linear-gradient(90deg, #fff 10%, rgba(255, 255, 255, 0.858) 90%);
                     width: 100%;
@@ -159,6 +162,9 @@
                         line-height: 129%;
                         color: $--nine;
                         width: 55%;
+                        @include nesthub{
+                            font-size: 50px;
+                        }
                     }
                     p{
                         width: 50%;
@@ -217,6 +223,9 @@
 
 .home_about_wrapper{
     &{
+        @include nesthub{
+            margin-top: 106px;
+        }
         @include sm {
             margin-top: -125px;
         
@@ -313,6 +322,9 @@
 /*=================BOX GALLARY LOGO START=======================*/
 
 .box_gallery_logo{
+    @include nesthub{
+        margin-top: 110px;
+    }
     @include sm{
         margin-top: 75px;
     }
@@ -324,6 +336,9 @@
         @include sm{
             margin-top: -10px;
         }
+        @include nesthub{
+            margin-top: 60px;
+        }
     }
 }
 
@@ -331,6 +346,9 @@
     margin-top: 139px;
     @include sm{
         margin-top: 70px;
+    }
+    @include nesthub{ 
+        margin-top: 110px;
     }
     &{
         @include sm {
@@ -427,6 +445,10 @@
 
 /*=================services section start=======================*/
 .home_services_card{
+    @include nesthub{ 
+        margin-top: 100px;
+        height: fit-content;
+    }
     @include sm{
         margin-top: 70px;
         height: fit-content;
@@ -524,9 +546,12 @@
 /*=================services section end=======================*/
 /*=================Our team start =======================*/
 .our_team_expert_member{
-    margin-top: 136px;
+    margin-top: 80px;
     @include sm{
         margin-top: 70px;
+    }
+    @include nesthub{
+        margin-top: 100px;
     }
    
     
@@ -642,6 +667,10 @@
 
 /*=================Slider end =======================*/
 .albert_slider_wrapper{
+    margin-top: 94px;
+    @include nesthub{
+        margin-top: -80px;
+    }
 &{
         @include sm {
             margin-top: 70px;
@@ -669,6 +698,7 @@
     }
     .albert_slider_contains{
         margin-top: 80px;
+        
         @include flex(row, center, center);
         position: relative;
                     .left-arrow{
@@ -717,6 +747,13 @@
             padding: 60px 50px;
             border: 1px solid $--tow;
             
+            @include sm{
+            padding: 30px;
+        }
+            @include nesthub{
+            padding: 30px;
+        }
+            
 
             .albert_contains{
                 float: left;
@@ -725,12 +762,19 @@
                     float: none;
                 width: 100%;
             }
+                @include nesthub{
+                    float: none;
+                width: 60%;
+            }
                 p{
                 font-family: $--font-family;
                 font-weight: 400;
                 font-size: 26px;
                 line-height: 135%;
                 color: $--eight;
+                @include sm{
+                    font-size: 18px !important;
+                }
             }
             h5{
                 font-family: $--font-family;
@@ -750,10 +794,10 @@
             }
             }
             .albert_img{
+                
                 float: right;
                 span{
                 display: block;
-                background-color: yellow;
                 position: relative;
                 img{
                    &:nth-child(1){
@@ -784,8 +828,11 @@
 
 /*=================blog and news start =======================*/
 .home_blog_news{
-    margin-top: 186px;
+    margin-top: 136px;
     &{
+        @include nesthub{
+            margin-top: 100px;
+        }
         @include sm {
             margin-top: 50px;
             .desc{
@@ -960,8 +1007,11 @@
 
 /*=================subscribe start =======================*/
 #home_subscribe{
-    margin-top: 200px;
+    margin-top: 150px;
     &{
+        @include nesthub{
+            margin-top: 110px;
+        }
         @include sm {
             margin-top: 70px;
             .home_subscribe_area{

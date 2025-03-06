@@ -1,4 +1,19 @@
 .footer{
+    @include nesthub{
+        margin-top: 200px !important;
+    }
+    &.style_2{
+        margin-top: -0px !important;
+    }
+    &.style_5{
+        margin-top: 220px !important;
+        @include sm{
+            margin-top: 120px !important;
+        }
+        @include nesthub{
+            margin-top: 180px !important;
+        }
+    }
     &.style_2{
         @include sm{
             margin-top: -0px !important;
@@ -10,6 +25,7 @@
     &.style_1{
         margin-top:250px;
     }
+    
     
     &{
         @include sm{
@@ -85,17 +101,19 @@
                 .text{
                     h5{
                         font-family: $--font-family;
-                        font-weight: 400;
+                        font-weight: 200;
                         font-size: 20px;
                         line-height: 150%;
                         color: $--white;
+                        opacity: 0.9;
                     }
                     a{
                         font-family: $--font-family;
-                        font-weight: 400;
+                        font-weight: 200;
                         font-size: 16px;
                         line-height: 162%;
                         color: $--white;
+                        opacity: 0.8;
                     }
                 }
             }
@@ -109,6 +127,7 @@
             position: absolute;
             bottom: 0;
             left: -24%;
+            pointer-events: none;
             img{
                 width: 100%;
                 object-fit: contain;
@@ -120,6 +139,9 @@
             &.style_4{
                 @include sm{
                     margin-top: 50px !important;
+                }
+                @include nesthub{ 
+                    margin-top: 90px !important;
                 }
             }
             &.style_2{
@@ -257,19 +279,6 @@
                 }
             }
             .quicklink{
-                // &.style_1{
-                //     background-color: blue;
-                //     ul{
-                //         li{
-                //             a{
-                //                 &:hover{
-                //                     margin-left: 5px;
-
-                //                 }
-                //             }
-                //         }
-                //     }
-                // }
                 h3{
                     font-family: $--font-family;
                         font-weight: 400;
@@ -317,8 +326,19 @@
         }
 
         .footer_last{
+            p{
+                font-family: $--font-family;
+                font-weight: 200;
+                font-size: 16px;
+                line-height: 150%;
+                color: $--white;
+                opacity: 0.5;
+            }
+            @include nesthub{ 
+                margin-top: -17px;
+            }
             @include sm{
-                margin-top: -50px;
+                margin-top: -70px;
             }
             padding-bottom: 20px;
             padding-top: 20px;
@@ -343,7 +363,7 @@
                 font-size: 16px;
                 line-height: 150%;
                 color: $--white;
-                opacity: 0.8;
+                opacity: 0.4;
                 @include transition(0.4s);
                 &:hover{
                     color: $--primary;

@@ -40,6 +40,7 @@
       font-size: 16px;
       height: 45px;
       width: 45px;
+      border: none;
       background-color: $--primary;
       color: #ffffff;
     }
@@ -47,7 +48,6 @@
 
   .menu-sidebar-content {
     .menu-sidebar-single-widget {
-      // background-color: rgba(13, 255, 0, 0.292);
       display: inline-block;
       margin-top: 20px;
       width: 100%;
@@ -84,7 +84,6 @@
           font-family: "Rubik", sans-serif;
           width: 100%;
           @include transition(0.5s);
-          // background-color: green;
           &:hover{
             i{
               transform:rotate(360deg);
@@ -223,28 +222,27 @@
 
       }
       .dropdown{
-        display: none;
-         
+         display: none; 
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+         ul{
+      li{
+        padding: 10px 0px;
+        border-bottom: 1px solid $--tow;
+        a{
+          &:hover{
+            color: $--primary;
+          }
+        }
+      }
+    }
         
       }
       .dropdown.active{
-        display: block;
-        transition: all 10s ease-in-out !important;
-        -webkit-transition: all 10s ease-in-out !important;
-        -moz-transition: all 10s ease-in-out !important;
-        -ms-transition: all 10s ease-in-out !important;
-        -o-transition: all 10s ease-in-out !important;
-        ul{
-          li{
-            padding: 10px 0px;
-            border-bottom: 1px solid $--tow;
-            a{
-              &:hover{
-                color: $--primary;
-              }
-            }
-          }
-        }
+    display: block; 
+    opacity: 1;
+    visibility: visible;
 }
       ul{
         li{

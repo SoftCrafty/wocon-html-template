@@ -13,6 +13,33 @@ $(document).ready(function () {
     $(".menu-sidebar-close-btn, .cross_btn, .body-overlay").on("click", function () {
         $(".menu-sidebar-area, .body-overlay").removeClass("active");
     });
+    
+    $(document).ready(function () {
+        $(".dropdown").hide(); 
+
+        $(".dropdown_btn").click(function (event) {
+            event.preventDefault();
+
+            let parentLi = $(this).closest("li");
+            let dropdown = parentLi.find(".dropdown");
+            let icon = $(this).find("i");
+
+            if (dropdown.is(":animated")) return; 
+
+            if (!dropdown.is(":visible")) {
+                $(".dropdown").slideUp(300).removeClass("active"); 
+                $(".dropdown_btn i").removeClass("fa-minus").addClass("fa-plus");
+
+                dropdown.stop(true, true).slideDown(300).addClass("active");
+                icon.removeClass("fa-plus").addClass("fa-minus");
+            } else {
+                dropdown.stop(true, true).slideUp(300).removeClass("active");
+                icon.removeClass("fa-minus").addClass("fa-plus");
+            }
+        });
+    });
+
+
 
     // Sticky Navbar
     function addStickyNav(navSelector, scrollOffset = 120, activeClass = 'active') {
