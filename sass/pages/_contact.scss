@@ -3,9 +3,15 @@
     @include sm{
         margin-top: 40px;
     }
+    @include nesthub{
+        margin-top: 110px;
+    }
         .comment_box_area{
             box-shadow: 0 5px 60px 0 rgba(0, 0, 0, 0.05);
             padding: 80px;
+            @include nesthub{
+                padding: 30px;
+            }
             @include sm{
                     padding: 10px;
                 }

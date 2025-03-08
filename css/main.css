@@ -3302,6 +3302,9 @@
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .comment_box_wrapper {
     margin-top: 40px; } }
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .comment_box_wrapper {
+    margin-top: 110px; } }
 .comment_box_wrapper .comment_box_area {
   box-shadow: 0 5px 60px 0 rgba(0, 0, 0, 0.05);
   padding: 80px;
@@ -3310,6 +3313,9 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap; }
+  @media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .comment_box_wrapper .comment_box_area {
+      padding: 30px; } }
   @media only screen and (min-width: 0px) and (max-width: 767px) {
     .comment_box_wrapper .comment_box_area {
       padding: 10px; } }
