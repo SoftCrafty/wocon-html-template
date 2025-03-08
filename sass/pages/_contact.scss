@@ -5,17 +5,21 @@
     }
         .comment_box_area{
             box-shadow: 0 5px 60px 0 rgba(0, 0, 0, 0.05);
-            background: $--white;
             padding: 80px;
             @include sm{
                     padding: 10px;
                 }
             @include flex(row, space-between, center);
+            @include navmenu{
+                justify-content: center;
+                gap: 50px;
+            }
             flex-wrap: wrap;
             
             .comment_box_img{
                 width: 100%;
                 height: 100%;
+                
                 @include sm{
                     padding: 50px;
                 }
@@ -29,6 +33,10 @@
                 }
             }
             .comment_box{
+                padding-left: 60px;
+                @include navmenu{
+                    padding-left: 0px;
+                }
                  @include nesthub{
                     padding: 30px;
                 }
@@ -74,7 +82,6 @@
             }
             @include sm{
                 gap: 30px !important;
-                
                 
             }
             @include flex(row, space-between, center);

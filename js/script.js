@@ -132,7 +132,13 @@ $(document).ready(function () {
     });
 
 
-  
+    gsap.to(".text_line_slide", {
+        x: 100,
+        rotation: -360,
+        duration: 2,
+        repeat: -1
+    });
+
 
     // Social Icon Hover Effect
     $(".plus_btn").on("mouseenter", function () {

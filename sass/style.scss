@@ -154,18 +154,20 @@ span i{
                     width: fit-content;
                     height: fit-content;
                     object-fit: contain;
+                    animation: rotateCircle 10s linear infinite;
                 }
 
             }
     }
 }
-
-
 /*===========GENERAL SERVICE START ============*/
 #general_service{
     margin-top: 150px;
     @include sm{
         margin-top: 30px;
+    }
+    @include nesthub{
+        margin-top: 110px;
     }
     .general_service_wrapper{
          @include md{
@@ -188,8 +190,8 @@ span i{
             @include flex(column, center, flex-start);
             gap: 45px;
           .contains_title{
+            gap: 10px;
             @include flex(column, center, flex-start);
-            gap: 40px;
             @include sm{
                 gap: 20px ;
             }
@@ -216,6 +218,10 @@ span i{
                 font-size: 16px;
                 line-height: 150%;
                 color: $--eight;
+                margin-top: 10px;
+                @include sm{
+                    margin-top: -1px;
+                }
                   @include nesthub{
                 padding-right:55px;
             }
@@ -231,11 +237,15 @@ span i{
                 }
             }
             ul{
+                margin-top: 20px;
+                @include sm{
+                    margin-top: -1px;
+                }
                 padding: 0;
                 @include flex(column, center, flex-start);
                 li a{
                     @include sm{
-                        font-size: 18px;
+                        font-size: 16px;
                     }
                     @include xs{
                         font-size: 16px;
@@ -278,7 +288,7 @@ span i{
             
             // margin-top: 60px;
             border: 1px solid $--tow;
-            padding: 80px 40px 45px 40px;
+            padding: 70px 40px 45px 40px;
             position: relative;
             @include flex(column, center, flex-start);
             gap: 30px;
@@ -402,11 +412,12 @@ span i{
                     flex-direction: column;
                     gap: 20px;
                     li{
-                        padding:22px 20px;
+                        padding:12px 20px;
+                        background-color: darkred;
                         background-color: $--white;
                         border: 1px solid $--tow;
+                        text-align: center;
                         a{
-                            
                         @include flex(row, space-between, center);
                             font-family: $--font-family;
                             font-weight: 400;

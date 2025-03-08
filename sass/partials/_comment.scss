@@ -9,6 +9,9 @@
         line-height: 133%;
         color: $--nine;
         margin-bottom: 30px;
+        @include sm{
+                margin-bottom: 10px;
+                        }
     }
     input{
         border: 1px solid $--tow;
