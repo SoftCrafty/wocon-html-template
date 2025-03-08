@@ -5,10 +5,21 @@
         a{
             background-color: $--primary !important;
             color: $--white;
+            // border: 1px solid $--primary;
             &:hover{
                 background-color: transparent !important;
                 color: $--nine;
             }
+        }
+    }
+    &.style_2{
+        a{
+            background-color: $--primary;
+        width: 100%;
+        color: $--white;
+        &:hover{
+            color: $--nine;
+        }
         }
     }
     width: 100%;
@@ -28,6 +39,7 @@ text-transform: uppercase;
         font-size: 15px;
         line-height: 40px;
         text-align: center;
+        border: 1px solid transparent;
         i{
             margin-left: 8px;
             transform: rotate(45deg) !important;

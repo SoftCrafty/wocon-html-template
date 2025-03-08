@@ -1,4 +1,7 @@
 .comments_box{
+    &.style_1{
+        margin-bottom: 5px
+    }
     @include flex(column, flex-start, flex-start);
     gap: 20px;
     width: 100%;

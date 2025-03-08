@@ -1,4 +1,5 @@
 .blog_page_area{
+    margin-top: 150px;
     .container{
        .blog_main_content_wrapper{
         padding-right: 30px;
@@ -87,16 +88,8 @@
                 }
             }
         }
-        .button_all{
-            .commn_btn{
-                background-color: $--primary;
-                color: $--white;
-                &:hover{
-                    background-color: $--white;
-                    color: $--nine;
-                    
-                }
-            }
+        .btn_warpper{
+            margin-top: 20px;
         }
         }
         .michal_doe{
