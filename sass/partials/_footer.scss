@@ -155,6 +155,9 @@
                 @include sm{
                     margin-top: 300px !important;
                 }
+                @include md{
+                    margin-top: 300px !important;
+                }
             }
             
             margin-bottom: 95px;

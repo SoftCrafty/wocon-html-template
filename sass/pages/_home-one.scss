@@ -317,9 +317,9 @@
 /*=================company logo start=======================*/
 .company_logo{
     &.style_2{
-        margin-top: 404px !important;
+        margin-top: 5px !important;
         @include nesthub{
-            margin-top: 800px !important;
+            margin-top: -150px !important;
         }
         @include sm{ 
             margin-top: 800px !important;
@@ -1208,6 +1208,19 @@ color: $--eight;
 
 
 /*=================review start=======================*/
+.review_wrapper{
+    overflow: hidden;
+    height: 1735px;
+    @include nesthub{
+        height: 1500px;
+    }
+    @include md{
+        height: 1500px;
+    }
+    @include sm{
+        height: 760px;
+    }
+
 .review{
     
     @include nesthub{
@@ -1425,6 +1438,9 @@ color: $--eight;
         @include transformY(-80%);
         overflow: hidden;
         margin-top: 150px;
+        @include md{
+            margin-top: 1px;
+        }
         .img{
             position: relative;
 
@@ -1475,7 +1491,7 @@ color: $--eight;
     }
        
     }
-
+}
    
 .text_slider{
     @include nesthub{
@@ -1596,7 +1612,7 @@ color: $--eight;
             }
         }
     }
-    margin-top: 405px;
+    margin-top: 5px;
     .container {
         position: relative;
         background-color: $--nine;
@@ -1604,14 +1620,12 @@ color: $--eight;
         flex-wrap: wrap;
         gap: 50px;
         padding: 80px 80px;
-
         .vector {
             position: absolute;
             top: 0px;
             left: 0px;
             width: 100%;
             height: 100%;
-
             img {
                 &:nth-child(1) {
                     position: absolute;
@@ -1625,7 +1639,6 @@ color: $--eight;
                 }
             }
         }
-
         .subscribe_title {
             @include flex(row, center, center);
             h4 {
@@ -1634,16 +1647,13 @@ color: $--eight;
                 font-size: 40px;
                 line-height: 125%;
                 color: $--white;
-
             }
         }
-
         .submit_form {
             margin-top: 10px;
             @include flex(row, center, center);
             flex-wrap: wrap;
             gap: 20px;
-
             /* Form Start*/
             form {
                 display: flex;
