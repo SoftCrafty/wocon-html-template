@@ -56,7 +56,7 @@ $(document).ready(function () {
     });
 
     // Slick Carousel - Review Content
-    $('.review_content').slick({
+    $('.cleaning_container_area').slick({
         slidesToShow: 2,
         slidesToScroll: 1,
         prevArrow: `<span class="left-arrow"><i class="fa-solid fa-arrow-left"></i></span>`,
